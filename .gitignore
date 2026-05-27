@@ -35,6 +35,15 @@ scrapy_env/
 *.sqlite
 *.sqlite3
 
+# Generated reports and media
+talabat/**/*.txt
+!talabat/**/requirements.txt
+*.avif
+*.png
+*.jpg
+*.jpeg
+*.webp
+
 # Browser / Playwright artifacts
 playwright-report/
 test-results/
