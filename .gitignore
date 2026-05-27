@@ -1,0 +1,60 @@
+# Keep repository clean: scripts only, no scraped/exported data.
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+scrapy_env/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+
+# Scraped/exported data
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.xlsx
+*.xls
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+
+# Browser / Playwright artifacts
+playwright-report/
+test-results/
+downloads/
+screenshots/
+videos/
+storage_state*.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Documentation files should stay local unless intentionally force-added.
+*.md
+!README.template.md
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
