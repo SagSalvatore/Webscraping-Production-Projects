@@ -36,6 +36,7 @@ scrapy_env/
 *.sqlite3
 
 # Generated reports and media
+Hungerstation/**/*.txt
 talabat/**/*.txt
 !talabat/**/requirements.txt
 *.avif
@@ -60,6 +61,8 @@ storage_state*.json
 
 # Documentation files should stay local unless intentionally force-added.
 *.md
+!README.md
+!Readme.md
 !README.template.md
 
 # OS/editor noise
