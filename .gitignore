@@ -45,6 +45,7 @@ deliveroo/**/*.json
 agoda-hotels/**/*.xlsx
 noon-platform/**/*.json
 noon-platform/**/*.txt
+healthcare/**/*.html
 Gofood-Indonesia/**/*.txt
 elmenus-cairo/**/*.txt
 foodi-Bangladesh/**/*.txt
