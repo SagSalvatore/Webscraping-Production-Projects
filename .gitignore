@@ -36,6 +36,9 @@ scrapy_env/
 *.sqlite3
 
 # Generated reports and media
+Gofood-Indonesia/**/*.txt
+elmenus-cairo/**/*.txt
+foodi-Bangladesh/**/*.txt
 Hungerstation/**/*.txt
 talabat/**/*.txt
 !talabat/**/requirements.txt
