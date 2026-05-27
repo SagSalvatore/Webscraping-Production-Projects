@@ -9,6 +9,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 | Booking.com | `booking.com/` | Hotel listing extraction, address parsing, Excel export workflow |
 | Talabat | `talabat/` | Scrapy, requests, Selenium, validation, menu extraction, restaurant URL collection |
 | Hungerstation | `Hungerstation/` | Restaurant discovery, menu extraction, JSON-LD parsing, Selenium and Playwright workflows |
+| Zomato | `Zomato/` | UAE restaurant listing extraction, menu image collection, image preparation, and OpenAI Vision OCR |
 
 ## Tech Stack
 
@@ -21,6 +22,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - curl_cffi
 - pandas / openpyxl
 - JSON-LD extraction
+- OpenAI Vision menu OCR
 - Proxy-ready workflows through environment variables
 - Resume/checkpoint patterns for long scraping jobs
 
@@ -29,6 +31,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - Building production scraping pipelines for JavaScript-heavy and anti-bot-protected websites
 - Handling pagination, lazy loading, dynamic selectors, and restaurant/menu detail pages
 - Extracting structured data from HTML, embedded JSON, and JSON-LD
+- Building complete menu pipelines: scrape UAE Zomato listings, collect menu images, prepare images for OCR, and extract menu text using OpenAI vision models
 - Designing retry, delay, rate-limit, checkpoint, and validation flows
 - Keeping scraped datasets, logs, reports, credentials, and local files out of Git
 - Organizing scripts by website and scraping method for reusable project delivery
