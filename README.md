@@ -17,7 +17,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - Selenium
 - Playwright
 - Requests / aiohttp
-- BeautifulSoup
+- BeautifulSoup/Selectolax
 - curl_cffi
 - pandas / openpyxl
 - JSON-LD extraction
