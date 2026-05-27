@@ -13,6 +13,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 | <img src="assets/logos/gofood.png" alt="GoFood" width="120"> | GoFood Indonesia | `Gofood-Indonesia/` | Area-wise restaurant discovery with Playwright async scrolling and proxy-ready sessions |
 | <img src="assets/logos/elmenus-cairo.png" alt="elmenus" width="120"> | elmenus Cairo | `elmenus-cairo/` | Hidden API/XHR extraction for Cairo listings with location-aware request parameters |
 | <img src="assets/logos/foodi.png" alt="Foodi" width="120"> | Foodi Bangladesh | `foodi-Bangladesh/` | Lat-long driven branch scraping through API requests and browser-like headers |
+| Europe Bakery Ops | Multi-country Europe | `Europe/` | Country-wise bakery and cafe scraping across Denmark, Finland, France, Germany, and Sweden |
 
 ## Tech Stack
 
@@ -25,6 +26,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - Hidden fetch/XHR API analysis
 - Header rotation and browser-like request profiles
 - Latitude/longitude area-wise scraping
+- Multi-country operator pipelines with reusable scraper utilities
 - curl_cffi
 - pandas / openpyxl
 - JSON-LD extraction
@@ -37,6 +39,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - Building production scraping pipelines for JavaScript-heavy and anti-bot-protected websites
 - Handling pagination, lazy loading, dynamic selectors, and restaurant/menu detail pages
 - Reverse-engineering hidden fetch/XHR endpoints and replaying them with correct headers, auth context, and lat-long parameters
+- Scaling country-wise outlet collection with shared HTTP clients, parser helpers, exporters, logging, retries, and rate limits
 - Extracting structured data from HTML, embedded JSON, and JSON-LD
 - Building complete menu pipelines: scrape UAE Zomato listings, collect menu images, prepare images for OCR, and extract menu text using OpenAI, Groq LLaMA-4 Scout, and Mistral Pixtral vision models
 - Designing retry, delay, rate-limit, checkpoint, and validation flows

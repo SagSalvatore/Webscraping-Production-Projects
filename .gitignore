@@ -36,6 +36,11 @@ scrapy_env/
 *.sqlite3
 
 # Generated reports and media
+Europe/**/output/
+Europe/**/*.txt
+!Europe/requirements.txt
+Europe/**/*.html
+Europe/**/*.log
 Gofood-Indonesia/**/*.txt
 elmenus-cairo/**/*.txt
 foodi-Bangladesh/**/*.txt
