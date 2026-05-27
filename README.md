@@ -10,9 +10,9 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 | <img src="assets/logos/talabat.png" alt="Talabat" width="120"> | Talabat | `talabat/` | Scrapy, requests, Selenium, validation, menu extraction, restaurant URL collection |
 | <img src="assets/logos/hungerstation.png" alt="Hungerstation" width="120"> | Hungerstation | `Hungerstation/` | Restaurant discovery, menu extraction, JSON-LD parsing, Selenium and Playwright workflows |
 | <img src="assets/logos/zomato.png" alt="Zomato" width="120"> | Zomato | `Zomato/` | UAE restaurant listing extraction, menu image collection, image preparation, and multi-model vision OCR |
-| GoFood | GoFood Indonesia | `Gofood-Indonesia/` | Area-wise restaurant discovery with Playwright async scrolling and proxy-ready sessions |
-| elmenus | elmenus Cairo | `elmenus-cairo/` | Hidden API/XHR extraction for Cairo listings with location-aware request parameters |
-| Foodi | Foodi Bangladesh | `foodi-Bangladesh/` | Lat-long driven branch scraping through API requests and browser-like headers |
+| <img src="assets/logos/gofood.png" alt="GoFood" width="120"> | GoFood Indonesia | `Gofood-Indonesia/` | Area-wise restaurant discovery with Playwright async scrolling and proxy-ready sessions |
+| <img src="assets/logos/elmenus-cairo.png" alt="elmenus" width="120"> | elmenus Cairo | `elmenus-cairo/` | Hidden API/XHR extraction for Cairo listings with location-aware request parameters |
+| <img src="assets/logos/foodi.png" alt="Foodi" width="120"> | Foodi Bangladesh | `foodi-Bangladesh/` | Lat-long driven branch scraping through API requests and browser-like headers |
 
 ## Tech Stack
 
