@@ -40,7 +40,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 PROXY_CONFIG = {
     "username": os.getenv("OXYLABS_USERNAME", ""),
     "password": os.getenv("OXYLABS_PASSWORD", ""),
-    "country": os.getenv("OXYLABS_COUNTRY", "sa"),
+    "country": os.getenv("OXYLABS_COUNTRY", ""),
     "server": os.getenv("OXYLABS_SERVER", "http://pr.oxylabs.io:7777")
 }
 
