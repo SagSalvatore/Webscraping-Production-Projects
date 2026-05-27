@@ -6,10 +6,10 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 
 | Platform | Website | Folder | Focus |
 | --- | --- | --- | --- |
-| <img src="https://logo.clearbit.com/booking.com" alt="Booking.com" width="120"> | Booking.com | `booking.com/` | Hotel listing extraction, address parsing, Excel export workflow |
-| <img src="https://logo.clearbit.com/talabat.com" alt="Talabat" width="120"> | Talabat | `talabat/` | Scrapy, requests, Selenium, validation, menu extraction, restaurant URL collection |
-| <img src="https://logo.clearbit.com/hungerstation.com" alt="Hungerstation" width="120"> | Hungerstation | `Hungerstation/` | Restaurant discovery, menu extraction, JSON-LD parsing, Selenium and Playwright workflows |
-| <img src="https://logo.clearbit.com/zomato.com" alt="Zomato" width="120"> | Zomato | `Zomato/` | UAE restaurant listing extraction, menu image collection, image preparation, and OpenAI Vision OCR |
+| <img src="assets/logos/booking.png" alt="Booking.com" width="120"> | Booking.com | `booking.com/` | Hotel listing extraction, address parsing, Excel export workflow |
+| <img src="assets/logos/talabat.png" alt="Talabat" width="120"> | Talabat | `talabat/` | Scrapy, requests, Selenium, validation, menu extraction, restaurant URL collection |
+| <img src="assets/logos/hungerstation.png" alt="Hungerstation" width="120"> | Hungerstation | `Hungerstation/` | Restaurant discovery, menu extraction, JSON-LD parsing, Selenium and Playwright workflows |
+| <img src="assets/logos/zomato.png" alt="Zomato" width="120"> | Zomato | `Zomato/` | UAE restaurant listing extraction, menu image collection, image preparation, and OpenAI Vision OCR |
 
 ## Tech Stack
 

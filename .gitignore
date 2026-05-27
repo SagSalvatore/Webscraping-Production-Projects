@@ -44,6 +44,9 @@ talabat/**/*.txt
 *.jpg
 *.jpeg
 *.webp
+!assets/
+!assets/logos/
+!assets/logos/*.png
 
 # Browser / Playwright artifacts
 playwright-report/
