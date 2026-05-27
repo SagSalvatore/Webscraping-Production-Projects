@@ -11,7 +11,7 @@ from playwright.async_api import async_playwright
 # Set these in your local environment before running.
 username = os.getenv("OXYLABS_USERNAME", "")
 password = os.getenv("OXYLABS_PASSWORD", "")
-country = os.getenv("OXYLABS_COUNTRY", "sa")
+country = os.getenv("OXYLABS_COUNTRY", " ")
 
 # === Output directory ===
 output_dir = "Riyadh_king-faisal-neighborhood"
