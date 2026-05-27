@@ -14,6 +14,9 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 | <img src="assets/logos/elmenus-cairo.png" alt="elmenus" width="120"> | elmenus Cairo | `elmenus-cairo/` | Hidden API/XHR extraction for Cairo listings with location-aware request parameters |
 | <img src="assets/logos/foodi.png" alt="Foodi" width="120"> | Foodi Bangladesh | `foodi-Bangladesh/` | Lat-long driven branch scraping through API requests and browser-like headers |
 | Europe Bakery Ops | Multi-country Europe | `Europe/` | Country-wise bakery and cafe scraping across Denmark, Finland, France, Germany, and Sweden |
+| <img src="assets/logos/deliveroo.png" alt="Deliveroo" width="120"> | Deliveroo | `deliveroo/` | Menu extraction workflow with structured JSON output |
+| <img src="assets/logos/agoda.png" alt="Agoda" width="120"> | Agoda Hotels | `agoda-hotels/` | Hotel listing extraction with Playwright browser automation and Excel export |
+| <img src="assets/logos/noonfood.png" alt="Noon Food" width="120"> | Noon Food | `noon-platform/` | Noon restaurant and menu scraping with Selenium, curl_cffi, and hidden API workflows |
 
 ## Tech Stack
 
@@ -27,6 +30,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - Header rotation and browser-like request profiles
 - Latitude/longitude area-wise scraping
 - Multi-country operator pipelines with reusable scraper utilities
+- Selenium and curl_cffi flows for protected menu platforms
 - curl_cffi
 - pandas / openpyxl
 - JSON-LD extraction

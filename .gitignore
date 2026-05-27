@@ -41,6 +41,10 @@ Europe/**/*.txt
 !Europe/requirements.txt
 Europe/**/*.html
 Europe/**/*.log
+deliveroo/**/*.json
+agoda-hotels/**/*.xlsx
+noon-platform/**/*.json
+noon-platform/**/*.txt
 Gofood-Indonesia/**/*.txt
 elmenus-cairo/**/*.txt
 foodi-Bangladesh/**/*.txt
