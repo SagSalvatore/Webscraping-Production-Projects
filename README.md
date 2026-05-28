@@ -17,7 +17,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 | <img src="assets/logos/deliveroo.png" alt="Deliveroo" width="120"> | Deliveroo | `deliveroo/` | Menu extraction workflow with structured JSON output |
 | <img src="assets/logos/agoda.png" alt="Agoda" width="120"> | Agoda Hotels | `agoda-hotels/` | Hotel listing extraction with Playwright browser automation and Excel export |
 | <img src="assets/logos/noonfood.png" alt="Noon Food" width="120"> | Noon Food | `noon-platform/` | Noon restaurant and menu scraping with Selenium, curl_cffi, and hidden API workflows |
-| Healthcare Registry | DIMDI / German medicine portal | `healthcare/` | Medicine product detail extraction with Playwright and BeautifulSoup, followed by structured German-to-English JSON normalization |
+| Healthcare Registry | DIMDI / German medicine portal The Federal Institute for Drugs and Medical Devices ( BfArM )| `healthcare/` | Medicine product detail extraction with Playwright and BeautifulSoup, followed by structured German-to-English JSON normalization |
 
 ## Tech Stack
 
