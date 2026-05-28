@@ -51,6 +51,12 @@ google-place/logs/
 google-place/*.csv
 apify/output/
 apify/*.json
+foodpanda-bangladesh/data/
+foodpanda-bangladesh/logs/
+foodpanda-bangladesh/**/*.csv
+foodpanda-bangladesh/**/*.json
+!foodpanda-bangladesh/config/cities.json
+foodpanda-bangladesh/**/*.xlsx
 **/PLAN.md
 **/SCRAPE_PLAN.md
 Gofood-Indonesia/**/*.txt

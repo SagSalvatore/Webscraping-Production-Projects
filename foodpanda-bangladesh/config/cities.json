@@ -1,0 +1,32 @@
+{
+  "cities": {
+    "bacoor": {
+      "city_id": "2020706",
+      "city_name": "Bacoor Cavite",
+      "country": "ph",
+      "currency": "PHP",
+      "api_domain": "ph.fd-api.com",
+      "web_domain": "www.foodpanda.ph",
+      "description": "Bacoor, Cavite - Manila area"
+    },
+    "cebu": {
+      "city_id": "2019715",
+      "city_name": "Cebu City",
+      "country": "ph",
+      "currency": "PHP",
+      "api_domain": "ph.fd-api.com",
+      "web_domain": "www.foodpanda.ph",
+      "description": "Cebu City - Central Visayas"
+    },
+    "dhaka": {
+      "city_id": "11359",
+      "city_name": "Dhaka",
+      "country": "bd",
+      "currency": "BDT",
+      "api_domain": "bd.fd-api.com",
+      "web_domain": "www.foodpanda.com.bd",
+      "description": "Dhaka - Bangladesh"
+    }
+  },
+  "default_city": "bacoor"
+}
