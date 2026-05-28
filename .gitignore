@@ -1,4 +1,4 @@
-# Keep repository clean: scripts only, no scraped/exported data.
+﻿# Keep repository clean: scripts only, no scraped/exported data.
 
 # Python
 __pycache__/
@@ -46,6 +46,13 @@ agoda-hotels/**/*.xlsx
 noon-platform/**/*.json
 noon-platform/**/*.txt
 healthcare/**/*.html
+google-place/output/
+google-place/logs/
+google-place/*.csv
+apify/output/
+apify/*.json
+**/PLAN.md
+**/SCRAPE_PLAN.md
 Gofood-Indonesia/**/*.txt
 elmenus-cairo/**/*.txt
 foodi-Bangladesh/**/*.txt
@@ -86,3 +93,4 @@ storage_state*.json
 Thumbs.db
 .idea/
 .vscode/
+

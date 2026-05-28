@@ -1,4 +1,4 @@
-# Webscraping Production Projects
+﻿# Webscraping Production Projects
 
 Production-focused scraping scripts for restaurant, hotel, menu, and marketplace data extraction across dynamic websites.
 
@@ -17,7 +17,9 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 | <img src="assets/logos/deliveroo.png" alt="Deliveroo" width="120"> | Deliveroo | `deliveroo/` | Menu extraction workflow with structured JSON output |
 | <img src="assets/logos/agoda.png" alt="Agoda" width="120"> | Agoda Hotels | `agoda-hotels/` | Hotel listing extraction with Playwright browser automation and Excel export |
 | <img src="assets/logos/noonfood.png" alt="Noon Food" width="120"> | Noon Food | `noon-platform/` | Noon restaurant and menu scraping with Selenium, curl_cffi, and hidden API workflows |
-| Healthcare Registry | DIMDI / German medicine portal The Federal Institute for Drugs and Medical Devices ( BfArM )| `healthcare/` | Medicine product detail extraction with Playwright and BeautifulSoup, followed by structured German-to-English JSON normalization |
+| Healthcare Registry | DIMDI / German medicine portal The Federal Institute for Drugs and Medical Devices (BfArM) | `healthcare/` | Medicine product detail extraction with Playwright and BeautifulSoup, followed by structured German-to-English JSON normalization |
+| <img src="assets/logos/google.png" alt="Google" width="120"> | Google Places | `google-place/` | Listing enrichment through Google Places Text Search API for address, contact details, geo-coordinates, place IDs, categories, websites, and Maps URLs |
+| <img src="assets/logos/apify.png" alt="Apify" width="120"> | Apify Google Maps | `apify/` | Dubai F&B Google Maps extraction using Apify actors for FSR, QSR, cafes, cloud kitchens, bakeries, dessert venues, and bars |
 
 ## Tech Stack
 
@@ -29,6 +31,8 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - BeautifulSoup/Selectolax
 - Healthcare registry scraping and structured translation mapping
 - Hidden fetch/XHR API analysis
+- Google Places Text Search API enrichment
+- Apify actor orchestration for Google Maps datasets
 - Header rotation and browser-like request profiles
 - Latitude/longitude area-wise scraping
 - Multi-country operator pipelines with reusable scraper utilities
@@ -48,6 +52,8 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - Scaling country-wise outlet collection with shared HTTP clients, parser helpers, exporters, logging, retries, and rate limits
 - Extracting structured data from HTML, embedded JSON, and JSON-LD
 - Building complete menu pipelines: scrape UAE Zomato listings, collect menu images, prepare images for OCR, and extract menu text using OpenAI, Groq LLaMA-4 Scout, and Mistral Pixtral vision models
+- Enriching restaurant lists with Google place IDs, addresses, phone numbers, websites, categories, coordinates, and clean Maps links
+- Running area/category-based Apify Google Maps collection for Dubai F&B market mapping and deduplicated downstream outputs
 - Designing retry, delay, rate-limit, checkpoint, and validation flows
 - Keeping scraped datasets, logs, reports, credentials, and local files out of Git due to clients confidentiality
 - Organizing scripts by website and scraping method for reusable project delivery
@@ -55,3 +61,5 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 ## Security Notes
 
 Credentials and API keys should be supplied through environment variables, never committed in code. Generated outputs such as CSV, JSON, Excel, logs, reports, screenshots, and browser state files are ignored by `.gitignore`.
+
+
