@@ -21,6 +21,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 | <img src="assets/logos/google.png" alt="Google" width="120"> | Google Places | `google-place/` | Listing enrichment through Google Places Text Search API for address, contact details, geo-coordinates, place IDs, categories, websites, and Maps URLs |
 | <img src="assets/logos/apify.png" alt="Apify" width="120"> | Apify Google Maps | `apify/` | Dubai F&B Google Maps extraction using Apify actors for FSR, QSR, cafes, cloud kitchens, bakeries, dessert venues, and bars |
 | <img src="assets/logos/food-panda.png" alt="Foodpanda" width="120"> | Foodpanda Bangladesh | `foodpanda-bangladesh/` | Bangladesh restaurant and menu extraction using hidden Foodpanda APIs, curl_cffi browser impersonation, proxy-ready menu requests, checkpoints, and final menu mapping |
+| <img src="assets/logos/expert-of-deals.png" alt="Expert of Deals" width="120"> | Expert of Deals | `expert-of-deals/` | B2B lead extraction from hidden `/api/latestlead` endpoint, collecting 10k+ listings in minutes with curl_cffi Chrome impersonation, pagination guards, cleaning, and CSV/JSON exporters |
 
 ## Tech Stack
 
@@ -35,6 +36,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - Google Places Text Search API enrichment
 - Apify actor orchestration for Google Maps datasets
 - Foodpanda hidden API extraction with curl_cffi request replay
+- B2B lead API scraping with pagination, response-shape detection, and data cleaning
 - Header rotation and browser-like request profiles
 - Latitude/longitude area-wise scraping
 - Multi-country operator pipelines with reusable scraper utilities
@@ -57,6 +59,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - Enriching restaurant lists with Google place IDs, addresses, phone numbers, websites, categories, coordinates, and clean Maps links
 - Running area/category-based Apify Google Maps collection for Dubai F&B market mapping and deduplicated downstream outputs
 - Building phased Foodpanda pipelines for restaurant discovery, menu extraction, checkpointed retries, and merged restaurant-menu datasets
+- Delivering high-throughput B2B listing extraction, including lead fields such as company, contact channel, country, product, requirement, trade terms, destination port, status, slug, and timestamps
 - Designing retry, delay, rate-limit, checkpoint, and validation flows
 - Keeping scraped datasets, logs, reports, credentials, and local files out of Git due to clients confidentiality
 - Organizing scripts by website and scraping method for reusable project delivery

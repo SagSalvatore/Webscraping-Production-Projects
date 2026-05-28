@@ -57,6 +57,9 @@ foodpanda-bangladesh/**/*.csv
 foodpanda-bangladesh/**/*.json
 !foodpanda-bangladesh/config/cities.json
 foodpanda-bangladesh/**/*.xlsx
+expert-of-deals/output/
+expert-of-deals/**/*.csv
+expert-of-deals/**/*.json
 **/PLAN.md
 **/SCRAPE_PLAN.md
 Gofood-Indonesia/**/*.txt
