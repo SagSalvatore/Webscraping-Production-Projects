@@ -23,6 +23,35 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 | <img src="assets/logos/food-panda.png" alt="Foodpanda" width="120"> | Foodpanda Bangladesh | `foodpanda-bangladesh/` | Bangladesh restaurant and menu extraction using hidden Foodpanda APIs, curl_cffi browser impersonation, proxy-ready menu requests, checkpoints, and final menu mapping |
 | <img src="assets/logos/expert-of-deals.png" alt="Expert of Deals" width="120"> | Expert of Deals | `expert-of-deals/` | B2B lead extraction from hidden `/api/latestlead` endpoint, collecting 10k+ listings in minutes with curl_cffi Chrome impersonation, pagination guards, cleaning, and CSV/JSON exporters |
 
+## Expert of Deals JSON Glimpse
+
+Redacted preview of the first 20 lead objects. Keys are preserved; values are intentionally blank.
+
+```json
+[
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""},
+  {"_id":"","slug":"","name":"","companyName":"","email":"","phone":"","country":"","supplier":"","productType":"","product":"","quantity":"","unit":"","requirement":"","paymentterm":"","shippingterm":"","destinationport":"","status":"","__v":"","createdAt":"","updatedAt":""}
+]
+```
+
 ## Tech Stack
 
 - Python
