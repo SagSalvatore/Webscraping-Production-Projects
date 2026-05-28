@@ -49,7 +49,7 @@ Production-focused scraping scripts for restaurant, hotel, menu, and marketplace
 - Extracting structured data from HTML, embedded JSON, and JSON-LD
 - Building complete menu pipelines: scrape UAE Zomato listings, collect menu images, prepare images for OCR, and extract menu text using OpenAI, Groq LLaMA-4 Scout, and Mistral Pixtral vision models
 - Designing retry, delay, rate-limit, checkpoint, and validation flows
-- Keeping scraped datasets, logs, reports, credentials, and local files out of Git
+- Keeping scraped datasets, logs, reports, credentials, and local files out of Git due to clients confidentiality
 - Organizing scripts by website and scraping method for reusable project delivery
 
 ## Security Notes
