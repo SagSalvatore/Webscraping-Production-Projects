@@ -54,7 +54,7 @@ SAVE_INTERVAL            = 25     # checkpoint every N total processed
 load_dotenv(dotenv_path=ENV_PATH)
 USERNAME = os.getenv("OXYLABS_USERNAME", "")
 PASSWORD = os.getenv("OXYLABS_PASSWORD", "")
-COUNTRY  = os.getenv("OXYLABS_COUNTRY", "ae")
+COUNTRY  = os.getenv("OXYLABS_COUNTRY", "")
 
 # ── thread-safe state ─────────────────────────────────────────────────────────
 lock           = threading.Lock()
