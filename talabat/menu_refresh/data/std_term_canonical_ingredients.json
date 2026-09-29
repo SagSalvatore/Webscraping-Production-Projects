@@ -1,0 +1,4268 @@
+{
+ "Combo": [
+  "chicken",
+  "rice",
+  "lettuce",
+  "onion",
+  "bread"
+ ],
+ "Juice": [
+  "ice",
+  "water"
+ ],
+ "Seafood Platter": [
+  "garlic",
+  "olive oil",
+  "lemon",
+  "squid",
+  "salt",
+  "herbs",
+  "pepper",
+  "shrimp"
+ ],
+ "Fresh Fruits": [
+  "fruits",
+  "lemon",
+  "honey",
+  "mint",
+  "fruit slices"
+ ],
+ "Grill": [
+  "garlic",
+  "lemon",
+  "olive oil",
+  "salt",
+  "black pepper",
+  "cumin",
+  "coriander",
+  "chicken"
+ ],
+ "Hot Sides": [
+  "salt",
+  "oil",
+  "potato",
+  "garlic",
+  "butter",
+  "vegetables"
+ ],
+ "Milkshake": [
+  "sugar",
+  "milk",
+  "ice",
+  "cream"
+ ],
+ "Hot & Cold Beverages": [
+  "sugar",
+  "milk",
+  "water"
+ ],
+ "Sweets & Desserts": [
+  "sugar",
+  "milk",
+  "cream"
+ ],
+ "Bread And Bakery": [
+  "salt",
+  "water",
+  "butter",
+  "yeast",
+  "wheat flour",
+  "milk",
+  "sugar"
+ ],
+ "Strips": [
+  "oil",
+  "breadcrumbs",
+  "chicken",
+  "salt"
+ ],
+ "Curry": [
+  "garlic",
+  "ginger",
+  "tomato",
+  "onion",
+  "garam masala",
+  "cream",
+  "cumin",
+  "coriander"
+ ],
+ "Matcha": [
+  "milk",
+  "sugar",
+  "water",
+  "matcha powder"
+ ],
+ "Appetizer": [
+  "garlic",
+  "oil",
+  "salt",
+  "onion",
+  "black pepper"
+ ],
+ "Acai": [
+  "honey",
+  "banana",
+  "acai puree",
+  "mixed berries",
+  "coconut"
+ ],
+ "Rice Dish": [
+  "onion",
+  "basmati rice",
+  "oil",
+  "garlic",
+  "salt",
+  "saffron",
+  "ghee",
+  "chicken"
+ ],
+ "Snack": [
+  "oil",
+  "salt",
+  "corn",
+  "chili powder",
+  "spice mix"
+ ],
+ "Mojito": [
+  "ice",
+  "lime",
+  "mint",
+  "soda water",
+  "sugar"
+ ],
+ "Burger": [
+  "lettuce",
+  "tomato",
+  "onion",
+  "burger bun",
+  "cheese",
+  "sauce",
+  "beef",
+  "chicken"
+ ],
+ "Manoushe": [
+  "olive oil",
+  "flatbread dough",
+  "zaatar",
+  "cheese"
+ ],
+ "Pastry": [
+  "sugar",
+  "butter",
+  "milk",
+  "salt",
+  "yeast"
+ ],
+ "Chocolate": [
+  "sugar",
+  "cocoa butter",
+  "milk",
+  "vanilla extract",
+  "dark chocolate",
+  "chocolate"
+ ],
+ "Egg Plates": [
+  "salt",
+  "butter",
+  "oil",
+  "pepper",
+  "bread",
+  "egg",
+  "olive oil",
+  "tomato"
+ ],
+ "Mixed Platter": [
+  "chicken",
+  "onion",
+  "rice",
+  "olive oil",
+  "parsley",
+  "garlic sauce",
+  "lamb"
+ ],
+ "Vegetable Plate": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "mixed vegetables",
+  "lemon",
+  "herbs",
+  "onion",
+  "tomato"
+ ],
+ "Kebab": [
+  "onion",
+  "cumin",
+  "parsley",
+  "salt",
+  "coriander",
+  "garlic",
+  "oil",
+  "minced meat"
+ ],
+ "Wrap": [
+  "lettuce",
+  "tomato",
+  "onion",
+  "chicken",
+  "sauce",
+  "tortilla bread"
+ ],
+ "Dairy And Yogurt": [
+  "milk",
+  "cheese",
+  "yogurt",
+  "salt",
+  "cream",
+  "labneh"
+ ],
+ "Pizza": [
+  "tomato sauce",
+  "olive oil",
+  "pizza dough",
+  "mozzarella cheese",
+  "oregano"
+ ],
+ "Sandwich": [
+  "tomato",
+  "lettuce",
+  "bread",
+  "mayonnaise",
+  "salt",
+  "pepper",
+  "chicken",
+  "cheese"
+ ],
+ "Noodle": [
+  "soy sauce",
+  "garlic",
+  "sesame",
+  "mixed vegetables",
+  "oil",
+  "ginger",
+  "chicken"
+ ],
+ "Sauces & Condiments": [
+  "garlic",
+  "oil",
+  "salt",
+  "vinegar",
+  "herbs"
+ ],
+ "Tikka": [
+  "garlic",
+  "ginger",
+  "yogurt",
+  "lemon",
+  "garam masala",
+  "chicken",
+  "cumin",
+  "coriander"
+ ],
+ "Breakfast Plate": [
+  "salt",
+  "tomato",
+  "butter",
+  "cheese",
+  "cucumber",
+  "pepper"
+ ],
+ "Hummus": [
+  "olive oil",
+  "garlic",
+  "cumin",
+  "salt",
+  "tahini",
+  "lemon juice"
+ ],
+ "Samosa": [
+  "oil",
+  "potato",
+  "coriander",
+  "cumin",
+  "garam masala",
+  "maida",
+  "green pea",
+  "peas"
+ ],
+ "Cake": [
+  "sugar",
+  "butter",
+  "milk",
+  "baking powder",
+  "vanilla extract"
+ ],
+ "Ful Medames": [
+  "garlic",
+  "olive oil",
+  "lemon",
+  "cumin",
+  "parsley",
+  "tahini",
+  "fava bean"
+ ],
+ "Pie": [
+  "salt",
+  "sugar",
+  "milk",
+  "butter",
+  "wheat flour",
+  "egg"
+ ],
+ "Salad": [
+  "tomato",
+  "onion",
+  "olive oil",
+  "salt",
+  "cucumber",
+  "lemon juice",
+  "pepper"
+ ],
+ "Fillet": [
+  "salt",
+  "black pepper",
+  "oil",
+  "breadcrumbs",
+  "egg",
+  "wheat flour",
+  "fish"
+ ],
+ "Cookie": [
+  "sugar",
+  "butter",
+  "vanilla extract",
+  "baking soda",
+  "salt"
+ ],
+ "Nuts": [
+  "salt",
+  "nuts",
+  "walnuts",
+  "almonds",
+  "oil",
+  "cashew",
+  "pistachio",
+  "almond"
+ ],
+ "Dim Sum And Dumplings": [
+  "ginger",
+  "cabbage",
+  "soy sauce",
+  "oil",
+  "sesame",
+  "wheat dough",
+  "chicken",
+  "pork"
+ ],
+ "Waffle": [
+  "sugar",
+  "milk",
+  "butter",
+  "baking powder"
+ ],
+ "Shawarma": [
+  "tomato",
+  "garlic sauce",
+  "lettuce",
+  "tahini",
+  "pita bread",
+  "meat",
+  "chicken"
+ ],
+ "Avocado Toast": [
+  "avocado",
+  "salt",
+  "olive oil",
+  "black pepper",
+  "sourdough bread",
+  "lemon juice"
+ ],
+ "Ice Cream": [
+  "sugar",
+  "milk",
+  "vanilla extract",
+  "egg",
+  "heavy cream"
+ ],
+ "Kunafa": [
+  "cream",
+  "rose water",
+  "kunafa dough",
+  "sugar syrup",
+  "butter",
+  "cheese"
+ ],
+ "Milk": [
+  "milk",
+  "sugar",
+  "cardamom",
+  "saffron"
+ ],
+ "Nuggets": [
+  "chicken",
+  "salt",
+  "oil",
+  "black pepper",
+  "breadcrumbs",
+  "egg",
+  "wheat flour"
+ ],
+ "Soft Drink": [
+  "sugar",
+  "carbonated water",
+  "citric acid"
+ ],
+ "Bbq": [
+  "onion",
+  "bbq sauce",
+  "garlic",
+  "chicken",
+  "oil"
+ ],
+ "Falooda": [
+  "milk",
+  "vermicelli",
+  "rose syrup",
+  "basil seeds",
+  "cream",
+  "rose water",
+  "ice",
+  "sugar"
+ ],
+ "Crepe": [
+  "sugar",
+  "butter",
+  "milk",
+  "salt"
+ ],
+ "Fatteh": [
+  "garlic",
+  "tahini",
+  "pine nuts",
+  "pita bread",
+  "lemon",
+  "yogurt",
+  "olive oil"
+ ],
+ "Fish": [
+  "garlic",
+  "salt",
+  "lemon",
+  "olive oil",
+  "herbs",
+  "black pepper",
+  "fish"
+ ],
+ "Labneh Toast": [
+  "olive oil",
+  "labneh",
+  "tomato",
+  "zaatar",
+  "bread"
+ ],
+ "Cocktail": [
+  "ice",
+  "mint",
+  "soda water",
+  "sugar syrup",
+  "lime",
+  "lemon"
+ ],
+ "Baguette": [
+  "salt",
+  "wheat flour",
+  "water",
+  "yeast",
+  "butter"
+ ],
+ "Add On": [
+  "garlic",
+  "oil",
+  "cheese",
+  "sauce",
+  "chili"
+ ],
+ "Moroccan Tagine": [
+  "onion",
+  "tomato",
+  "olives",
+  "preserved lemon",
+  "cumin",
+  "coriander",
+  "ginger",
+  "cinnamon"
+ ],
+ "Soup": [
+  "garlic",
+  "broth",
+  "onion",
+  "salt",
+  "vegetables",
+  "olive oil",
+  "pepper"
+ ],
+ "Steak": [
+  "garlic",
+  "salt",
+  "black pepper",
+  "butter",
+  "rosemary",
+  "thyme",
+  "beef"
+ ],
+ "Chocolate Drink": [
+  "sugar",
+  "milk",
+  "water"
+ ],
+ "Pasta": [
+  "cheese",
+  "garlic",
+  "tomato sauce",
+  "olive oil",
+  "basil"
+ ],
+ "Wings": [
+  "garlic",
+  "butter",
+  "bbq sauce",
+  "sauce",
+  "chicken",
+  "chicken wings"
+ ],
+ "Manchurian": [
+  "garlic",
+  "ginger",
+  "soy sauce",
+  "chili sauce",
+  "corn flour",
+  "scallion",
+  "chicken"
+ ],
+ "Tea": [
+  "sugar",
+  "water",
+  "milk",
+  "cardamom",
+  "mint",
+  "tea leaves"
+ ],
+ "Candy": [
+  "sugar",
+  "corn syrup",
+  "gelatin",
+  "glucose syrup",
+  "citric acid",
+  "food color",
+  "vanilla extract"
+ ],
+ "Croissant": [
+  "sugar",
+  "butter",
+  "milk",
+  "salt",
+  "yeast",
+  "egg"
+ ],
+ "Frappe": [
+  "sugar",
+  "milk",
+  "ice",
+  "whipped cream"
+ ],
+ "Falafel": [
+  "garlic",
+  "parsley",
+  "cumin",
+  "coriander",
+  "oil",
+  "onion",
+  "cilantro"
+ ],
+ "Omelette": [
+  "salt",
+  "butter",
+  "cheese",
+  "tomato",
+  "black pepper",
+  "onion",
+  "egg",
+  "pepper"
+ ],
+ "Pudding": [
+  "sugar",
+  "milk",
+  "vanilla extract",
+  "cornstarch"
+ ],
+ "Smoothie": [
+  "ice",
+  "milk",
+  "honey",
+  "fruits",
+  "yogurt",
+  "banana"
+ ],
+ "Shakshuka": [
+  "tomato",
+  "onion",
+  "cumin",
+  "olive oil",
+  "garlic",
+  "bell pepper",
+  "egg",
+  "parsley"
+ ],
+ "Assorted Selection": [
+  "salt",
+  "garlic",
+  "onion"
+ ],
+ "Nachos": [
+  "cheese",
+  "sour cream",
+  "tortilla chips",
+  "lettuce",
+  "cilantro",
+  "taco shell",
+  "chicken",
+  "guacamole"
+ ],
+ "Granola": [
+  "honey",
+  "oats",
+  "almonds",
+  "dried fruits",
+  "cinnamon"
+ ],
+ "Quesadilla": [
+  "cheese",
+  "flour tortilla",
+  "chicken",
+  "meat",
+  "sour cream",
+  "bell pepper",
+  "lettuce",
+  "taco shell"
+ ],
+ "Vada": [
+  "salt",
+  "urad dal",
+  "oil",
+  "curry leaves",
+  "ginger",
+  "onion",
+  "chili"
+ ],
+ "Bhel Puri": [
+  "onion",
+  "tomato",
+  "coriander",
+  "papri",
+  "tamarind paste",
+  "chili powder",
+  "potato"
+ ],
+ "Dates": [
+  "dates",
+  "cream",
+  "nuts",
+  "chocolate"
+ ],
+ "Baklava": [
+  "walnuts",
+  "cinnamon",
+  "phyllo dough",
+  "butter",
+  "sugar",
+  "honey"
+ ],
+ "Iced Tea": [
+  "sugar",
+  "water",
+  "steamed milk",
+  "milk",
+  "ice",
+  "milk foam"
+ ],
+ "Basbousa": [
+  "butter",
+  "semolina",
+  "sugar syrup",
+  "yogurt",
+  "coconut",
+  "sugar"
+ ],
+ "Sashimi": [
+  "wasabi",
+  "soy sauce",
+  "pickled ginger",
+  "salmon",
+  "rice",
+  "nori sheet",
+  "vinegar"
+ ],
+ "Lassi/ Butter Milk": [
+  "sugar",
+  "salt",
+  "yogurt",
+  "cumin",
+  "water",
+  "ice",
+  "milk"
+ ],
+ "Maamoul": [
+  "sugar",
+  "walnuts",
+  "dates",
+  "semolina",
+  "rose water",
+  "butter"
+ ],
+ "Still Water": [
+  "carbonated water"
+ ],
+ "Muffin": [
+  "sugar",
+  "butter",
+  "milk",
+  "baking powder",
+  "vanilla extract",
+  "egg"
+ ],
+ "Indian Sweet": [
+  "sugar",
+  "milk",
+  "ghee",
+  "cardamom",
+  "saffron",
+  "milk powder",
+  "pistachio"
+ ],
+ "Sweeteners": [
+  "sugar",
+  "honey",
+  "syrup"
+ ],
+ "Tacos": [
+  "cheese",
+  "lettuce",
+  "taco shell",
+  "sour cream",
+  "cilantro",
+  "chicken",
+  "meat"
+ ],
+ "Baked Potato": [
+  "salt",
+  "butter",
+  "potato",
+  "cheese",
+  "sour cream",
+  "chives"
+ ],
+ "Bagel": [
+  "salt",
+  "wheat flour",
+  "yeast",
+  "sesame",
+  "water",
+  "egg",
+  "poppy seeds"
+ ],
+ "Balila": [
+  "garlic",
+  "olive oil",
+  "salt",
+  "cumin",
+  "lemon",
+  "parsley",
+  "chickpea"
+ ],
+ "Mangalorean Ghee Roast": [
+  "salt",
+  "garlic",
+  "coriander",
+  "clarified butter",
+  "red chili",
+  "tamarind"
+ ],
+ "Channa Bhatura": [
+  "onion",
+  "oil",
+  "garlic",
+  "tomato",
+  "ginger",
+  "yogurt"
+ ],
+ "Sparkling Water": [
+  "carbonated water"
+ ],
+ "Sweet Spreads": [
+  "sugar",
+  "honey",
+  "butter"
+ ],
+ "Indian Snack": [
+  "salt",
+  "onion",
+  "cumin",
+  "coriander",
+  "oil",
+  "gram flour",
+  "chili",
+  "garlic"
+ ],
+ "Kothu": [
+  "onion",
+  "oil",
+  "egg",
+  "flatbread",
+  "garam masala",
+  "curry leaves",
+  "salt",
+  "chicken"
+ ],
+ "Arabic Breakfast": [
+  "tomato",
+  "bread",
+  "cheese",
+  "olives",
+  "cucumber"
+ ],
+ "Msabbaha": [
+  "garlic",
+  "tahini",
+  "olive oil",
+  "lemon",
+  "cumin",
+  "parsley"
+ ],
+ "Pongal": [
+  "cumin",
+  "salt",
+  "rice",
+  "ghee",
+  "black pepper",
+  "oil",
+  "curry leaves",
+  "garlic"
+ ],
+ "South Indian Staples": [
+  "salt",
+  "oil",
+  "coconut",
+  "rice",
+  "curry leaves",
+  "mustard"
+ ],
+ "Poke": [
+  "cucumber",
+  "avocado",
+  "rice",
+  "sesame",
+  "edamame",
+  "salmon",
+  "soy sauce",
+  "onion"
+ ],
+ "Appam": [
+  "salt",
+  "yeast",
+  "sugar",
+  "rice flour",
+  "coconut milk",
+  "butter",
+  "cheese"
+ ],
+ "Burrito": [
+  "rice",
+  "tomato",
+  "onion",
+  "lettuce",
+  "tortilla bread",
+  "sauce",
+  "tortilla",
+  "chicken"
+ ],
+ "Mutabal": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon",
+  "tahini",
+  "eggplant",
+  "yogurt",
+  "mutton"
+ ],
+ "Pav Bhaji": [
+  "onion",
+  "butter",
+  "pav",
+  "mixed vegetables",
+  "bread",
+  "cilantro"
+ ],
+ "Muhammara": [
+  "olive oil",
+  "cumin",
+  "red pepper",
+  "walnuts",
+  "pomegranate molasses",
+  "breadcrumbs",
+  "chili"
+ ],
+ "Dosa": [
+  "salt",
+  "oil",
+  "urad dal",
+  "water",
+  "rice flour"
+ ],
+ "Mousse": [
+  "sugar",
+  "cream",
+  "gelatin",
+  "chocolate"
+ ],
+ "Idiyappam": [
+  "salt",
+  "water",
+  "coconut",
+  "rice flour",
+  "coconut oil"
+ ],
+ "Baked Rolls": [
+  "rice",
+  "sauce",
+  "vegetables",
+  "salt",
+  "garlic",
+  "meat",
+  "butter"
+ ],
+ "Energy Bar": [
+  "honey",
+  "oats",
+  "nuts",
+  "dates",
+  "dark chocolate"
+ ],
+ "Churros": [
+  "sugar",
+  "cinnamon",
+  "oil",
+  "water",
+  "chocolate dipping sauce"
+ ],
+ "Others": [
+  "onion",
+  "garlic",
+  "tomato",
+  "olive oil",
+  "salt",
+  "black pepper",
+  "spice mix"
+ ],
+ "Fruit": [
+  "sugar",
+  "fruits",
+  "milk"
+ ],
+ "Uthappam": [
+  "tomato",
+  "salt",
+  "butter",
+  "cheese",
+  "pepper",
+  "cucumber",
+  "rice",
+  "oil"
+ ],
+ "Kombucha": [
+  "sugar",
+  "water",
+  "green tea"
+ ],
+ "Tres Leches": [
+  "sugar",
+  "milk",
+  "evaporated milk",
+  "condensed milk",
+  "heavy cream"
+ ],
+ "Coconut Water": [
+  "coconut water",
+  "ice",
+  "coconut"
+ ],
+ "Carrot Walnut Cake": [
+  "sugar",
+  "butter",
+  "milk",
+  "vanilla extract",
+  "baking powder"
+ ],
+ "Hot Beverage": [
+  "sugar",
+  "water",
+  "milk"
+ ],
+ "Chocolate Cake": [
+  "sugar",
+  "milk",
+  "butter",
+  "baking powder",
+  "vanilla extract"
+ ],
+ "Retail & Misc": [
+  "sugar",
+  "milk",
+  "water"
+ ],
+ "Veg Breakfast": [
+  "salt",
+  "butter",
+  "tomato",
+  "pepper",
+  "cheese",
+  "cucumber"
+ ],
+ "Banana Leaf Roast": [
+  "milk",
+  "sugar"
+ ],
+ "Khubani Ka Meetha": [
+  "onion",
+  "garlic",
+  "salt",
+  "oil",
+  "basmati rice"
+ ],
+ "Moussaka": [
+  "cheese",
+  "tomato sauce",
+  "eggplant",
+  "minced meat"
+ ],
+ "Beverages": [
+  "sugar",
+  "water",
+  "milk",
+  "carbonated water"
+ ],
+ "Pear Dessert": [
+  "sugar",
+  "milk",
+  "cream"
+ ],
+ "Spanish Eggs": [
+  "steamed milk",
+  "milk foam",
+  "milk"
+ ],
+ "Fusion Bites": [
+  "salt",
+  "garlic",
+  "oil"
+ ],
+ "Mango": [
+  "mango",
+  "sugar",
+  "milk"
+ ],
+ "San Sebastian Cheesecake": [
+  "sugar",
+  "butter",
+  "cream cheese"
+ ],
+ "Nuts And Crunch": [
+  "sugar",
+  "butter",
+  "milk",
+  "salt"
+ ],
+ "Makhaniya Biscuit": [
+  "salt",
+  "sugar",
+  "garlic",
+  "onion"
+ ],
+ "Mangalorean Roast": [
+  "garlic",
+  "salt",
+  "lemon",
+  "olive oil",
+  "black pepper",
+  "coriander",
+  "cumin",
+  "chicken"
+ ],
+ "Saj Flatbread": [
+  "salt",
+  "butter",
+  "yeast",
+  "water"
+ ],
+ "Pepper Roast": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "coriander",
+  "cumin",
+  "lemon",
+  "black pepper"
+ ],
+ "Meal + Juice": [
+  "salt",
+  "chicken",
+  "garlic",
+  "onion",
+  "black pepper"
+ ],
+ "Coconut Milk": [
+  "coconut",
+  "sugar",
+  "milk"
+ ],
+ "Cheese Tart": [
+  "cheese",
+  "salt",
+  "butter",
+  "olive oil"
+ ],
+ "Indian Combo Meal": [
+  "onion",
+  "salt",
+  "garlic",
+  "oil",
+  "chicken"
+ ],
+ "Kunafa Croffle With Chocolate Hazelnut Spread": [
+  "sugar",
+  "milk"
+ ],
+ "Cold Mezze": [
+  "water",
+  "sugar"
+ ],
+ "Filipino Mung Bean Shrimp Curry": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon",
+  "shrimp",
+  "chicken",
+  "pepper",
+  "herbs"
+ ],
+ "Snack + Energy Drink": [
+  "sugar",
+  "carbonated water",
+  "citric acid"
+ ],
+ "Caramel Dessert": [
+  "sugar",
+  "milk",
+  "butter"
+ ],
+ "Pain Au Chocolat": [
+  "butter",
+  "sugar",
+  "milk",
+  "salt",
+  "yeast"
+ ],
+ "South Indian Combo Meal": [
+  "salt",
+  "garlic",
+  "chicken",
+  "onion"
+ ],
+ "Flavored Milk": [
+  "milk foam",
+  "steamed milk"
+ ],
+ "Sparkling Drink": [
+  "water",
+  "sugar",
+  "milk",
+  "steamed milk"
+ ],
+ "Caramel Dessert Or Caramel Sauce": [
+  "sugar",
+  "milk",
+  "butter"
+ ],
+ "Berries": [
+  "sugar",
+  "milk",
+  "butter"
+ ],
+ "American Pancake Breakfast": [
+  "butter",
+  "sugar",
+  "milk",
+  "salt"
+ ],
+ "Cheese & Tomato Plate": [
+  "cheese",
+  "salt",
+  "milk",
+  "sugar",
+  "yogurt cultures"
+ ],
+ "Lava Cake": [
+  "sugar",
+  "butter",
+  "milk",
+  "vanilla extract",
+  "baking powder"
+ ],
+ "Fries + Pepsi": [
+  "salt",
+  "garlic",
+  "oil",
+  "butter",
+  "vegetables",
+  "potato"
+ ],
+ "Garlic Sauce Curry": [
+  "garlic",
+  "salt",
+  "oil",
+  "herbs"
+ ],
+ "Sides And Snacks": [
+  "salt",
+  "garlic",
+  "oil",
+  "butter",
+  "vegetables",
+  "potato"
+ ],
+ "Spicy Dry": [
+  "garlic",
+  "salt",
+  "oil",
+  "chicken",
+  "olive oil"
+ ],
+ "Indian Drink": [
+  "sugar",
+  "milk",
+  "water"
+ ],
+ "Spicy Signature Dish": [
+  "garlic",
+  "salt",
+  "olive oil"
+ ],
+ "Ginger Beer": [
+  "milk",
+  "sugar",
+  "water",
+  "beef",
+  "black pepper",
+  "coriander",
+  "cumin",
+  "garlic"
+ ],
+ "Cooler": [
+  "water",
+  "sugar",
+  "ice",
+  "milk"
+ ],
+ "Latin Street Bites": [
+  "cheese",
+  "garlic",
+  "basil",
+  "olive oil",
+  "potato",
+  "tomato sauce",
+  "butter"
+ ],
+ "Kadala Snack": [
+  "garlic",
+  "salt",
+  "oil"
+ ],
+ "Red Velvet Cake": [
+  "sugar",
+  "milk",
+  "butter",
+  "vanilla extract",
+  "baking powder"
+ ],
+ "Meat/Poultry Bites": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "cumin",
+  "coriander",
+  "chicken",
+  "black pepper",
+  "lemon"
+ ],
+ "Meal + Pepsi": [
+  "garlic",
+  "salt",
+  "olive oil"
+ ],
+ "Pastry Twist": [
+  "sugar",
+  "milk",
+  "salt",
+  "butter",
+  "vanilla extract"
+ ],
+ "Sauce/Dips": [
+  "salt",
+  "garlic",
+  "oil",
+  "herbs",
+  "vinegar"
+ ],
+ "Burger + Mojito": [
+  "cheese",
+  "onion",
+  "beef",
+  "sauce",
+  "tomato",
+  "burger bun",
+  "lettuce",
+  "garlic"
+ ],
+ "Healthy Bowl": [
+  "salt",
+  "garlic",
+  "olive oil",
+  "onion"
+ ],
+ "Green Chili Tawa Fry": [
+  "garlic",
+  "salt",
+  "coriander",
+  "cumin",
+  "oil",
+  "olive oil",
+  "lemon",
+  "chicken"
+ ],
+ "Skillet Cookie": [
+  "salt",
+  "sugar",
+  "butter",
+  "garlic",
+  "vanilla extract",
+  "chicken",
+  "baking soda"
+ ],
+ "Crunchy Balls": [
+  "salt",
+  "garlic",
+  "oil",
+  "onion",
+  "chicken"
+ ],
+ "Non Veg Starter": [
+  "garlic",
+  "salt",
+  "chicken",
+  "olive oil",
+  "oil",
+  "onion",
+  "lemon",
+  "coriander"
+ ],
+ "Health Drink": [
+  "sugar",
+  "carbonated water",
+  "water",
+  "milk",
+  "citric acid"
+ ],
+ "Stuffed Fish": [
+  "salt",
+  "garlic",
+  "olive oil",
+  "cumin"
+ ],
+ "Portokalopita": [
+  "salt",
+  "water",
+  "butter",
+  "milk",
+  "sugar",
+  "wheat flour",
+  "yeast"
+ ],
+ "Ginger Ale": [
+  "garlic",
+  "salt",
+  "sugar",
+  "ginger",
+  "lemon"
+ ],
+ "Pineapple": [
+  "pineapple",
+  "sugar",
+  "milk"
+ ],
+ "Breakfast Sandwich/Toast": [
+  "salt",
+  "tomato",
+  "pepper",
+  "lettuce",
+  "bread",
+  "mayonnaise",
+  "butter"
+ ],
+ "Banana Bread": [
+  "salt",
+  "butter",
+  "water",
+  "yeast",
+  "wheat flour"
+ ],
+ "Riz Bil Halib": [
+  "onion",
+  "garlic",
+  "salt",
+  "basmati rice"
+ ],
+ "South Indian/Sri Lankan": [
+  "garlic",
+  "onion",
+  "salt",
+  "oil",
+  "coriander",
+  "cumin",
+  "basmati rice",
+  "chicken"
+ ],
+ "Papaya": [
+  "salt",
+  "sugar",
+  "water",
+  "olive oil",
+  "tomato"
+ ],
+ "Sides And Crisps": [
+  "garlic",
+  "salt",
+  "oil",
+  "butter",
+  "vegetables",
+  "potato",
+  "chicken"
+ ],
+ "Apple Pie": [
+  "sugar",
+  "milk"
+ ],
+ "Sushi Condiments": [
+  "garlic",
+  "salt",
+  "oil",
+  "onion",
+  "basmati rice",
+  "salmon"
+ ],
+ "Grilled Dish": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon",
+  "coriander",
+  "cumin",
+  "black pepper",
+  "chicken"
+ ],
+ "Aloe Vera Drink": [
+  "sugar",
+  "water",
+  "milk"
+ ],
+ "Meal/Juice": [
+  "salt",
+  "garlic",
+  "chicken",
+  "onion"
+ ],
+ "Bagel Sandwich": [
+  "salt",
+  "pepper",
+  "bread",
+  "tomato",
+  "lettuce",
+  "mayonnaise",
+  "chicken"
+ ],
+ "Mixed Curry Or Fry": [
+  "garlic",
+  "salt",
+  "oil",
+  "onion",
+  "chicken",
+  "vegetables"
+ ],
+ "Salads And Greens": [
+  "salt",
+  "olive oil",
+  "onion",
+  "tomato",
+  "cucumber",
+  "lemon juice",
+  "pepper"
+ ],
+ "Addon": [
+  "salt",
+  "garlic",
+  "oil",
+  "butter",
+  "vegetables",
+  "potato"
+ ],
+ "Daal": [
+  "garlic",
+  "salt",
+  "cumin",
+  "coriander",
+  "onion",
+  "oil",
+  "chicken",
+  "tomato"
+ ],
+ "Galaktoboureko": [
+  "sugar",
+  "salt",
+  "butter",
+  "milk"
+ ],
+ "Fruit Drink": [
+  "sugar",
+  "water",
+  "milk",
+  "carbonated water",
+  "citric acid"
+ ],
+ "Whole Fish Curry Or Fry": [
+  "garlic",
+  "salt",
+  "chicken",
+  "oil",
+  "olive oil",
+  "onion",
+  "coriander",
+  "cumin"
+ ],
+ "Sunny Side Up": [
+  "salt",
+  "pepper",
+  "butter",
+  "oil",
+  "bread"
+ ],
+ "Turkish Eggs": [
+  "sugar",
+  "salt",
+  "water",
+  "milk",
+  "butter"
+ ],
+ "Breakfast Cheese Plate": [
+  "cheese",
+  "salt",
+  "butter",
+  "pepper",
+  "tomato",
+  "cucumber"
+ ],
+ "Filipino Drink": [
+  "sugar",
+  "milk",
+  "water"
+ ],
+ "Italian Pastry": [
+  "olive oil",
+  "garlic",
+  "basil",
+  "tomato sauce",
+  "cheese",
+  "salt"
+ ],
+ "Mezze Appetizer Plate": [
+  "salt",
+  "garlic",
+  "olive oil"
+ ],
+ "Nut Sweet": [
+  "sugar",
+  "milk",
+  "cream"
+ ],
+ "Fried Vegetarian Dish": [
+  "garlic",
+  "salt",
+  "oil",
+  "onion",
+  "soy sauce",
+  "olive oil",
+  "chicken"
+ ],
+ "Pichi Pichi": [
+  "oil",
+  "salt",
+  "sugar",
+  "milk"
+ ],
+ "Grill/Teriyaki": [
+  "garlic",
+  "salt",
+  "oil",
+  "olive oil",
+  "lemon",
+  "onion",
+  "black pepper",
+  "chicken"
+ ],
+ "Khaja": [
+  "salt",
+  "garlic",
+  "oil",
+  "butter",
+  "pepper",
+  "egg",
+  "olive oil",
+  "bread"
+ ],
+ "Poori": [
+  "salt",
+  "butter",
+  "water",
+  "wheat flour",
+  "yeast",
+  "oil"
+ ],
+ "Cajun Platter": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "chicken",
+  "cheese"
+ ],
+ "Fried Balls W/ Sweet-Sour Sauce": [
+  "garlic",
+  "salt",
+  "oil",
+  "onion",
+  "chicken"
+ ],
+ "Vegan Dish": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon"
+ ],
+ "Sweet Potato Pie": [
+  "garlic",
+  "salt",
+  "oil",
+  "potato",
+  "butter",
+  "vegetables",
+  "olive oil"
+ ],
+ "English Breakfast": [
+  "butter",
+  "salt",
+  "pepper",
+  "cheese",
+  "cucumber",
+  "tomato",
+  "bacon"
+ ],
+ "Functional Water": [
+  "milk",
+  "sugar",
+  "carbonated water",
+  "water"
+ ],
+ "Lemon Curd": [
+  "lemon",
+  "sugar",
+  "water",
+  "ice",
+  "salt"
+ ],
+ "Breakfast Egg Bowl": [
+  "salt",
+  "butter",
+  "pepper",
+  "tomato",
+  "cheese",
+  "oil",
+  "cucumber",
+  "bread"
+ ],
+ "Curry Or Special Roast": [
+  "garlic",
+  "chicken",
+  "salt",
+  "coriander",
+  "cumin",
+  "onion",
+  "oil",
+  "olive oil"
+ ],
+ "Watermelon": [
+  "water",
+  "sugar",
+  "ice"
+ ],
+ "Breakfast Protein Plate": [
+  "salt",
+  "sugar",
+  "butter",
+  "milk"
+ ],
+ "Peanut Biscuit": [
+  "butter",
+  "sugar",
+  "honey",
+  "salt"
+ ],
+ "Rice Cake": [
+  "sugar",
+  "milk",
+  "butter",
+  "baking powder",
+  "vanilla extract"
+ ],
+ "Regional Starters": [
+  "chicken",
+  "salt",
+  "ginger",
+  "oil",
+  "cumin",
+  "garlic",
+  "olive oil"
+ ],
+ "Brioche": [
+  "salt",
+  "butter",
+  "milk",
+  "sugar",
+  "cheese",
+  "brioche"
+ ],
+ "Chia Pot": [
+  "garlic",
+  "salt"
+ ],
+ "Kitkat Sweet": [
+  "sugar",
+  "milk",
+  "cream",
+  "butter"
+ ],
+ "Eggs & Minced Meat Plate": [
+  "salt",
+  "garlic",
+  "olive oil",
+  "black pepper",
+  "coriander",
+  "cumin",
+  "lemon"
+ ],
+ "Sugar": [
+  "sugar",
+  "milk"
+ ],
+ "Fruit Dessert": [
+  "sugar",
+  "cream",
+  "milk"
+ ],
+ "Fried Banana": [
+  "garlic",
+  "oil",
+  "salt",
+  "chicken",
+  "soy sauce"
+ ],
+ "Ice Cream Sundae": [
+  "sugar",
+  "milk",
+  "vanilla extract",
+  "egg",
+  "heavy cream"
+ ],
+ "Healthy/Keto Breakfast Plate": [
+  "garlic",
+  "olive oil",
+  "salt"
+ ],
+ "Seafood/Chicken Starters": [
+  "chicken",
+  "garlic",
+  "salt",
+  "oil",
+  "black pepper",
+  "onion",
+  "olive oil",
+  "coriander"
+ ],
+ "Filipino Tomato Curry": [
+  "garlic",
+  "salt",
+  "coriander",
+  "cumin",
+  "olive oil",
+  "oil"
+ ],
+ "Lachha Paratha": [
+  "salt",
+  "butter",
+  "water",
+  "ghee",
+  "whole wheat flour"
+ ],
+ "Croquettes": [
+  "garlic",
+  "chicken",
+  "salt",
+  "coriander",
+  "cumin",
+  "black pepper",
+  "olive oil"
+ ],
+ "Egg & Pastrami Skillet": [
+  "chicken",
+  "garlic",
+  "olive oil",
+  "cheese",
+  "salt",
+  "basil",
+  "tomato sauce",
+  "sauce"
+ ],
+ "Shakarpare": [
+  "garlic",
+  "oil",
+  "mango",
+  "salmon",
+  "onion",
+  "basmati rice",
+  "shrimp",
+  "salt"
+ ],
+ "Pakistani Breakfast Combo": [
+  "salt",
+  "garlic",
+  "onion"
+ ],
+ "Eggs & Pastrami": [
+  "salt",
+  "butter",
+  "garlic",
+  "olive oil"
+ ],
+ "Indian/Pakistani Dessert": [
+  "sugar",
+  "milk",
+  "butter",
+  "cream"
+ ],
+ "Coconut Tossed": [
+  "garlic",
+  "chicken",
+  "salt",
+  "coriander",
+  "cumin",
+  "lemon",
+  "sugar",
+  "black pepper"
+ ],
+ "Garnishes": [
+  "salt",
+  "garlic",
+  "oil",
+  "sugar",
+  "butter"
+ ],
+ "Kerala Vattichathu Curry": [
+  "garlic",
+  "onion",
+  "salt",
+  "oil",
+  "chicken",
+  "cumin",
+  "coriander"
+ ],
+ "Non-Alcoholic Drink": [
+  "sugar",
+  "milk",
+  "water",
+  "carbonated water"
+ ],
+ "Mezze Dip": [
+  "salt",
+  "garlic",
+  "oil",
+  "herbs",
+  "vinegar"
+ ],
+ "Indo-Chinese": [
+  "garlic",
+  "oil",
+  "salt",
+  "soy sauce",
+  "chicken",
+  "ginger",
+  "onion",
+  "mixed vegetables"
+ ],
+ "Pasta In Alfredo Sauce": [
+  "garlic",
+  "cheese",
+  "olive oil",
+  "tomato sauce",
+  "basil",
+  "cream",
+  "butter",
+  "chicken"
+ ],
+ "Baked Dish": [
+  "salt",
+  "garlic",
+  "olive oil"
+ ],
+ "Pasta (Tomato Marinara)": [
+  "garlic",
+  "olive oil",
+  "basil",
+  "cheese",
+  "tomato sauce"
+ ],
+ "Savarin": [
+  "garlic",
+  "salt",
+  "sugar",
+  "herbs",
+  "oil"
+ ],
+ "Fruit And Nuts Bowl": [
+  "olive oil",
+  "garlic",
+  "chicken",
+  "salt",
+  "tomato",
+  "lemon"
+ ],
+ "Buttermilk": [
+  "sugar",
+  "salt",
+  "butter",
+  "water",
+  "cumin",
+  "chicken"
+ ],
+ "Indo-Chinese Chili Fry": [
+  "garlic",
+  "salt",
+  "oil",
+  "chicken",
+  "onion",
+  "soy sauce",
+  "coriander",
+  "lemon"
+ ],
+ "Batter Fry": [
+  "butter",
+  "garlic",
+  "salt",
+  "milk",
+  "sugar",
+  "pepper"
+ ],
+ "Truffle": [
+  "truffle",
+  "sugar",
+  "milk",
+  "vanilla extract",
+  "dark chocolate",
+  "cocoa butter"
+ ],
+ "South Indian Breakfast": [
+  "salt",
+  "urad dal",
+  "oil"
+ ],
+ "South Indian Curries & Soups": [
+  "milk",
+  "sugar",
+  "water",
+  "chicken",
+  "onion",
+  "dark chocolate",
+  "cabbage",
+  "garlic"
+ ],
+ "Pickles And Chutneys": [
+  "salt",
+  "garlic",
+  "oil",
+  "herbs",
+  "vinegar"
+ ],
+ "Eggs & Sausage": [
+  "salt",
+  "garlic",
+  "butter",
+  "olive oil",
+  "oil"
+ ],
+ "Smoked Salmon Tartine": [
+  "salmon",
+  "salt",
+  "garlic",
+  "olive oil",
+  "lemon",
+  "black pepper",
+  "herbs"
+ ],
+ "Dal Snack": [
+  "garlic",
+  "oil",
+  "salt",
+  "chicken",
+  "onion"
+ ],
+ "Soda Water": [
+  "carbonated water",
+  "sugar",
+  "water"
+ ],
+ "Baked Or Stuffed Dish": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "oil",
+  "chicken",
+  "cheese"
+ ],
+ "Tonic Water": [
+  "carbonated water",
+  "sugar",
+  "water"
+ ],
+ "Mushrooms": [
+  "mushrooms",
+  "garlic",
+  "salt",
+  "olive oil",
+  "chicken"
+ ],
+ "Western Breakfast Set": [
+  "butter",
+  "salt",
+  "chicken",
+  "cheese",
+  "cucumber",
+  "pepper",
+  "tomato",
+  "water"
+ ],
+ "Kinder Sweet": [
+  "sugar",
+  "milk",
+  "butter",
+  "vanilla extract"
+ ],
+ "Berry Cake": [
+  "sugar",
+  "butter",
+  "milk",
+  "vanilla extract",
+  "baking powder"
+ ],
+ "Breakfast Bowl": [
+  "salt",
+  "tomato",
+  "butter",
+  "cucumber",
+  "cheese",
+  "pepper"
+ ],
+ "Labneh Plate": [
+  "olive oil",
+  "salt",
+  "garlic",
+  "cumin",
+  "lemon",
+  "black pepper"
+ ],
+ "Salads And Cold Sides": [
+  "salt",
+  "onion",
+  "tomato",
+  "olive oil",
+  "cucumber",
+  "lemon juice",
+  "pepper"
+ ],
+ "Halo Halo": [
+  "sugar",
+  "milk",
+  "cream"
+ ],
+ "Bread Pudding": [
+  "salt",
+  "butter",
+  "water",
+  "yeast",
+  "wheat flour"
+ ],
+ "Ful & Eggs": [
+  "cumin",
+  "garlic",
+  "lemon",
+  "olive oil",
+  "salt",
+  "chicken",
+  "sugar",
+  "butter"
+ ],
+ "Egg And Awarma Skillet": [
+  "salt",
+  "garlic",
+  "chicken",
+  "olive oil",
+  "cumin",
+  "coriander",
+  "black pepper"
+ ],
+ "Jello": [
+  "oil",
+  "sugar",
+  "cabbage",
+  "chicken",
+  "ginger",
+  "sesame",
+  "soy sauce",
+  "wheat dough"
+ ],
+ "Filipino Squid Curry": [
+  "squid",
+  "salt",
+  "garlic",
+  "lemon",
+  "olive oil",
+  "herbs",
+  "pepper"
+ ],
+ "Malted Drink": [
+  "sugar",
+  "milk",
+  "water"
+ ],
+ "Yogurt Drink": [
+  "sugar",
+  "milk",
+  "water"
+ ],
+ "Kiwi Dessert": [
+  "cream",
+  "sugar",
+  "chicken",
+  "salt",
+  "garlic"
+ ],
+ "Pot Curry": [
+  "garlic",
+  "oil",
+  "onion",
+  "coriander",
+  "cumin",
+  "ginger",
+  "tomato",
+  "garam masala"
+ ],
+ "Sagot Gulaman": [
+  "garlic",
+  "salt",
+  "oil",
+  "onion"
+ ],
+ "Bean Starters": [
+  "garlic",
+  "salt",
+  "oil",
+  "olive oil"
+ ],
+ "Ghraybeh": [
+  "sugar",
+  "butter",
+  "cream"
+ ],
+ "Mixed Fruit": [
+  "salt"
+ ],
+ "Stir-Fry Or Curry": [
+  "garlic",
+  "onion",
+  "salt",
+  "oil",
+  "chicken",
+  "cumin",
+  "lemon",
+  "olive oil"
+ ],
+ "Stir-Fry Vegetables": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "onion",
+  "lemon",
+  "mixed vegetables",
+  "oil"
+ ],
+ "Curry (Thai)": [
+  "garlic",
+  "onion",
+  "chicken",
+  "ginger",
+  "coriander",
+  "cumin",
+  "oil",
+  "tomato"
+ ],
+ "Black Pepper Stir Fry": [
+  "garlic",
+  "salt",
+  "lemon",
+  "olive oil",
+  "onion",
+  "coriander",
+  "cumin",
+  "oil"
+ ],
+ "Seasonal Drink": [
+  "sugar",
+  "milk"
+ ],
+ "Filipino Vinegar Curry": [
+  "salt",
+  "garlic",
+  "herbs",
+  "oil"
+ ],
+ "Zaatar Crackers With Dips": [
+  "salt",
+  "garlic",
+  "oil",
+  "zaatar",
+  "herbs",
+  "vinegar"
+ ],
+ "Mixed Seafood Curry": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon",
+  "herbs",
+  "squid",
+  "pepper",
+  "shrimp"
+ ],
+ "Fried Dish": [
+  "garlic",
+  "salt",
+  "oil",
+  "vegetables",
+  "olive oil",
+  "onion",
+  "lemon"
+ ],
+ "Vegetarian Curry": [
+  "garlic",
+  "salt",
+  "oil",
+  "olive oil",
+  "onion",
+  "ginger",
+  "cumin",
+  "coriander"
+ ],
+ "Egg Curry": [
+  "salt",
+  "oil",
+  "butter",
+  "pepper",
+  "tomato",
+  "bread",
+  "garlic",
+  "coriander"
+ ],
+ "Pulao": [
+  "onion",
+  "basmati rice",
+  "oil",
+  "vegetables",
+  "meat"
+ ],
+ "Indian/Pakistani Veg Curry": [
+  "garlic",
+  "oil",
+  "salt",
+  "onion",
+  "cumin",
+  "coriander",
+  "chicken",
+  "ginger"
+ ],
+ "Steamed": [
+  "oil",
+  "garlic",
+  "salt",
+  "ginger",
+  "chicken",
+  "soy sauce",
+  "sesame",
+  "cabbage"
+ ],
+ "Mixed Seafood Platter": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon",
+  "herbs",
+  "pepper",
+  "squid",
+  "shrimp"
+ ],
+ "Indo-Chinese Starters": [
+  "garlic",
+  "chicken",
+  "salt",
+  "oil"
+ ],
+ "Dry Fry": [
+  "garlic",
+  "salt",
+  "lemon",
+  "olive oil",
+  "cumin",
+  "coriander",
+  "oil",
+  "black pepper"
+ ],
+ "Functional Beverage": [
+  "sugar",
+  "carbonated water",
+  "citric acid",
+  "milk",
+  "water",
+  "baking soda",
+  "butter",
+  "salt"
+ ],
+ "Raita": [
+  "salt",
+  "onion",
+  "garlic",
+  "ghee"
+ ],
+ "Kulcha": [
+  "salt",
+  "butter",
+  "yeast",
+  "water",
+  "wheat flour"
+ ],
+ "Pomegranate": [
+  "salt",
+  "sugar"
+ ],
+ "Kadhai Curry": [
+  "garlic",
+  "coriander",
+  "cumin",
+  "oil",
+  "ginger",
+  "onion",
+  "chicken",
+  "garam masala"
+ ],
+ "Rasmalai": [
+  "sugar",
+  "cream",
+  "milk",
+  "salt",
+  "garlic"
+ ],
+ "Gulab Jamun And Rabdi": [
+  "sugar syrup",
+  "ghee",
+  "cardamom",
+  "milk powder",
+  "rose water"
+ ],
+ "Maharashtrian Snack": [
+  "garlic",
+  "salt",
+  "cumin",
+  "olive oil",
+  "chicken",
+  "coriander",
+  "oil"
+ ],
+ "Lassi": [
+  "sugar",
+  "water",
+  "ice",
+  "yogurt",
+  "salt",
+  "cumin",
+  "milk"
+ ],
+ "Indian/Pakistani Breakfast": [
+  "salt",
+  "garlic",
+  "oil",
+  "chicken",
+  "coriander",
+  "cumin",
+  "onion"
+ ],
+ "Indian Street Snacks": [
+  "salt",
+  "onion",
+  "oil",
+  "garlic"
+ ],
+ "Spicy Mangalorean Curry": [
+  "salt",
+  "garlic",
+  "chicken",
+  "olive oil",
+  "black pepper",
+  "oil"
+ ],
+ "Indo-Chinese Curry": [
+  "chicken",
+  "garlic",
+  "oil",
+  "ginger",
+  "soy sauce",
+  "sesame",
+  "mixed vegetables",
+  "onion"
+ ],
+ "Filipino Silog": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon",
+  "pepper",
+  "oil"
+ ],
+ "Curry/Sauce": [
+  "garlic",
+  "salt",
+  "oil",
+  "herbs"
+ ],
+ "Cream Sauce Fry": [
+  "garlic",
+  "salt",
+  "oil",
+  "olive oil"
+ ],
+ "Filipino Vegetable Dish": [
+  "garlic",
+  "olive oil",
+  "salt",
+  "lemon",
+  "herbs",
+  "mixed vegetables"
+ ],
+ "Fruit Salad": [
+  "olive oil",
+  "tomato",
+  "cucumber",
+  "onion",
+  "lemon juice",
+  "avocado",
+  "salt",
+  "chicken"
+ ],
+ "Edamame": [
+  "garlic",
+  "salt",
+  "oil"
+ ],
+ "Kerala Stew": [
+  "salt",
+  "garlic",
+  "onion",
+  "oil",
+  "butter"
+ ],
+ "South Asian Breakfast": [
+  "chicken",
+  "salt",
+  "garlic",
+  "turmeric",
+  "water"
+ ],
+ "Tempura": [
+  "sauce",
+  "oil",
+  "vegetables",
+  "tempura batter",
+  "shrimp"
+ ],
+ "Pasta Or Continental Dish": [
+  "garlic",
+  "olive oil",
+  "cheese",
+  "tomato sauce",
+  "basil"
+ ],
+ "Tartufo": [
+  "butter",
+  "sugar",
+  "cream"
+ ],
+ "Bruschetta": [
+  "salt",
+  "olive oil",
+  "black pepper",
+  "avocado",
+  "lemon juice",
+  "sourdough bread",
+  "basil"
+ ],
+ "Chutneys & Pickles": [
+  "garlic",
+  "salt",
+  "herbs",
+  "oil",
+  "vinegar",
+  "sugar"
+ ],
+ "Maharashtrian Breakfast": [
+  "salt",
+  "garlic",
+  "olive oil",
+  "onion",
+  "cumin",
+  "oil"
+ ],
+ "Egg Based Dish": [
+  "salt",
+  "oil",
+  "butter",
+  "garlic",
+  "pepper",
+  "bread",
+  "olive oil"
+ ],
+ "Eggs & Mortadella Plate": [
+  "salt",
+  "garlic",
+  "olive oil",
+  "butter"
+ ],
+ "Mezze": [
+  "salt",
+  "garlic",
+  "olive oil"
+ ],
+ "Broths & Stocks": [
+  "garlic",
+  "salt",
+  "chicken",
+  "oil",
+  "onion",
+  "olive oil"
+ ],
+ "Sudanese Breakfast": [
+  "salt",
+  "olive oil",
+  "garlic",
+  "water",
+  "sugar"
+ ],
+ "Continental Seafood Dish": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon",
+  "herbs",
+  "pepper",
+  "squid"
+ ],
+ "Roob": [
+  "garlic",
+  "salt",
+  "sugar",
+  "black pepper",
+  "lemon",
+  "olive oil"
+ ],
+ "Nutella Sweet": [
+  "sugar",
+  "milk",
+  "vanilla extract",
+  "dark chocolate",
+  "cocoa butter",
+  "butter"
+ ],
+ "Tawa Fry": [
+  "salt",
+  "garlic",
+  "olive oil",
+  "lemon",
+  "herbs",
+  "black pepper"
+ ],
+ "Gujarati Snack": [
+  "garlic",
+  "salt",
+  "oil",
+  "onion"
+ ],
+ "Fried Eggs": [
+  "oil",
+  "salt",
+  "onion",
+  "garlic",
+  "soy sauce",
+  "pepper",
+  "rice",
+  "butter"
+ ],
+ "Mango Sticky Rice": [
+  "salt",
+  "garlic",
+  "basmati rice",
+  "olive oil"
+ ],
+ "Sesame Ball": [
+  "salt",
+  "garlic",
+  "oil"
+ ],
+ "Steamed Vegetable Sides": [
+  "garlic",
+  "salt",
+  "oil",
+  "butter",
+  "vegetables",
+  "potato"
+ ],
+ "Kiri Pani": [
+  "garlic",
+  "salt",
+  "oil",
+  "onion"
+ ],
+ "Kerala Mappas": [
+  "salt",
+  "garlic"
+ ],
+ "Gelato": [
+  "sugar",
+  "milk",
+  "egg",
+  "heavy cream",
+  "vanilla extract"
+ ],
+ "Risotto": [
+  "butter",
+  "onion",
+  "arborio rice",
+  "broth",
+  "cheese"
+ ],
+ "Calzone": [
+  "olive oil",
+  "mozzarella cheese",
+  "pizza dough",
+  "tomato sauce",
+  "oregano",
+  "cheese"
+ ],
+ "Finger Fry": [
+  "salt",
+  "garlic",
+  "oil",
+  "chicken",
+  "olive oil",
+  "butter"
+ ],
+ "Asian Vegetable Sides": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon",
+  "mixed vegetables",
+  "oil",
+  "herbs"
+ ],
+ "Dumpling Curry": [
+  "oil",
+  "soy sauce",
+  "ginger",
+  "chicken",
+  "sesame",
+  "cabbage",
+  "wheat dough",
+  "pork"
+ ],
+ "Meat/Seafood Bites": [
+  "salt",
+  "garlic",
+  "olive oil",
+  "lemon",
+  "herbs",
+  "black pepper"
+ ],
+ "Seafood Starters": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon",
+  "herbs",
+  "pepper",
+  "squid",
+  "shrimp"
+ ],
+ "Bao": [
+  "oil",
+  "sesame",
+  "chicken",
+  "ginger",
+  "cabbage",
+  "soy sauce",
+  "wheat dough",
+  "garlic"
+ ],
+ "Coconut Yogurt Bowl": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "chicken",
+  "lemon",
+  "black pepper",
+  "coriander",
+  "cumin"
+ ],
+ "Western Breakfast Platter": [
+  "sauce",
+  "cabbage",
+  "chicken",
+  "ginger",
+  "shrimp",
+  "soy sauce",
+  "fruits",
+  "honey"
+ ],
+ "Black Forest": [
+  "sugar",
+  "milk",
+  "butter",
+  "vanilla extract",
+  "baking powder"
+ ],
+ "Ferrero Sweet": [
+  "sugar",
+  "milk",
+  "vanilla extract",
+  "butter",
+  "baking powder"
+ ],
+ "Indian Starters": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "lemon",
+  "oil",
+  "onion",
+  "chicken"
+ ],
+ "Khichdi": [
+  "onion",
+  "cumin",
+  "rice",
+  "ghee",
+  "ginger",
+  "lentils",
+  "turmeric"
+ ],
+ "Continental Set": [
+  "salt",
+  "cheese",
+  "garlic",
+  "butter",
+  "pepper",
+  "tomato",
+  "cucumber",
+  "bread"
+ ],
+ "Khari": [
+  "cream",
+  "coriander",
+  "cumin",
+  "garlic",
+  "ginger",
+  "garam masala",
+  "oil",
+  "onion"
+ ],
+ "Moghli": [
+  "garlic",
+  "oil",
+  "chicken",
+  "cumin",
+  "coriander",
+  "ginger",
+  "onion",
+  "salt"
+ ],
+ "Indian Curries And Gravies": [
+  "garlic",
+  "coriander",
+  "cumin",
+  "oil",
+  "onion",
+  "garam masala",
+  "ginger",
+  "cream"
+ ],
+ "Rabdi": [
+  "cream",
+  "milk",
+  "sugar"
+ ],
+ "South Indian Snack": [
+  "salt",
+  "tomato",
+  "garlic",
+  "cumin",
+  "coriander",
+  "butter",
+  "oil",
+  "onion"
+ ],
+ "Sri Lankan Breakfast": [
+  "garlic",
+  "vegetables",
+  "salt",
+  "oil",
+  "soy sauce",
+  "rice",
+  "onion",
+  "chicken"
+ ],
+ "Kulfi": [
+  "sugar",
+  "milk",
+  "cardamom",
+  "cream",
+  "rose water"
+ ],
+ "Kunafa Bar": [
+  "water",
+  "milk",
+  "sugar"
+ ],
+ "Detox Drink": [
+  "water",
+  "ice",
+  "milk",
+  "sugar"
+ ],
+ "Chole": [
+  "garlic",
+  "salt",
+  "oil",
+  "tomato",
+  "onion",
+  "coriander",
+  "cumin",
+  "ginger"
+ ],
+ "Chapathi": [
+  "salt",
+  "water",
+  "whole wheat flour",
+  "ghee"
+ ],
+ "Herbal Tea": [
+  "oil",
+  "garlic",
+  "salt",
+  "butter",
+  "potato",
+  "vegetables",
+  "water"
+ ],
+ "Asian Street Bites": [
+  "salt",
+  "garlic",
+  "olive oil",
+  "lemon"
+ ],
+ "Kebab + Tea": [
+  "salt",
+  "garlic",
+  "oil",
+  "coriander",
+  "cumin",
+  "onion"
+ ],
+ "South Indian Tiffin": [
+  "salt",
+  "urad dal",
+  "sugar",
+  "vanilla extract",
+  "butter"
+ ],
+ "Indian Accompaniments": [
+  "onion",
+  "coriander",
+  "cream",
+  "cumin",
+  "garam masala",
+  "garlic",
+  "ginger",
+  "oil"
+ ],
+ "Filipino Taro Curry": [
+  "garlic",
+  "chicken",
+  "coriander",
+  "cumin",
+  "salt",
+  "oil",
+  "garam masala",
+  "ginger"
+ ],
+ "Indo-Chinese Dish": [
+  "garlic",
+  "oil",
+  "salt",
+  "chicken",
+  "ginger"
+ ],
+ "Puran Poli": [
+  "salt",
+  "oil",
+  "garlic",
+  "coriander",
+  "cumin",
+  "water",
+  "black pepper",
+  "lemon"
+ ],
+ "Accompaniments": [
+  "salt",
+  "butter",
+  "sugar"
+ ],
+ "South Indian Chutneys": [
+  "garlic",
+  "salt",
+  "oil",
+  "herbs",
+  "vinegar",
+  "cumin"
+ ],
+ "Kheer": [
+  "milk",
+  "rice",
+  "saffron",
+  "sugar",
+  "cardamom",
+  "nuts"
+ ],
+ "Rice Fusion Dish": [
+  "garlic",
+  "salt",
+  "oil",
+  "onion",
+  "basmati rice",
+  "lemon",
+  "olive oil"
+ ],
+ "South Asian Curry": [
+  "garlic",
+  "oil",
+  "chicken",
+  "onion",
+  "coriander",
+  "cumin",
+  "ginger",
+  "cream"
+ ],
+ "Indo-Chinese Fry": [
+  "garlic",
+  "salt",
+  "onion",
+  "oil",
+  "chicken",
+  "coriander",
+  "cumin",
+  "soy sauce"
+ ],
+ "Sourdough Toast": [
+  "salt",
+  "butter",
+  "water",
+  "yeast",
+  "wheat flour"
+ ],
+ "Quiche": [
+  "salt",
+  "cheese",
+  "cream",
+  "nutmeg"
+ ],
+ "Fruit Cups": [
+  "sugar",
+  "milk",
+  "vanilla extract",
+  "butter",
+  "salt"
+ ],
+ "Macaron": [
+  "sugar",
+  "butter",
+  "egg",
+  "cream",
+  "almond flour"
+ ],
+ "Biscotti": [
+  "sugar",
+  "vanilla extract",
+  "butter",
+  "baking soda",
+  "salt",
+  "milk"
+ ],
+ "Fateer": [
+  "salt",
+  "butter",
+  "milk",
+  "sugar"
+ ],
+ "South Indian Or Sri Lankan Combo": [
+  "milk",
+  "sugar"
+ ],
+ "Overnight Oats/Chia": [
+  "milk",
+  "honey",
+  "oats",
+  "sugar"
+ ],
+ "Muhalabiya": [
+  "sugar",
+  "milk",
+  "salt",
+  "vanilla extract",
+  "cornstarch",
+  "garlic",
+  "cumin"
+ ],
+ "Buko Pandan": [
+  "garlic",
+  "salt",
+  "oil",
+  "onion"
+ ],
+ "Bulbul Sweet": [
+  "sugar",
+  "milk",
+  "butter"
+ ],
+ "Carrot Loaf": [
+  "water",
+  "salt",
+  "ice"
+ ],
+ "Napoleon Cake": [
+  "sugar",
+  "milk",
+  "butter",
+  "vanilla extract",
+  "baking powder"
+ ],
+ "Rasgulla": [
+  "sugar",
+  "cream",
+  "milk"
+ ],
+ "Labneh Egg Plate": [
+  "salt",
+  "butter",
+  "oil",
+  "olive oil",
+  "pepper",
+  "garlic",
+  "lamb"
+ ],
+ "Savory Snack": [
+  "salt",
+  "sugar",
+  "butter"
+ ],
+ "Fried Condiment": [
+  "garlic",
+  "salt",
+  "oil",
+  "olive oil",
+  "lemon",
+  "vegetables",
+  "black pepper",
+  "coriander"
+ ],
+ "Grill/Curry": [
+  "chicken",
+  "garlic",
+  "coriander",
+  "cumin",
+  "salt",
+  "lemon",
+  "olive oil",
+  "black pepper"
+ ],
+ "Acai Bowl": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "chicken",
+  "lemon"
+ ],
+ "Flan": [
+  "milk",
+  "sugar",
+  "cornstarch",
+  "vanilla extract",
+  "garlic",
+  "lemon",
+  "olive oil",
+  "salt"
+ ],
+ "Boti": [
+  "garlic",
+  "onion",
+  "chicken",
+  "oil",
+  "salt",
+  "cumin",
+  "coriander",
+  "basmati rice"
+ ],
+ "Curd": [
+  "salt",
+  "garlic",
+  "oil",
+  "butter"
+ ],
+ "Curd Bowl": [
+  "chicken",
+  "garlic",
+  "coriander",
+  "cumin",
+  "black pepper",
+  "lemon",
+  "olive oil",
+  "salt"
+ ],
+ "Macaroni": [
+  "butter",
+  "sugar",
+  "cream",
+  "almond flour",
+  "egg"
+ ],
+ "Flavored Water": [
+  "water",
+  "carbonated water",
+  "milk",
+  "ice"
+ ],
+ "Koshari": [
+  "garlic",
+  "oil",
+  "basmati rice",
+  "onion",
+  "salt",
+  "tomato sauce",
+  "rice",
+  "lentils"
+ ],
+ "Eggs And Sausage Plate": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "cumin",
+  "black pepper"
+ ],
+ "Ful With Sausage": [
+  "butter",
+  "garlic",
+  "salt",
+  "chicken",
+  "milk",
+  "sugar"
+ ],
+ "Eggs & Cheese": [
+  "salt",
+  "cheese",
+  "butter",
+  "pepper"
+ ],
+ "Mixed Nuts": [
+  "garlic",
+  "sugar",
+  "oil"
+ ],
+ "Instant Noodle": [
+  "garlic",
+  "oil",
+  "soy sauce",
+  "ginger",
+  "mixed vegetables",
+  "sesame",
+  "water"
+ ],
+ "Indo-Chinese Dry Dish": [
+  "garlic",
+  "coriander",
+  "cumin",
+  "oil",
+  "salt",
+  "chicken",
+  "ginger",
+  "onion"
+ ],
+ "Central Asian Starters": [
+  "lime",
+  "ice",
+  "mint",
+  "soda water",
+  "sugar"
+ ],
+ "Seasonings": [
+  "garlic",
+  "salt",
+  "oil",
+  "herbs",
+  "vinegar"
+ ],
+ "Infused Water": [
+  "carbonated water",
+  "sugar"
+ ],
+ "Kerala Spicy Curry": [
+  "garlic",
+  "oil",
+  "onion",
+  "chicken",
+  "coriander",
+  "cumin",
+  "ginger",
+  "tomato"
+ ],
+ "Papad": [
+  "salt",
+  "garlic",
+  "oil",
+  "onion",
+  "butter"
+ ],
+ "Kachori": [
+  "onion",
+  "salt",
+  "oil",
+  "sugar"
+ ],
+ "Soussi": [
+  "garlic",
+  "oil",
+  "onion",
+  "tomato",
+  "lamb",
+  "salt",
+  "chicken",
+  "coriander"
+ ],
+ "Pakistani Breakfast": [
+  "garlic",
+  "salt",
+  "oil",
+  "onion",
+  "coriander",
+  "cumin",
+  "chicken"
+ ],
+ "Fusion Dessert": [
+  "salt",
+  "sugar",
+  "garlic"
+ ],
+ "Apricots": [
+  "salt",
+  "sugar",
+  "butter",
+  "milk",
+  "almonds",
+  "nuts",
+  "walnuts"
+ ],
+ "Mixed Sweets Platter": [
+  "sugar",
+  "milk",
+  "cream"
+ ],
+ "Angoori Dessert": [
+  "salt",
+  "sugar",
+  "cream",
+  "milk"
+ ],
+ "Mais Con Yelo": [
+  "ginger",
+  "chicken",
+  "oil",
+  "sesame",
+  "soy sauce",
+  "cabbage",
+  "wheat dough",
+  "pork"
+ ],
+ "Malt Drink": [
+  "sugar",
+  "milk",
+  "water"
+ ],
+ "Filipino Sour Soup": [
+  "garlic",
+  "salt",
+  "broth",
+  "olive oil",
+  "onion",
+  "pepper",
+  "vegetables"
+ ],
+ "Fruit Plate": [
+  "garlic",
+  "salt",
+  "chicken",
+  "olive oil"
+ ],
+ "Profiterole": [
+  "sauce",
+  "chocolate",
+  "cream"
+ ],
+ "Indian Breakfast": [
+  "salt",
+  "water",
+  "butter"
+ ],
+ "Non-Alcoholic Beer": [
+  "sugar",
+  "beef",
+  "coriander",
+  "cumin",
+  "garlic",
+  "milk",
+  "water"
+ ],
+ "Iranian Breakfast": [
+  "salt",
+  "butter",
+  "garlic",
+  "sugar"
+ ],
+ "Zarda": [
+  "cream",
+  "milk",
+  "sugar"
+ ],
+ "Greek Yogurt Bowl": [
+  "cucumber",
+  "feta cheese",
+  "olives",
+  "tomato",
+  "almonds",
+  "honey",
+  "oregano",
+  "cinnamon"
+ ],
+ "Tortilla": [
+  "garlic",
+  "salt",
+  "chicken",
+  "oil",
+  "cheese"
+ ],
+ "Fresh Fruit Bowl": [
+  "garlic",
+  "chicken",
+  "salt",
+  "olive oil"
+ ],
+ "Kataifi": [
+  "olive oil",
+  "garlic",
+  "herbs",
+  "lemon",
+  "salt",
+  "mozzarella cheese",
+  "oregano",
+  "pizza dough"
+ ],
+ "Turon": [
+  "garlic",
+  "salt",
+  "butter"
+ ],
+ "Loukoumades": [
+  "sugar",
+  "salt",
+  "cream",
+  "butter",
+  "garlic"
+ ],
+ "Madakku": [
+  "salt",
+  "garlic",
+  "cumin",
+  "onion",
+  "oil",
+  "basmati rice",
+  "chicken",
+  "olive oil"
+ ],
+ "Kerala Curry Or Roast": [
+  "salt",
+  "oil",
+  "chicken",
+  "garlic",
+  "water",
+  "herbs",
+  "vinegar"
+ ],
+ "Khachapuri": [
+  "salt",
+  "water",
+  "oil"
+ ],
+ "Ful With Pastrami": [
+  "olive oil",
+  "garlic",
+  "cheese",
+  "tomato sauce",
+  "basil",
+  "chicken"
+ ],
+ "Breakfast Combo": [
+  "salt",
+  "onion"
+ ],
+ "Kadala": [
+  "tomato",
+  "salt",
+  "butter",
+  "cheese",
+  "cucumber",
+  "pepper",
+  "chicken",
+  "garlic"
+ ],
+ "Surti": [
+  "egg",
+  "heavy cream",
+  "milk",
+  "sugar",
+  "vanilla extract",
+  "angus beef",
+  "garlic",
+  "herbs"
+ ],
+ "Kiwi": [
+  "ice",
+  "water"
+ ],
+ "Sol Kadi": [
+  "salt",
+  "garlic"
+ ],
+ "Whole Fish": [
+  "garlic",
+  "onion",
+  "tomato",
+  "chicken",
+  "coriander",
+  "cumin",
+  "cream",
+  "olive oil"
+ ],
+ "Nankhatai": [
+  "salt",
+  "sugar",
+  "butter",
+  "black pepper",
+  "coriander",
+  "cumin",
+  "garlic",
+  "lemon"
+ ],
+ "Banana Split": [
+  "sugar",
+  "milk",
+  "egg",
+  "heavy cream",
+  "vanilla extract"
+ ],
+ "Emirati Breakfast": [
+  "salt",
+  "water",
+  "butter"
+ ],
+ "Porridge": [
+  "milk",
+  "sugar",
+  "water",
+  "salt",
+  "oats"
+ ],
+ "Sticky Date Pudding": [
+  "sugar",
+  "milk",
+  "vanilla extract",
+  "cream",
+  "butter"
+ ],
+ "Syrup": [
+  "sugar",
+  "butter",
+  "garlic",
+  "oil",
+  "salt"
+ ],
+ "Thari Unda": [
+  "garlic",
+  "salt",
+  "onion"
+ ],
+ "Nut Bar": [
+  "sugar",
+  "milk",
+  "vanilla extract"
+ ],
+ "Fruit Bowl": [
+  "garlic",
+  "salt",
+  "chicken",
+  "olive oil"
+ ],
+ "Flavored Soda": [
+  "milk foam",
+  "steamed milk"
+ ],
+ "Levant Breakfast Mezze": [
+  "black pepper",
+  "coriander",
+  "cumin",
+  "garlic",
+  "lemon",
+  "olive oil",
+  "salt",
+  "sauce"
+ ],
+ "Sweet Toast": [
+  "butter",
+  "milk",
+  "sugar",
+  "vanilla extract"
+ ],
+ "Corek": [
+  "cumin",
+  "garlic",
+  "lemon",
+  "olive oil",
+  "beef",
+  "black pepper",
+  "coriander",
+  "salt"
+ ],
+ "Rich Curry Or Continental Dish": [
+  "onion",
+  "beef",
+  "garlic",
+  "honey",
+  "oil"
+ ],
+ "Greek Starters": [
+  "milk",
+  "sugar",
+  "water",
+  "feta cheese"
+ ],
+ "Kerala Roast": [
+  "coriander",
+  "cumin",
+  "garlic",
+  "salt",
+  "beef",
+  "black pepper",
+  "lemon",
+  "olive oil"
+ ],
+ "Curry (Malay Style)": [
+  "garlic",
+  "chicken",
+  "coriander",
+  "cumin",
+  "oil",
+  "cream",
+  "onion",
+  "ginger"
+ ],
+ "Goto Style Dish": [
+  "salt",
+  "garlic",
+  "olive oil",
+  "oil",
+  "cumin",
+  "lemon"
+ ],
+ "Torte": [
+  "milk",
+  "sugar",
+  "butter",
+  "vanilla extract",
+  "baking powder"
+ ],
+ "Payasam": [
+  "sugar",
+  "cream",
+  "milk",
+  "garlic",
+  "oil"
+ ],
+ "Trifle": [
+  "sugar",
+  "milk",
+  "vanilla extract",
+  "cream"
+ ],
+ "Hareeseh": [
+  "garlic",
+  "salt",
+  "basmati rice",
+  "oil",
+  "onion"
+ ],
+ "Sharbat": [
+  "milk",
+  "sugar",
+  "water",
+  "salt"
+ ],
+ "Gallayeh": [
+  "garlic",
+  "salt",
+  "chicken",
+  "coriander",
+  "cumin",
+  "lemon",
+  "olive oil",
+  "onion"
+ ],
+ "Kunafa Croffle": [
+  "salt",
+  "butter",
+  "garlic",
+  "oil",
+  "cheese",
+  "cream",
+  "milk"
+ ],
+ "Fondant": [
+  "sugar",
+  "milk",
+  "dark chocolate",
+  "vanilla extract"
+ ],
+ "Fruit Sweet": [
+  "sugar",
+  "cream",
+  "milk",
+  "fruits"
+ ],
+ "Sheer Khurma": [
+  "garlic",
+  "cream",
+  "oil",
+  "onion",
+  "sugar",
+  "salt"
+ ],
+ "Gnanakatha": [
+  "garlic",
+  "olive oil",
+  "ice",
+  "water",
+  "basil",
+  "cheese",
+  "onion",
+  "tomato sauce"
+ ],
+ "Bonda": [
+  "garlic",
+  "sugar"
+ ],
+ "Churma": [
+  "salt",
+  "water",
+  "whole wheat flour"
+ ],
+ "Mava": [
+  "milk",
+  "sugar",
+  "garlic",
+  "oil",
+  "yogurt cultures"
+ ],
+ "Beer": [
+  "sugar",
+  "milk",
+  "water",
+  "carbonated water",
+  "citric acid"
+ ],
+ "Laddu": [
+  "sugar",
+  "cream",
+  "milk"
+ ],
+ "Pumpkin Pie": [
+  "salt",
+  "garlic"
+ ],
+ "Curry Or Fry": [
+  "garlic",
+  "salt",
+  "oil",
+  "butter",
+  "chicken",
+  "potato",
+  "vegetables",
+  "onion"
+ ],
+ "Lumpia": [
+  "butter",
+  "egg wash",
+  "wheat dough",
+  "meat",
+  "spinach",
+  "cheese",
+  "chicken"
+ ],
+ "Burger + Pepsi": [
+  "lettuce",
+  "tomato",
+  "onion",
+  "sauce",
+  "cheese",
+  "beef",
+  "burger bun",
+  "salt"
+ ],
+ "West African Breakfast": [
+  "breadcrumbs",
+  "chicken",
+  "honey",
+  "mustard",
+  "oil",
+  "sauce",
+  "milk",
+  "sugar"
+ ],
+ "Rocky Road": [
+  "sugar",
+  "milk",
+  "cream",
+  "dark chocolate",
+  "salt"
+ ],
+ "Rusk": [
+  "butter",
+  "milk",
+  "sugar",
+  "baking powder",
+  "vanilla extract",
+  "water"
+ ],
+ "Japanese Starters": [
+  "salt",
+  "garlic",
+  "onion",
+  "oil"
+ ],
+ "Jelly": [
+  "sugar",
+  "water",
+  "gelatin"
+ ],
+ "Kesari": [
+  "sugar",
+  "milk",
+  "butter",
+  "salt"
+ ],
+ "Sweet Loaf": [
+  "butter",
+  "salt",
+  "water",
+  "wheat flour",
+  "yeast",
+  "sugar",
+  "milk"
+ ],
+ "Soufflé": [
+  "olive oil",
+  "salt",
+  "chicken",
+  "broth",
+  "sugar",
+  "onion",
+  "pepper"
+ ],
+ "Fermented Drink": [
+  "salt",
+  "olive oil",
+  "lemon juice",
+  "sugar",
+  "onion",
+  "pepper"
+ ],
+ "Barfi": [
+  "cardamom",
+  "ghee",
+  "milk",
+  "nuts",
+  "sugar"
+ ],
+ "Peda": [
+  "cream",
+  "milk",
+  "sugar"
+ ],
+ "Shrikhand": [
+  "cream",
+  "milk",
+  "sugar",
+  "oil",
+  "salt",
+  "water"
+ ],
+ "Eastern European Breakfast": [
+  "tomato",
+  "onion",
+  "pepper",
+  "salt",
+  "cucumber"
+ ],
+ "Japanese Curry Or Glaze": [
+  "oil",
+  "garlic",
+  "rice",
+  "salt",
+  "sauce",
+  "chicken",
+  "onion",
+  "breadcrumbs"
+ ],
+ "Breakfast Side": [
+  "butter",
+  "salt",
+  "tomato",
+  "cheese",
+  "cucumber",
+  "pepper"
+ ],
+ "Mango And Berries": [
+  "sugar"
+ ],
+ "Chia Pudding": [
+  "honey",
+  "garlic"
+ ],
+ "Cham Cham": [
+  "salt",
+  "butter",
+  "garlic",
+  "oil",
+  "chicken"
+ ],
+ "Paklava": [
+  "garlic",
+  "salt",
+  "herbs",
+  "lemon",
+  "mixed vegetables",
+  "olive oil",
+  "basmati rice",
+  "beef"
+ ],
+ "Sweet Pastry": [
+  "sugar",
+  "milk",
+  "butter",
+  "salt",
+  "cream"
+ ],
+ "Milk Sweet": [
+  "milk",
+  "sugar",
+  "cream",
+  "baking powder",
+  "butter",
+  "vanilla extract"
+ ],
+ "Victoria Sponge": [
+  "milk",
+  "sugar",
+  "cream",
+  "baking powder",
+  "butter",
+  "vanilla extract"
+ ],
+ "Western Skillet": [
+  "milk",
+  "sugar",
+  "ice",
+  "vanilla extract"
+ ],
+ "Health Shot": [
+  "water",
+  "sugar",
+  "ice",
+  "ginger",
+  "milk",
+  "lemon"
+ ],
+ "Grill/Glaze": [
+  "garlic",
+  "oil",
+  "black pepper",
+  "coriander",
+  "lemon",
+  "olive oil",
+  "salt",
+  "onion"
+ ],
+ "Cannoli": [
+  "cream",
+  "milk",
+  "ricotta",
+  "sugar",
+  "garlic",
+  "olive oil"
+ ],
+ "Egyptian Breakfast": [
+  "garlic",
+  "salt",
+  "olive oil",
+  "cumin"
+ ],
+ "Othmalliyeh": [
+  "cream",
+  "milk",
+  "sugar"
+ ],
+ "Marshmallow": [
+  "sugar",
+  "corn syrup",
+  "milk"
+ ],
+ "Ghazal Beirut": [
+  "sugar",
+  "milk",
+  "cream",
+  "salt"
+ ],
+ "Mysore Pak": [
+  "cream",
+  "milk",
+  "sugar",
+  "garlic",
+  "oil",
+  "salt"
+ ],
+ "Gum": [
+  "sugar",
+  "corn syrup"
+ ],
+ "Peanut Sweet": [
+  "sugar",
+  "milk",
+  "cream",
+  "honey"
+ ],
+ "Gata": [
+  "butter",
+  "salt",
+  "milk",
+  "sugar",
+  "black pepper",
+  "garlic"
+ ],
+ "Figs": [
+  "salt",
+  "almonds",
+  "walnuts",
+  "sugar"
+ ],
+ "Sholeh Zard": [
+  "milk",
+  "sugar",
+  "water",
+  "egg",
+  "heavy cream",
+  "vanilla extract"
+ ],
+ "Syrniki": [
+  "sugar",
+  "milk",
+  "butter",
+  "cream",
+  "baking powder"
+ ],
+ "Scandinavian Breakfast Plate": [
+  "avocado",
+  "basil",
+  "beetroot",
+  "bread",
+  "cherry",
+  "cucumber",
+  "egg",
+  "feta cheese"
+ ],
+ "Eastern European Starters": [
+  "baking powder",
+  "butter",
+  "milk",
+  "sugar",
+  "vanilla extract",
+  "cucumber",
+  "herbs",
+  "lemon juice"
+ ],
+ "Sheera": [
+  "milk",
+  "sugar",
+  "cream",
+  "cornstarch",
+  "vanilla extract"
+ ],
+ "Croffle": [
+  "butter",
+  "egg",
+  "milk",
+  "salt",
+  "sugar",
+  "yeast"
+ ],
+ "Energy Bites": [
+  "garlic",
+  "oil",
+  "onion",
+  "salt",
+  "butter",
+  "milk",
+  "sugar"
+ ],
+ "Bhajia": [
+  "garlic",
+  "salt",
+  "herbs",
+  "oil",
+  "olive oil",
+  "water"
+ ],
+ "Choori": [
+  "garlic",
+  "chicken",
+  "oil",
+  "salt",
+  "sugar"
+ ],
+ "Kinako": [
+  "milk",
+  "sugar",
+  "butter",
+  "salt",
+  "baking powder",
+  "vanilla extract",
+  "salmon"
+ ],
+ "Coconut Jelly": [
+  "sugar",
+  "cream",
+  "milk"
+ ],
+ "Gulf Breakfast": [
+  "garlic",
+  "salt",
+  "onion",
+  "basmati rice",
+  "oil",
+  "black pepper"
+ ],
+ "English Breakfast Platter": [
+  "beans",
+  "beef",
+  "milk foam",
+  "steamed milk",
+  "bread",
+  "sauce",
+  "mushrooms",
+  "tomato"
+ ],
+ "Western Breakfast Plate": [
+  "basil",
+  "cheese",
+  "garlic",
+  "olive oil",
+  "tomato sauce"
+ ],
+ "Bibingka": [
+  "egg",
+  "onion",
+  "beef",
+  "cucumber",
+  "herbs",
+  "lemon juice",
+  "olive oil",
+  "potato"
+ ],
+ "Kutsinta": [
+  "baking powder",
+  "butter",
+  "milk",
+  "sugar",
+  "vanilla extract"
+ ],
+ "Persian Starters": [
+  "garlic",
+  "milk",
+  "sugar",
+  "salt",
+  "rice",
+  "vegetables",
+  "herbs",
+  "cucumber"
+ ],
+ "Continental Dish": [
+  "chicken",
+  "coriander",
+  "cream",
+  "cumin",
+  "garam masala",
+  "garlic",
+  "ginger",
+  "oil"
+ ],
+ "Yogurt Sweet": [
+  "milk",
+  "honey",
+  "sugar",
+  "butter",
+  "cucumber",
+  "feta cheese",
+  "olives",
+  "oregano"
+ ],
+ "Binignit": [
+  "salt",
+  "sugar",
+  "butter",
+  "garlic",
+  "lamb",
+  "milk"
+ ],
+ "Fruit Nectar": [
+  "sugar",
+  "carbonated water",
+  "citric acid",
+  "egg",
+  "heavy cream",
+  "milk",
+  "vanilla extract",
+  "corn syrup"
+ ],
+ "Watalappan": [
+  "garlic",
+  "peppers",
+  "salt",
+  "black pepper",
+  "chicken",
+  "coriander",
+  "cumin",
+  "lemon"
+ ],
+ "Soymilk": [
+  "milk"
+ ],
+ "Indian Street Accompaniments": [
+  "ice",
+  "water",
+  "butter",
+  "garlic",
+  "oil",
+  "potato",
+  "salt",
+  "vegetables"
+ ],
+ "Stocks And Bases": [
+  "baking powder",
+  "butter",
+  "milk",
+  "sugar",
+  "vanilla extract"
+ ],
+ "Dodol": [
+  "herbs",
+  "lemon",
+  "grape leaves",
+  "minced meat",
+  "olive oil",
+  "onion",
+  "rice",
+  "vegetables"
+ ],
+ "Shvili": [
+  "cream",
+  "milk",
+  "sugar",
+  "caesar dressing",
+  "chicken",
+  "cucumber",
+  "lemon juice",
+  "lettuce"
+ ]
+}

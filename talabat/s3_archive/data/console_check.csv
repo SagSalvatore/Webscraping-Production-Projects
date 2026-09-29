@@ -1,0 +1,10 @@
+﻿prefix,expected_objects,expected_bytes,observed_objects,observed_bytes
+talabat/bronze/bronze/,1101,3225198625,1101,3.0 GB
+talabat/gold/2026-06/,6,592842838,6,565.4 MB
+talabat/gold/2026-07/,50,2255456078,50,2.1 GB
+talabat/gold/2026-08/,14,3512357970,14,3.3 GB
+talabat/gold/2026-09/,10,750320823,10,715.6 MB
+talabat/gold/_cross_month/,1,404,1,404.0 B
+talabat/ops/,14,9282066,14,8.9 MB
+talabat/reference/,7,468697,7,457.7 KB
+talabat/silver/,444,5808275006,444,5.4 GB

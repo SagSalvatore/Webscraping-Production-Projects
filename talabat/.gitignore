@@ -5,3 +5,26 @@ data/
 __pycache__/
 *.pyc
 .scrapy/
+
+# A file under an ignored DIRECTORY cannot be re-included, so `data/` above
+# would defeat any `!data/<file>` written elsewhere. Un-ignore the three data
+# directories that hold records rather than bulk output, re-ignore their
+# contents, then name the individual keepers. The root .gitignore explains why
+# each one has to travel with the code.
+!s3_archive/data/
+s3_archive/data/*
+!s3_archive/data/staged_manifest.jsonl
+!s3_archive/data/upload_manifest.jsonl
+!s3_archive/data/deleted_index.csv
+!s3_archive/data/inventory.csv
+!s3_archive/data/inventory_summary.json
+!s3_archive/data/verify_report.json
+!s3_archive/data/console_check.csv
+
+!menu_refresh/data/
+menu_refresh/data/*
+!menu_refresh/data/std_term_canonical_ingredients.json
+
+!unified/data/
+unified/data/*
+!unified/data/arabic_fixes.json

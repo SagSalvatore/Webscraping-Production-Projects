@@ -1,0 +1,796 @@
+﻿rel_path,bytes,modified,top_folder,layer,stage,month,action,s3_key,reason
+unified/data/talabat_unified_202609.jsonl,675927944,2026-09-17,unified,gold,unified,2026-09,archive_keep,talabat/gold/2026-09/unified/unified/data/talabat_unified_202609.jsonl,rule ^unified/data/talabat_unified_202609\.jsonl$
+August_classification/data/serper_maps_cache.json,47061495,2026-08-17,August_classification,bronze,04_enrichment_raw,2026-08,archive_keep,talabat/bronze/2026-08/04_enrichment_raw/August_classification/data/serper_maps_cache.json,rule serper[^/]*cache[^/]*\.json$
+september/data/September_export.json,32264501,2026-09-10,september,gold,exports,2026-09,archive_keep,talabat/gold/2026-09/exports/september/data/September_export.json,rule ^september/data/September_export\.json$
+address_audit/data/serper_branch_cache.json,22642222,2026-09-16,address_audit,bronze,04_enrichment_raw,2026-09,archive_keep,talabat/bronze/2026-09/04_enrichment_raw/address_audit/data/serper_branch_cache.json,rule serper[^/]*cache[^/]*\.json$
+tavily/cache/supabase_tavily_cache.json,13466965,2026-06-22,tavily,bronze,04_enrichment_raw,_cross_month,archive_keep,talabat/bronze/_cross_month/04_enrichment_raw/tavily/cache/supabase_tavily_cache.json,rule (llm|openai|gpt|tavily)[^/]*cache[^/]*\.json$
+August_classification/data_sep/serper_maps_cache.json,8792974,2026-09-10,August_classification,bronze,04_enrichment_raw,2026-08,archive_keep,talabat/bronze/2026-08/04_enrichment_raw/August_classification/data_sep/serper_maps_cache.json,rule serper[^/]*cache[^/]*\.json$
+August_classification/data/serper_places_cache.json,8753876,2026-09-10,August_classification,bronze,04_enrichment_raw,2026-08,archive_keep,talabat/bronze/2026-08/04_enrichment_raw/August_classification/data/serper_places_cache.json,rule serper[^/]*cache[^/]*\.json$
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak21,6507281,2026-08-03,export,,,,skip,,not a data file (.bak21)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak9,6493095,2026-07-30,export,,,,skip,,not a data file (.bak9)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak10,6491265,2026-07-31,export,,,,skip,,not a data file (.bak10)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak18,6491262,2026-08-03,export,,,,skip,,not a data file (.bak18)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak19,6491188,2026-08-03,export,,,,skip,,not a data file (.bak19)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak20,6491186,2026-08-03,export,,,,skip,,not a data file (.bak20)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak13,6491142,2026-07-31,export,,,,skip,,not a data file (.bak13)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak12,6491127,2026-07-31,export,,,,skip,,not a data file (.bak12)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak11,6491121,2026-07-31,export,,,,skip,,not a data file (.bak11)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak16,6490947,2026-07-31,export,,,,skip,,not a data file (.bak16)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak17,6490947,2026-07-31,export,,,,skip,,not a data file (.bak17)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak14,6490941,2026-07-31,export,,,,skip,,not a data file (.bak14)
+export/IT_Team_Location/output/ri-db.restaurants_id.final.json.bak15,6490941,2026-07-31,export,,,,skip,,not a data file (.bak15)
+data/urls/talabat_restaurant_urls_run2.jsonl.predupe,4773735,2026-08-10,data,,,,skip,,not a data file (.predupe)
+address_audit/data/serper_branch_ll_cache.json,4245566,2026-09-17,address_audit,bronze,04_enrichment_raw,2026-09,archive_keep,talabat/bronze/2026-09/04_enrichment_raw/address_audit/data/serper_branch_ll_cache.json,rule serper[^/]*cache[^/]*\.json$
+images/data/logos_manifest.jsonl,3883293,2026-07-27,images,gold,logos,2026-07,archive_keep,talabat/gold/2026-07/logos/images/data/logos_manifest.jsonl,rule ^images/data/[^/]*logos_manifest\.[^/]*$
+menu/data/logs/run_20260619_111807.log,2285971,2026-06-19,menu,,,,skip,,not a data file (.log)
+Postgre/migration_run2.log,2262576,2026-06-23,Postgre,,,,skip,,not a data file (.log)
+August_classification/data/llm_classify_cache.json,2217604,2026-08-15,August_classification,bronze,04_enrichment_raw,2026-08,archive_keep,talabat/bronze/2026-08/04_enrichment_raw/August_classification/data/llm_classify_cache.json,rule (llm|openai|gpt|tavily)[^/]*cache[^/]*\.json$
+listing_scraper/logs/run2.log,2042521,2026-09-08,listing_scraper,,,,skip,,not a data file (.log)
+images/data/august_logos_manifest.jsonl,1809940,2026-08-24,images,gold,logos,2026-08,archive_keep,talabat/gold/2026-08/logos/images/data/august_logos_manifest.jsonl,rule ^images/data/[^/]*logos_manifest\.[^/]*$
+menu/data/logs/pending_run_stdout.txt,1481654,2026-06-19,menu,,,,skip,,code or documentation
+Postgre/migration_async.log,1356664,2026-06-23,Postgre,,,,skip,,not a data file (.log)
+.scrapy/jobs/uae_full_run/requests.queue/-5,1277686,2026-06-12,.scrapy,,,,skip,,not a data file (no extension)
+menu/data/logs/run_20260618_142446.log,1079040,2026-06-18,menu,,,,skip,,not a data file (.log)
+August_classification/data/tavily_cache.json,1001104,2026-09-10,August_classification,bronze,04_enrichment_raw,2026-08,archive_keep,talabat/bronze/2026-08/04_enrichment_raw/August_classification/data/tavily_cache.json,rule (llm|openai|gpt|tavily)[^/]*cache[^/]*\.json$
+menu_refresh/data/refresh_202609/newitems/translation_cache.json,902954,2026-09-17,menu_refresh,bronze,04_enrichment_raw,2026-09,archive_keep,talabat/bronze/2026-09/04_enrichment_raw/menu_refresh/data/refresh_202609/newitems/translation_cache.json,rule translat[^/]*cache[^/]*\.json$
+tavily/logs/classification_20260622.log,883980,2026-06-22,tavily,,,,skip,,not a data file (.log)
+s3_archive/data/staged_manifest.jsonl,784245,2026-09-23,s3_archive,,,,skip,,rule ^s3_archive/
+s3_archive/data/staged_manifest.jsonl.bak_20260923_180611,776538,2026-09-23,s3_archive,,,,skip,,not a data file (.bak_20260923_180611)
+menu/data/logs/stdout_full_run.log,767665,2026-06-18,menu,,,,skip,,not a data file (.log)
+s3_archive/data/inventory.csv,762242,2026-09-22,s3_archive,,,,skip,,rule ^s3_archive/
+s3_archive/data/deleted_index.csv,675576,2026-09-23,s3_archive,,,,skip,,rule ^s3_archive/
+menu/translations_cache.json,669783,2026-06-24,menu,bronze,04_enrichment_raw,2026-06,archive_keep,talabat/bronze/2026-06/04_enrichment_raw/menu/translations_cache.json,rule translat[^/]*cache[^/]*\.json$
+menu/classification/menu_classifier.log,619103,2026-06-26,menu,,,,skip,,not a data file (.log)
+area_classification/data/cache/serper_area_cache.json,548965,2026-09-02,area_classification,bronze,04_enrichment_raw,2026-09,archive_keep,talabat/bronze/2026-09/04_enrichment_raw/area_classification/data/cache/serper_area_cache.json,rule serper[^/]*cache[^/]*\.json$
+docs/Talabat_Pipeline_Documentation.pdf,525652,2026-08-28,docs,,,,skip,,rule ^docs/
+August_menu/data/translation_cache.json,500868,2026-08-26,August_menu,bronze,04_enrichment_raw,2026-08,archive_keep,talabat/bronze/2026-08/04_enrichment_raw/August_menu/data/translation_cache.json,rule translat[^/]*cache[^/]*\.json$
+Restaurant Identifier/run2_classify.out,371523,2026-08-11,Restaurant Identifier,,,,skip,,not a data file (.out)
+August_classification/data_sep/llm_classify_cache.json,317514,2026-09-10,August_classification,bronze,04_enrichment_raw,2026-08,archive_keep,talabat/bronze/2026-08/04_enrichment_raw/August_classification/data_sep/llm_classify_cache.json,rule (llm|openai|gpt|tavily)[^/]*cache[^/]*\.json$
+unified/data/known_branch_ids.json,281206,2026-09-01,unified,reference,unified,_cross_month,archive_keep,talabat/reference/unified/known_branch_ids.json,rule ^unified/data/(known_branch_ids|arabic_fixes)\.json$
+area_classification/data/cache/taxonomy_llm_cache.json,273412,2026-09-02,area_classification,bronze,04_enrichment_raw,2026-09,archive_keep,talabat/bronze/2026-09/04_enrichment_raw/area_classification/data/cache/taxonomy_llm_cache.json,rule (llm|openai|gpt|tavily)[^/]*cache[^/]*\.json$
+images/data/september_logos_manifest.jsonl,268436,2026-09-18,images,gold,logos,2026-09,archive_keep,talabat/gold/2026-09/logos/images/data/september_logos_manifest.jsonl,rule ^images/data/[^/]*logos_manifest\.[^/]*$
+.scrapy/jobs/uae_full_run/requests.seen,205800,2026-06-12,.scrapy,,,,skip,,not a data file (.seen)
+september/data/menus/translation_cache.json,204280,2026-09-09,september,bronze,04_enrichment_raw,2026-09,archive_keep,talabat/bronze/2026-09/04_enrichment_raw/september/data/menus/translation_cache.json,rule translat[^/]*cache[^/]*\.json$
+images/data/september_logos_manifest.csv,176480,2026-09-18,images,gold,logos,2026-09,archive_keep,talabat/gold/2026-09/logos/images/data/september_logos_manifest.csv,rule ^images/data/[^/]*logos_manifest\.[^/]*$
+Google_Place/talabat_menu/output/slug_preview.txt,144204,2026-06-23,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/talabat_menu/output/slug_preview.txt,144204,2026-06-23,apify,,,,skip,,code or documentation
+s3_archive/data/verify_report.json,128878,2026-09-23,s3_archive,,,,skip,,rule ^s3_archive/
+Google_Place/talabat_menu/output/brand_slug_preview.txt,110159,2026-06-23,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/talabat_menu/output/brand_slug_preview.txt,110159,2026-06-23,apify,,,,skip,,code or documentation
+menu_refresh/data/translation_cache.json,109015,2026-08-19,menu_refresh,bronze,04_enrichment_raw,2026-08,archive_keep,talabat/bronze/2026-08/04_enrichment_raw/menu_refresh/data/translation_cache.json,rule translat[^/]*cache[^/]*\.json$
+export/IT_Team_Location/logs/resolve_manual.log,98808,2026-07-29,export,,,,skip,,not a data file (.log)
+tavily/classify_live.log,86689,2026-06-22,tavily,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_08/output/logs/brand_run_20260703_154717.log,81226,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_07/output/logs/brand_run_20260703_150935.log,78544,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_09/output/logs/brand_run_20260703_161810.log,77848,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_10/output/logs/brand_run_20260703_201440.log,77608,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_06/output/logs/brand_run_20260703_142315.log,76447,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+listing_scraper/logs/probe.log,75381,2026-08-11,listing_scraper,,,,skip,,not a data file (.log)
+August_menu/ingredients_export_02.json,73571,2026-08-17,August_menu,reference,ingredients,2026-08,archive_keep,talabat/reference/ingredients/ingredients_export_02.json,rule ^August_menu/ingredients_export_02\.json$
+Google_Place/apify/brands/uae_main_batch_12/output/logs/brand_run_20260704_111416.log,71912,2026-07-04,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_11/output/logs/brand_run_20260704_105149.log,68403,2026-07-04,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_14/output/logs/brand_run_20260704_130855.log,68214,2026-07-04,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_13/output/logs/brand_run_20260704_124108.log,67235,2026-07-04,Google_Place,,,,skip,,not a data file (.log)
+menu/talabat_menu_tracker.py,61158,2026-06-19,menu,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_main_batch_05/output/logs/brand_run_20260703_135726.log,57678,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+menu_refresh/data/std_term_canonical_ingredients.json,55496,2026-08-24,menu_refresh,reference,std_terms,2026-08,archive_keep,talabat/reference/std_terms/std_term_canonical_ingredients.json,rule ^menu_refresh/data/std_term_canonical_ingredients\.json$
+listing_comparison/logs/fetch_area.log,51178,2026-09-16,listing_comparison,,,,skip,,not a data file (.log)
+sanitization/sanitize_run.log,49702,2026-06-18,sanitization,,,,skip,,not a data file (.log)
+unified/build_unified_202609.py,46781,2026-09-18,unified,,,,skip,,code or documentation
+docs/Talabat_Pipeline_Documentation.docx,46592,2026-08-28,docs,,,,skip,,not a data file (.docx)
+tavily/logs/classification_20260603.log,43549,2026-06-03,tavily,,,,skip,,not a data file (.log)
+docs/TALABAT_PIPELINE_DOCUMENTATION.md,42563,2026-08-28,docs,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_main_batch_04/output/logs/brand_run_20260703_130452.log,42186,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+menu_refresh/data/refresh_202609/scrape/logs/scrape.log,40161,2026-09-16,menu_refresh,,,,skip,,not a data file (.log)
+tavily/classify_from_supabase.py,39825,2026-06-22,tavily,,,,skip,,code or documentation
+images/data/september_scrape.log,38445,2026-09-18,images,,,,skip,,not a data file (.log)
+export/export_to_json.py,37949,2026-07-16,export,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_main_batch_01/output/logs/brand_run_20260702_205511.log,35714,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/process_results.py,32796,2026-05-26,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/scripts/process_results.py,32796,2026-05-26,apify,,,,skip,,code or documentation
+Google_Place/apify/test/test_processor.py,31021,2026-05-26,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/test/test_processor.py,31021,2026-05-26,apify,,,,skip,,code or documentation
+menu/translations_step2_cache.json,30763,2026-06-24,menu,bronze,04_enrichment_raw,2026-06,archive_keep,talabat/bronze/2026-06/04_enrichment_raw/menu/translations_step2_cache.json,rule translat[^/]*cache[^/]*\.json$
+images/download_images.py,29157,2026-07-27,images,,,,skip,,code or documentation
+area_classification/data/cache/llm_area_cache.json,28898,2026-09-02,area_classification,bronze,04_enrichment_raw,2026-09,archive_keep,talabat/bronze/2026-09/04_enrichment_raw/area_classification/data/cache/llm_area_cache.json,rule (llm|openai|gpt|tavily)[^/]*cache[^/]*\.json$
+menu/classification/test_menu_classifier.py,28585,2026-06-26,menu,,,,skip,,code or documentation
+tavily/reclass_low_confidence.py,27631,2026-06-22,tavily,,,,skip,,code or documentation
+Postgre/migration.log,26559,2026-06-23,Postgre,,,,skip,,not a data file (.log)
+menu/std_term_mapper.py,26481,2026-06-24,menu,,,,skip,,code or documentation
+images/data/test_logos_manifest.jsonl,26021,2026-07-27,images,gold,logos,2026-07,archive_keep,talabat/gold/2026-07/logos/images/data/test_logos_manifest.jsonl,rule ^images/data/[^/]*logos_manifest\.[^/]*$
+talabat_2_0/talabat_2_0/spiders/talabat_complete_spider.py,25714,2025-10-10,talabat_2_0,,,,skip,,code or documentation
+menu/classification/post_process.py,25575,2026-06-26,menu,,,,skip,,code or documentation
+TALABAT_PROJECT_CONTEXT.md,25394,2026-06-18,(root files),,,,skip,,code or documentation
+menu_refresh/data/scrape/logs/scrape.log,25301,2026-08-19,menu_refresh,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_fast_default_13/output/logs/brand_run_20260702_141418.log,25000,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+menu/classification/menu_classifier.py,24931,2026-06-26,menu,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_default_17/output/logs/brand_run_20260702_141424.log,24342,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+menu_refresh/apply_refresh_review.py,24022,2026-09-17,menu_refresh,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_default_16/output/logs/brand_run_20260702_141422.log,23992,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_fast_default_09/output/logs/brand_run_20260702_141405.log,23990,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_fast_default_18/output/logs/brand_run_20260702_141424.log,23789,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+docs/TF-IDF-kNN-Under-the-Hood.md,23630,2026-08-25,docs,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_default_14/output/logs/brand_run_20260702_141419.log,23484,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_fast_default_12/output/logs/brand_run_20260702_141417.log,23344,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_fast_default_08/output/logs/brand_run_20260702_141405.log,23224,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_fast_default_11/output/logs/brand_run_20260702_141415.log,23133,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+listing_scraper/run2_collector.py,22934,2026-09-01,listing_scraper,,,,skip,,code or documentation
+Restaurant Identifier/restaurant_identifier.py,22852,2026-09-08,Restaurant Identifier,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_default_10/output/logs/brand_run_20260702_141406.log,22768,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/process_brand.py,22600,2026-09-07,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_default_15/output/logs/brand_run_20260702_141421.log,22250,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+menu_refresh/data/refresh_run.log,22009,2026-08-19,menu_refresh,,,,skip,,not a data file (.log)
+August_menu/build_august_export.py,21886,2026-08-20,August_menu,,,,skip,,code or documentation
+August_classification/test_pipeline.py,21433,2026-09-10,August_classification,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_default_07/output/logs/brand_run_20260702_141403.log,21372,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+export/IT_Team_Location/scripts/resolve_manual.py,21045,2026-07-29,export,,,,skip,,code or documentation
+address_audit/detect_address_smear.py,20683,2026-09-15,address_audit,,,,skip,,code or documentation
+unified/data/arabic_fixes.json,20606,2026-08-26,unified,reference,unified,_cross_month,archive_keep,talabat/reference/unified/arabic_fixes.json,rule ^unified/data/(known_branch_ids|arabic_fixes)\.json$
+menu/classification/sample_run.py,20449,2026-06-26,menu,,,,skip,,code or documentation
+images/scrape_menu_images.py,20221,2026-08-24,images,,,,skip,,code or documentation
+August_classification/classify_llm.py,20209,2026-09-10,August_classification,,,,skip,,code or documentation
+Postgre/migrate_supabase_to_local.py,20070,2026-06-23,Postgre,,,,skip,,code or documentation
+menu/enrich_export.py,19827,2026-06-18,menu,,,,skip,,code or documentation
+tavily/tests/test_type_classifier.py,19686,2026-06-03,tavily,,,,skip,,code or documentation
+Google_Place/logs/run_20260520_161532.log,19633,2026-05-20,Google_Place,,,,skip,,not a data file (.log)
+menu/clean_menu_data.py,19564,2026-06-24,menu,,,,skip,,code or documentation
+Google_Place/apify/scripts/generate_input.py,19248,2026-05-26,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/scripts/generate_input.py,19248,2026-05-26,apify,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_main_batch_03/output/logs/brand_run_20260703_112943.log,19212,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+August_classification/serper_places.py,19195,2026-09-10,August_classification,,,,skip,,code or documentation
+area_classification/fix_city_mismatch.py,19191,2026-09-02,area_classification,,,,skip,,code or documentation
+menu/entity_resolution.py,18887,2026-06-18,menu,,,,skip,,code or documentation
+export/IT_Team_Location/logs/fix_mislabelled.log,18672,2026-08-03,export,,,,skip,,not a data file (.log)
+address_audit/serper_branch_ll_search.py,18030,2026-09-17,address_audit,,,,skip,,code or documentation
+Postgre/migrate_async.py,17796,2026-06-23,Postgre,,,,skip,,code or documentation
+August_menu/map_std_terms.py,17756,2026-09-16,August_menu,,,,skip,,code or documentation
+unified/build_unified_export.py,17715,2026-08-26,unified,,,,skip,,code or documentation
+unified/validate_unified_202609_extra.py,17688,2026-09-17,unified,,,,skip,,code or documentation
+PROJECT_CONTEXT.md,17616,2026-06-18,(root files),,,,skip,,code or documentation
+menu/export_excel_review.py,17504,2026-06-25,menu,,,,skip,,code or documentation
+Google_Place/talabat_menu/run_talabat_menu.py,17424,2026-06-23,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/talabat_menu/run_talabat_menu.py,17424,2026-06-23,apify,,,,skip,,code or documentation
+tavily/tests/test_cuisine_classifier.py,17251,2026-06-03,tavily,,,,skip,,code or documentation
+August_classification/config.py,17214,2026-09-10,August_classification,,,,skip,,code or documentation
+images/download_logos.py,17201,2026-08-24,images,,,,skip,,code or documentation
+Google_Place/apify/UAE_FNB_INSIGHTS_REPORT.md,17182,2026-05-26,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/UAE_FNB_INSIGHTS_REPORT.md,17182,2026-05-26,apify,,,,skip,,code or documentation
+Google_Place/apify/brands/local/process_local.py,16910,2026-06-04,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/brands/local/process_local.py,16910,2026-06-04,apify,,,,skip,,code or documentation
+talabat_2_0/talabat_2_0/spiders/talabat_abu_dhabi_gate_city.py,16830,2025-10-10,talabat_2_0,,,,skip,,code or documentation
+Google_Place/talabat_menu/make_comparison_excel.py,16623,2026-06-23,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/talabat_menu/make_comparison_excel.py,16623,2026-06-23,apify,,,,skip,,code or documentation
+unified/area_check_review_202609.py,16569,2026-09-18,unified,,,,skip,,code or documentation
+menu_refresh/compute_delta.py,16408,2026-09-16,menu_refresh,,,,skip,,code or documentation
+Google_Place/apify/scripts/run_brand_scraper.py,16391,2026-07-03,Google_Place,,,,skip,,code or documentation
+september/sanitize_areas.py,16336,2026-09-10,september,,,,skip,,code or documentation
+August_classification/logs/classify.log,16250,2026-09-10,August_classification,,,,skip,,not a data file (.log)
+August_menu/scrape_menus.py,16207,2026-08-19,August_menu,,,,skip,,code or documentation
+Google_Place/apify/UAE_Restaurant_Directory_Enrichment_Plan_v2.md,16045,2026-07-02,Google_Place,,,,skip,,code or documentation
+Code-review-SKILL.md,16033,2026-07-15,(root files),,,,skip,,code or documentation
+Google_Place/apify/brands/uae_main_batch_02/output/logs/brand_run_20260703_104021.log,15799,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+s3_archive/layout.py,15796,2026-09-23,s3_archive,,,,skip,,code or documentation
+Google_Place/scripts/fetch_places.py,15756,2026-05-20,Google_Place,,,,skip,,code or documentation
+supabase/PLAN.md,15696,2026-06-18,supabase,,,,skip,,code or documentation
+Google_Place/apify/scripts/process_kfc_results.py,15652,2026-06-04,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/scripts/process_kfc_results.py,15652,2026-06-04,apify,,,,skip,,code or documentation
+tavily/config.py,15595,2026-06-22,tavily,,,,skip,,code or documentation
+address_audit/apply_area_fix.py,15323,2026-09-17,address_audit,,,,skip,,code or documentation
+apify/Apify_talabat/scripts/process_brand.py,15277,2026-06-04,apify,,,,skip,,code or documentation
+menu_refresh/map_std_terms_august.py,15102,2026-08-19,menu_refresh,,,,skip,,code or documentation
+map_version2/workdone.md,15041,2026-07-05,map_version2,,,,skip,,code or documentation
+menu_refresh/detect_nonfood_items.py,15040,2026-08-24,menu_refresh,,,,skip,,code or documentation
+tavily/classifier_async.py,14974,2026-06-03,tavily,,,,skip,,code or documentation
+August_menu/logs/scrape.log,14876,2026-08-19,August_menu,,,,skip,,not a data file (.log)
+Google_Place/tav/pipeline.py,14817,2026-07-05,Google_Place,,,,skip,,code or documentation
+listing_scraper/prioritize_areas.py,14521,2026-08-11,listing_scraper,,,,skip,,code or documentation
+menu/clean_menu_step2.py,14518,2026-06-24,menu,,,,skip,,code or documentation
+menu/export_to_csv.py,14482,2026-06-18,menu,,,,skip,,code or documentation
+August_menu/logs/map_std_terms.log,14320,2026-09-16,August_menu,,,,skip,,not a data file (.log)
+tavily/classifier.py,14274,2026-06-03,tavily,,,,skip,,code or documentation
+september/apply_review_verdicts.py,14240,2026-09-09,september,,,,skip,,code or documentation
+August_classification/PIPELINE.md,14152,2026-09-10,August_classification,,,,skip,,code or documentation
+tavily/cuisine_classifier.py,14053,2026-06-03,tavily,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_retest_venkatesh_bestha/output/logs/brand_run_20260702_161842.log,13909,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+August_classification/logs/serper.log,13894,2026-09-10,August_classification,,,,skip,,not a data file (.log)
+August_classification/logs/serper_maps.log,13883,2026-09-10,August_classification,,,,skip,,not a data file (.log)
+Postgre/migration_stdout.txt,13833,2026-06-23,Postgre,,,,skip,,code or documentation
+menu/final_std_terms_taxonomy.csv,13833,2026-09-17,menu,reference,std_terms,2026-06,archive_keep,talabat/reference/std_terms/final_std_terms_taxonomy.csv,rule ^menu/final_std_terms_taxonomy\.csv
+menu/final_std_terms_taxonomy.csv.pre_marketing_fix.bak,13815,2026-09-17,menu,reference,std_terms,2026-06,archive_keep,talabat/reference/std_terms/final_std_terms_taxonomy.csv.pre_marketing_fix.bak,rule ^menu/final_std_terms_taxonomy\.csv
+menu_refresh/load_to_postgres.py,13746,2026-08-19,menu_refresh,,,,skip,,code or documentation
+supabase/supabase_writer.py,13681,2026-06-18,supabase,,,,skip,,code or documentation
+tavily/type_classifier.py,13624,2026-06-03,tavily,,,,skip,,code or documentation
+area_classification/approve_new_areas.py,13611,2026-09-02,area_classification,,,,skip,,code or documentation
+area_classification/recover_nulls.py,13491,2026-09-02,area_classification,,,,skip,,code or documentation
+Google_Place/Google_map/2_scrape_google_maps.py,13452,2026-07-03,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/scripts/run_brand_scraper.py,13369,2026-06-04,apify,,,,skip,,code or documentation
+brand_locations.py,13366,2026-09-15,(root files),,,,skip,,code or documentation
+area_classification/validate_output.py,13132,2026-09-02,area_classification,,,,skip,,code or documentation
+Google_Place/apify/scripts/12_full_project_summary.py,13117,2026-07-04,Google_Place,,,,skip,,code or documentation
+unified/validate_unified_export.py,13042,2026-08-26,unified,,,,skip,,code or documentation
+Google_Place/apify/SCRAPE_PLAN.md,12991,2026-05-26,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/SCRAPE_PLAN.md,12991,2026-05-26,apify,,,,skip,,code or documentation
+menu/data_summary.py,12773,2026-06-19,menu,,,,skip,,code or documentation
+docs/UNIFIED_DELIVERABLE_PLAN.md,12578,2026-08-26,docs,,,,skip,,code or documentation
+address_audit/serper_contact_fill.py,12560,2026-09-16,address_audit,,,,skip,,code or documentation
+create_entity_resolution_excel.py,12534,2026-06-12,(root files),,,,skip,,code or documentation
+Google_Place/talabat_menu/process_menu_results.py,12379,2026-06-23,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/talabat_menu/process_menu_results.py,12379,2026-06-23,apify,,,,skip,,code or documentation
+september/build_september_export.py,12364,2026-09-10,september,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_retest_elakiya_chandrasekhar/output/logs/brand_run_20260702_161841.log,12352,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+url_collector/parser.py,12322,2026-08-11,url_collector,,,,skip,,code or documentation
+area_classification/apply_taxonomy.py,12234,2026-09-02,area_classification,,,,skip,,code or documentation
+unified/rectify_areas.py,12221,2026-09-17,unified,,,,skip,,code or documentation
+Google_Place/apify/scripts/9_merge_retest_strict.py,12203,2026-07-02,Google_Place,,,,skip,,code or documentation
+August_menu/sanitize_menus.py,12189,2026-09-09,August_menu,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/fix_mislabelled.py,12165,2026-08-03,export,,,,skip,,code or documentation
+August_menu/map_std_terms.py.pre_sept.bak,12122,2026-08-13,August_menu,,,,skip,,rule \.py\.[^/]*bak$
+Google_Place/apify/brands/uae_retest_thejas_k_sabu/output/logs/brand_run_20260702_161844.log,12108,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+map_version2/load_mnc_chain_locations_batch2.py,11984,2026-07-06,map_version2,,,,skip,,code or documentation
+August_menu/translate_arabic.py,11976,2026-09-09,August_menu,,,,skip,,code or documentation
+add_formula_sheet.py,11956,2026-06-12,(root files),,,,skip,,code or documentation
+Google_Place/map_v2/build_final_reconciliation.py,11948,2026-07-05,Google_Place,,,,skip,,code or documentation
+August_classification/tavily_fallback.py,11924,2026-09-10,August_classification,,,,skip,,code or documentation
+unified/resolve_label_conflicts.py,11827,2026-08-26,unified,,,,skip,,code or documentation
+area_classification/resolve_final_nulls.py,11812,2026-09-02,area_classification,,,,skip,,code or documentation
+s3_archive/README.md,11768,2026-09-23,s3_archive,,,,skip,,code or documentation
+talabat_2_0/talabat_2_0/TALABAT_FAST_MENU.py,11725,2026-05-27,talabat_2_0,,,,skip,,code or documentation
+TAB_MENU_VALIDATION/TALABAT_FAST_MENU.py,11725,2026-05-27,TAB_MENU_VALIDATION,,,,skip,,code or documentation
+area_classification/extract_offtaxonomy.py,11719,2026-09-02,area_classification,,,,skip,,code or documentation
+August_classification/serper_maps_details.py,11677,2026-09-10,August_classification,,,,skip,,code or documentation
+area_classification/apply_manual_findings.py,11674,2026-09-02,area_classification,,,,skip,,code or documentation
+menu_refresh/test_pipeline.py,11593,2026-09-16,menu_refresh,,,,skip,,code or documentation
+listing_comparison/compare_identity.py,11548,2026-09-08,listing_comparison,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_validation_default/output/logs/brand_run_20260702_130343.log,11547,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Postgre/migrations/001_chain_id.py,11499,2026-08-17,Postgre,,,,skip,,code or documentation
+area_classification/resolve_residue.py,11369,2026-09-02,area_classification,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_retest_ravi_chandra/output/logs/brand_run_20260702_161843.log,11345,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+tavily/CLASSIFICATION_PLAN.md,11337,2026-06-22,tavily,,,,skip,,code or documentation
+unified/fix_arabic_names.py,11145,2026-08-26,unified,,,,skip,,code or documentation
+August_menu/translate_arabic.py.pre_sept.bak,11129,2026-08-23,August_menu,,,,skip,,rule \.py\.[^/]*bak$
+August_menu/sanitize_menus.py.pre_sept.bak,11091,2026-08-12,August_menu,,,,skip,,rule \.py\.[^/]*bak$
+Google_Place/apify/scripts/run_scraper.py,11078,2026-06-04,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/scripts/run_scraper.py,11078,2026-06-04,apify,,,,skip,,code or documentation
+menu_refresh/export_refresh_review.py,11072,2026-09-16,menu_refresh,,,,skip,,code or documentation
+Google_Place/test/test_edge_cases.py,10976,2026-05-21,Google_Place,,,,skip,,code or documentation
+url_collector/collector.py,10925,2026-06-12,url_collector,,,,skip,,code or documentation
+August_menu/validate_export.py,10853,2026-08-20,August_menu,,,,skip,,code or documentation
+Google_Place/apify/brands/all_local_brands/output/logs/brand_run_20260708_203447.log,10817,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/PLAN.md,10742,2026-05-26,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/PLAN.md,10742,2026-05-26,apify,,,,skip,,code or documentation
+area_classification/PLAN.md,10699,2026-09-02,area_classification,,,,skip,,code or documentation
+TAB_MENU_VALIDATION/scrape_to_csv.py,10652,2026-05-27,TAB_MENU_VALIDATION,,,,skip,,code or documentation
+area_classification/classify_to_taxonomy.py,10537,2026-09-02,area_classification,,,,skip,,code or documentation
+TAB_MENU_VALIDATION/validate_menu.py,10303,2026-05-27,TAB_MENU_VALIDATION,,,,skip,,code or documentation
+area_classification/test_area_pipeline.py,10303,2026-09-02,area_classification,,,,skip,,code or documentation
+address_audit/fix_area_fallback.py,10237,2026-09-16,address_audit,,,,skip,,code or documentation
+area_classification/resolve_areas.py,10232,2026-09-02,area_classification,,,,skip,,code or documentation
+september/conform_and_key_review.py,10181,2026-09-09,september,,,,skip,,code or documentation
+ENTITY_RESOLUTION_STRATEGY.md,10178,2026-06-12,(root files),,,,skip,,code or documentation
+Google_Place/apify/scripts/3_merge_uae_results.py,10174,2026-07-02,Google_Place,,,,skip,,code or documentation
+area_classification/area_list.csv,10170,2026-09-02,area_classification,reference,areas,2026-09,archive_keep,talabat/reference/areas/area_list.csv,rule ^area_classification/area_list\.csv$
+enrich_left.py,10057,2026-06-12,(root files),,,,skip,,code or documentation
+menu_refresh/build_july_update.py,9981,2026-08-24,menu_refresh,,,,skip,,code or documentation
+Google_Place/tav/openai_extract.py,9942,2026-07-04,Google_Place,,,,skip,,code or documentation
+september/probe_zones.py,9827,2026-09-08,september,,,,skip,,code or documentation
+Google_Place/tav/platform_scrape.py,9764,2026-07-04,Google_Place,,,,skip,,code or documentation
+listing_scraper/smoke_test_yield.py,9760,2026-08-10,listing_scraper,,,,skip,,code or documentation
+images/match_images_to_export.py,9653,2026-07-23,images,,,,skip,,code or documentation
+menu/Plan.md,9642,2026-06-24,menu,,,,skip,,code or documentation
+tavily/tests/test_classifier.py,9566,2026-06-03,tavily,,,,skip,,code or documentation
+menu/data/logs/run_20260619_111610.log,9476,2026-06-19,menu,,,,skip,,not a data file (.log)
+August_menu/resolve_area_cities.py,9430,2026-08-19,August_menu,,,,skip,,code or documentation
+Google_Place/apify/brands/local/output/logs/brand_run_20260604_181003.log,9362,2026-06-04,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/brands/local/output/logs/brand_run_20260604_181003.log,9362,2026-06-04,apify,,,,skip,,not a data file (.log)
+menu_refresh/conform_to_taxonomy_file.py,9271,2026-09-16,menu_refresh,,,,skip,,code or documentation
+August_classification/logs/tavily.log,9213,2026-09-10,August_classification,,,,skip,,not a data file (.log)
+Google_Place/apify/make_brand_inputs.py,9208,2026-09-07,Google_Place,,,,skip,,code or documentation
+ingredients/load_recovered_unmatched.py,9139,2026-07-01,ingredients,,,,skip,,code or documentation
+map_version2/load_mnc_chain_locations.py,8910,2026-07-05,map_version2,,,,skip,,code or documentation
+Google_Place/apify/scripts/8_merge_retest_and_export.py,8857,2026-07-02,Google_Place,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/websearch_resolve.py,8855,2026-07-31,export,,,,skip,,code or documentation
+Google_Place/test/test_output_format.py,8843,2026-05-21,Google_Place,,,,skip,,code or documentation
+Google_Place/map/build_master_mapping.py,8842,2026-07-03,Google_Place,,,,skip,,code or documentation
+menu/patch_taxonomy.py,8803,2026-06-24,menu,,,,skip,,code or documentation
+listing_comparison/fetch_area_names.py,8791,2026-09-16,listing_comparison,,,,skip,,code or documentation
+Google_Place/talabat_menu/Scraping Talabat Menu Data.md,8767,2026-06-23,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/talabat_menu/Scraping Talabat Menu Data.md,8767,2026-06-23,apify,,,,skip,,code or documentation
+August_menu/final_cleanup.py,8759,2026-09-09,August_menu,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_confirm_default/output/logs/brand_run_20260702_133329.log,8755,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+listing_comparison/dedupe_final.py,8724,2026-08-11,listing_comparison,,,,skip,,code or documentation
+August_menu/finalize_export.py,8674,2026-08-20,August_menu,,,,skip,,code or documentation
+tests/test_parser.py,8644,2026-06-12,tests,,,,skip,,code or documentation
+listing_scraper/listing_scraper/spiders/uae_listing_spider.py,8623,2026-06-12,listing_scraper,,,,skip,,code or documentation
+september/detect_relistings.py,8586,2026-09-01,september,,,,skip,,code or documentation
+menu_refresh/load_ingredients_august.py,8584,2026-08-19,menu_refresh,,,,skip,,code or documentation
+map_version2/load_enrichment_data.py,8466,2026-07-05,map_version2,,,,skip,,code or documentation
+Google_Place/tav/validation.py,8461,2026-07-05,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/scripts/13_build_main_account_checkpointed_batch.py,8425,2026-07-03,Google_Place,,,,skip,,code or documentation
+menu_refresh/export_new_mappings_review.py,8387,2026-08-20,menu_refresh,,,,skip,,code or documentation
+tavily/tests/test_classifier_async.py,8384,2026-06-03,tavily,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/fix_non_areas.py,8366,2026-07-31,export,,,,skip,,code or documentation
+export/location_sanitization/ADDRESS_ENRICHMENT_PLAN.md,8328,2026-07-29,export,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_retest_elakiya_chandrasekhar/output/logs/brand_run_20260702_160833.log,8313,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_retest_venkatesh_bestha/output/logs/brand_run_20260702_160833.log,8303,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_retest_thejas_k_sabu/output/logs/brand_run_20260702_160835.log,8297,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+menu_refresh/compare_export.py,8295,2026-08-19,menu_refresh,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_retest_ravi_chandra/output/logs/brand_run_20260702_160834.log,8212,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+menu_refresh/sanitize_august.py,8134,2026-08-19,menu_refresh,,,,skip,,code or documentation
+menu_refresh/canonicalise_std_terms.py,8072,2026-09-17,menu_refresh,,,,skip,,code or documentation
+images/test_logo_pipeline.py,8028,2026-08-24,images,,,,skip,,code or documentation
+menu_refresh/build_baseline_from_files.py,8023,2026-09-10,menu_refresh,,,,skip,,code or documentation
+August_menu/check_location_duplicates.py,8002,2026-08-21,August_menu,,,,skip,,code or documentation
+talabat-selenium/talabat_Kuwait.py,7964,2025-05-05,talabat-selenium,,,,skip,,code or documentation
+Google_Place/apify/scripts/make_excel.py,7922,2026-06-04,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/scripts/make_excel.py,7922,2026-06-04,apify,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/run_clean.py,7887,2026-07-29,export,,,,skip,,code or documentation
+export/location_sanitization/AREA_SANITIZATION_FINDINGS.md,7866,2026-07-29,export,,,,skip,,code or documentation
+area_classification/build_lookup.py,7854,2026-09-02,area_classification,,,,skip,,code or documentation
+listing_comparison/fix_area_names.py,7836,2026-08-11,listing_comparison,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/apply_manual_and_canonicalize.py,7834,2026-07-30,export,,,,skip,,code or documentation
+s3_archive/upload_to_s3.py,7778,2026-09-23,s3_archive,,,,skip,,code or documentation
+menu/classification/post_process_report.txt,7763,2026-06-26,menu,,,,skip,,code or documentation
+menu/classification/sample_output/sample_report.txt,7735,2026-06-26,menu,,,,skip,,code or documentation
+ingredients/load_std_terms_ingredients.py,7719,2026-07-01,ingredients,,,,skip,,code or documentation
+August_menu/translate_residual.py,7718,2026-08-20,August_menu,,,,skip,,code or documentation
+August_classification/apify_probe.py,7666,2026-09-10,August_classification,,,,skip,,code or documentation
+menu_refresh/apply_review_verdicts.py,7613,2026-08-24,menu_refresh,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/llm_client.py,7612,2026-07-29,export,,,,skip,,code or documentation
+september/build_september_new.py,7596,2026-09-08,september,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/geo_resolve.py,7568,2026-07-31,export,,,,skip,,code or documentation
+tavily/run_cuisine_classification.py,7502,2026-06-03,tavily,,,,skip,,code or documentation
+september/verify_new_brands.py,7466,2026-09-08,september,,,,skip,,code or documentation
+september/review_vs_source_exports.py,7394,2026-09-08,september,,,,skip,,code or documentation
+listing_comparison/match_strategies.py,7390,2026-08-11,listing_comparison,,,,skip,,code or documentation
+menu_refresh/fill_ingredient_gaps.py,7386,2026-08-19,menu_refresh,,,,skip,,code or documentation
+menu_refresh/validate_july_update.py,7383,2026-08-24,menu_refresh,,,,skip,,code or documentation
+address_audit/apply_contact_fix.py,7380,2026-09-16,address_audit,,,,skip,,code or documentation
+August_menu/final_cleanup.py.pre_sept.bak,7370,2026-08-12,August_menu,,,,skip,,rule \.py\.[^/]*bak$
+september/build_chain_ids.py,7349,2026-09-10,september,,,,skip,,code or documentation
+s3_archive/verify_console.py,7299,2026-09-23,s3_archive,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/fill_city.py,7273,2026-08-03,export,,,,skip,,code or documentation
+August_menu/apply_final_review.py,7261,2026-08-17,August_menu,,,,skip,,code or documentation
+Google_Place/tav/test/test_validation.py,7202,2026-07-05,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/scripts/2_build_validation_batch.py,7194,2026-07-02,Google_Place,,,,skip,,code or documentation
+address_audit/validate_areas_unique.py,7151,2026-09-16,address_audit,,,,skip,,code or documentation
+menu_refresh/empty_menu_report.py,7143,2026-08-19,menu_refresh,,,,skip,,code or documentation
+supabase/seed_data.py,7132,2026-06-18,supabase,,,,skip,,code or documentation
+export/IT_Team_Location/logs/run_clean.log,7120,2026-07-29,export,,,,skip,,not a data file (.log)
+menu_refresh/fix_nonfood_ingredients.py,7100,2026-08-24,menu_refresh,,,,skip,,code or documentation
+sanitization/apply_to_supabase.py,7092,2026-06-18,sanitization,,,,skip,,code or documentation
+s3_archive/prune_local.py,6972,2026-09-23,s3_archive,,,,skip,,code or documentation
+unified/fill_july_cities.py,6968,2026-08-26,unified,,,,skip,,code or documentation
+map_version2/New_Restro/match_new_listings.py,6967,2026-07-14,map_version2,,,,skip,,code or documentation
+August_menu/export_review_csv.py,6955,2026-08-13,August_menu,,,,skip,,code or documentation
+map_version2/New_Restro/llm_review_ambiguous.py,6787,2026-07-14,map_version2,,,,skip,,code or documentation
+menu_refresh/verify_july_mapping.py,6695,2026-08-20,menu_refresh,,,,skip,,code or documentation
+menu_refresh/explore_export_schema.py,6654,2026-08-19,menu_refresh,,,,skip,,code or documentation
+Google_Place/apify/scripts/5_build_fast_distributed_batch.py,6648,2026-07-02,Google_Place,,,,skip,,code or documentation
+area_classification/apply_null_verdicts.py,6607,2026-09-02,area_classification,,,,skip,,code or documentation
+listing_comparison/detect_relistings.py,6584,2026-08-11,listing_comparison,,,,skip,,code or documentation
+map_version2/costa_coffee/output/logs/brand_run_20260706_200510.log,6579,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/costa_coffee/output/logs/brand_run_20260706_200510.log,6579,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/generate_mnc_brand_inputs.py,6533,2026-07-06,Google_Place,,,,skip,,code or documentation
+tavily/tests/test_key_rotator.py,6487,2026-06-22,tavily,,,,skip,,code or documentation
+map_version2/arabica/output/logs/brand_run_20260706_142438.log,6472,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/arabica/output/logs/brand_run_20260706_142438.log,6472,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+talabat_2_0/talabat_2_0/test_enhanced_headers.py,6465,2025-10-09,talabat_2_0,,,,skip,,code or documentation
+August_classification/rules.py,6453,2026-09-10,August_classification,,,,skip,,code or documentation
+address_audit/reconstruct_pristine.py,6450,2026-09-16,address_audit,,,,skip,,code or documentation
+september/review_brand_collisions.py,6449,2026-09-08,september,,,,skip,,code or documentation
+tavily/run_type_classification.py,6409,2026-06-03,tavily,,,,skip,,code or documentation
+Google_Place/apify/apify_helper.py,6406,2026-07-02,Google_Place,,,,skip,,code or documentation
+menu/apply_manual_corrections.py,6391,2026-06-24,menu,,,,skip,,code or documentation
+map_version2/filli_cafe/output/logs/brand_run_20260706_142441.log,6358,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/filli_cafe/output/logs/brand_run_20260706_142441.log,6358,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/load_mnc_chain_locations_batch3.py,6349,2026-07-15,map_version2,,,,skip,,code or documentation
+menu_refresh/build_baseline.py,6326,2026-08-19,menu_refresh,,,,skip,,code or documentation
+Google_Place/apify/scripts/6_merge_all_fast_batches.py,6262,2026-07-02,Google_Place,,,,skip,,code or documentation
+map_version2/mcdonalds/output/logs/brand_run_20260706_164336.log,6242,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/mcdonalds/output/logs/brand_run_20260706_164336.log,6242,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+menu_refresh/resolve_collapsed_names.py,6233,2026-08-24,menu_refresh,,,,skip,,code or documentation
+address_audit/schema_check.py,6208,2026-09-16,address_audit,,,,skip,,code or documentation
+map_version2/zaatar_w_zeit/output/logs/brand_run_20260706_142501.log,6202,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+map_version2/caribou_coffee/output/logs/brand_run_20260706_142433.log,6202,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/zaatar_w_zeit/output/logs/brand_run_20260706_142501.log,6202,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/caribou_coffee/output/logs/brand_run_20260706_142433.log,6202,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+tavily/run_classification.py,6179,2026-06-03,tavily,,,,skip,,code or documentation
+menu_refresh/patch_final_38.py,6165,2026-08-19,menu_refresh,,,,skip,,code or documentation
+map_version2/dunkin_donuts/output/logs/brand_run_20260706_142436.log,6117,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/dunkin_donuts/output/logs/brand_run_20260706_142436.log,6117,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+sanitization/text_cleaner.py,6111,2026-06-18,sanitization,,,,skip,,code or documentation
+TAB_MENU_VALIDATION/scrape_mcdonalds_no_proxy.py,6088,2026-02-03,TAB_MENU_VALIDATION,,,,skip,,code or documentation
+export/IT_Team_Location/logs/tavily_keys.log,6079,2026-07-29,export,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/1_prepare_search_terms.py,6071,2026-07-02,Google_Place,,,,skip,,code or documentation
+map_version2/burger_king/output/logs/brand_run_20260706_164339.log,6058,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/burger_king/output/logs/brand_run_20260706_164339.log,6058,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/subway/output/logs/brand_run_20260706_171934.log,6045,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/subway/output/logs/brand_run_20260706_171934.log,6045,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/tim_hortons/output/logs/brand_run_20260706_171938.log,6043,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/tim_hortons/output/logs/brand_run_20260706_171938.log,6043,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/scripts/talabat_sitemap_crawler.py,6032,2026-05-21,Google_Place,,,,skip,,code or documentation
+september/join_google_details.py,6024,2026-09-10,september,,,,skip,,code or documentation
+Google_Place/test/test_api_connection.py,5988,2026-05-21,Google_Place,,,,skip,,code or documentation
+s3_archive/inventory.py,5983,2026-09-22,s3_archive,,,,skip,,code or documentation
+menu_refresh/conform_ingredients.py,5968,2026-08-20,menu_refresh,,,,skip,,code or documentation
+map_version2/new_york_fries/output/logs/brand_run_20260706_142505.log,5963,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/new_york_fries/output/logs/brand_run_20260706_142505.log,5963,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+s3_archive/verify_s3.py,5955,2026-09-23,s3_archive,,,,skip,,code or documentation
+map_version2/shake_shack/output/logs/brand_run_20260706_142503.log,5953,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/shake_shack/output/logs/brand_run_20260706_142503.log,5953,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+export/IT_Team_Location/scripts/audit_quality.py,5948,2026-07-31,export,,,,skip,,code or documentation
+menu_refresh/build_added_items_input.py,5942,2026-09-16,menu_refresh,,,,skip,,code or documentation
+map_version2/caffe_nero/output/logs/brand_run_20260706_142435.log,5935,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/caffe_nero/output/logs/brand_run_20260706_142435.log,5935,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/jollibee/output/logs/brand_run_20260706_142454.log,5926,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/jollibee/output/logs/brand_run_20260706_142454.log,5926,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+export/IT_Team_Location/scripts/merge_final.py,5915,2026-07-29,export,,,,skip,,code or documentation
+address_audit/build_branch_own_address.py,5906,2026-09-17,address_audit,,,,skip,,code or documentation
+map_version2/pizza_hut/output/logs/brand_run_20260706_171936.log,5896,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/pizza_hut/output/logs/brand_run_20260706_171936.log,5896,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+menu/seed_from_excel.py,5893,2026-06-18,menu,,,,skip,,code or documentation
+Google_Place/apify/brands/local/generate_input.py,5885,2026-06-04,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/brands/local/generate_input.py,5885,2026-06-04,apify,,,,skip,,code or documentation
+Google_Place/apify/test/test_generate_input.py,5875,2026-05-26,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/test/test_generate_input.py,5875,2026-05-26,apify,,,,skip,,code or documentation
+map_version2/pret_a_manger/output/logs/brand_run_20260706_142438.log,5863,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/pret_a_manger/output/logs/brand_run_20260706_142438.log,5863,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/five_guys/output/logs/brand_run_20260706_142502.log,5862,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/five_guys/output/logs/brand_run_20260706_142502.log,5862,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/vapiano/output/logs/brand_run_20260708_201317.log,5842,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+listing_scraper/status.py,5819,2026-08-11,listing_scraper,,,,skip,,code or documentation
+map_version2/german_doner_kebab/output/logs/brand_run_20260706_142458.log,5817,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/german_doner_kebab/output/logs/brand_run_20260706_142458.log,5817,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+tavily/key_rotator.py,5795,2026-06-22,tavily,,,,skip,,code or documentation
+supabase/backfill_existing.py,5794,2026-06-18,supabase,,,,skip,,code or documentation
+Google_Place/apify/brands/hardees/output/logs/brand_run_20260907_114140.log,5785,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/baskin_robbins/output/logs/brand_run_20260716_171544.log,5749,2026-07-16,Google_Place,,,,skip,,not a data file (.log)
+August_menu/verify_locations.py,5735,2026-08-20,August_menu,,,,skip,,code or documentation
+Google_Place/tav_keys/key_rotator.py,5729,2026-07-04,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/brands/dominos/output/logs/brand_run_20260604_170252.log,5714,2026-06-04,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/brands/dominos/output/logs/brand_run_20260604_170252.log,5714,2026-06-04,apify,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/nash_hot_chicken/output/logs/brand_run_20260907_115714.log,5710,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+menu/test_proxy.py,5704,2026-06-18,menu,,,,skip,,code or documentation
+Google_Place/apify/brands/texas_chicken/output/logs/brand_run_20260907_115714.log,5702,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+map_version2/burger_fuel/output/logs/brand_run_20260706_142506.log,5697,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/burger_fuel/output/logs/brand_run_20260706_142506.log,5697,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+sanitization/async_sanitize.py,5680,2026-06-18,sanitization,,,,skip,,code or documentation
+Google_Place/apify/brands/wingstop/output/logs/brand_run_20260907_115714.log,5674,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+map_version2/popeyes/output/logs/brand_run_20260706_142442.log,5673,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/popeyes/output/logs/brand_run_20260706_142442.log,5673,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/wendys/output/logs/brand_run_20260706_142443.log,5663,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/wendys/output/logs/brand_run_20260706_142443.log,5663,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+listing_scraper/bench_and_retry.py,5628,2026-08-10,listing_scraper,,,,skip,,code or documentation
+Google_Place/apify/brands/yellow_cab_pizza/output/logs/brand_run_20260708_201317.log,5593,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+map_version2/albaik/output/logs/brand_run_20260706_171938.log,5589,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/albaik/output/logs/brand_run_20260706_171938.log,5589,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/all_local_brands/output/logs/brand_run_20260708_203443.log,5584,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+september/verify_names_full.py,5576,2026-09-08,september,,,,skip,,code or documentation
+Google_Place/tav/scrape_platform_urls.py,5566,2026-07-04,Google_Place,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/apply_last_29.py,5562,2026-07-30,export,,,,skip,,code or documentation
+map_version2/pickl/output/logs/brand_run_20260706_142455.log,5537,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/pickl/output/logs/brand_run_20260706_142455.log,5537,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/tav/build_final_results.py,5521,2026-07-05,Google_Place,,,,skip,,code or documentation
+listing_scraper/map_areas.py,5515,2026-08-10,listing_scraper,,,,skip,,code or documentation
+Google_Place/apify/brands/dominos/output/logs/brand_run_20260604_164527.log,5509,2026-06-04,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/brands/dominos/output/logs/brand_run_20260604_164527.log,5509,2026-06-04,apify,,,,skip,,not a data file (.log)
+menu/talabat_queries.sql,5470,2026-06-25,menu,,,,skip,,code or documentation
+september/split_new_listings.py,5468,2026-09-01,september,,,,skip,,code or documentation
+Google_Place/apify/brands/daves_hot_chicken/output/logs/brand_run_20260907_115714.log,5467,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/malak_al_tawouk/output/logs/brand_run_20260907_115714.log,5457,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/raising_canes/output/logs/brand_run_20260907_115714.log,5428,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+map_version2/caribou_coffee/output/logs/brand_run_20260706_140701.log,5382,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/caribou_coffee/output/logs/brand_run_20260706_140701.log,5382,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+september/spot_check.py,5347,2026-09-08,september,,,,skip,,code or documentation
+Google_Place/apify/brands/nandos/output/logs/brand_run_20260907_115714.log,5338,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/test/test_parser.py,5325,2026-05-21,Google_Place,,,,skip,,code or documentation
+map_version2/arabica/output/logs/brand_run_20260706_140718.log,5303,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/arabica/output/logs/brand_run_20260706_140718.log,5303,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+export/IT_Team_Location/scripts/cardinality_report.py,5293,2026-08-03,export,,,,skip,,code or documentation
+menu_refresh/build_new_items_input.py,5262,2026-09-17,menu_refresh,,,,skip,,code or documentation
+Google_Place/talabat_menu/implementation_plan.md,5260,2026-06-23,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/talabat_menu/implementation_plan.md,5260,2026-06-23,apify,,,,skip,,code or documentation
+August_menu/final_cleanup_pass.py,5254,2026-08-20,August_menu,,,,skip,,code or documentation
+september/add_city.py,5235,2026-09-08,september,,,,skip,,code or documentation
+map_version2/shake_shack/output/logs/brand_run_20260706_140735.log,5229,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/shake_shack/output/logs/brand_run_20260706_140735.log,5229,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+menu_refresh/status.py,5223,2026-09-10,menu_refresh,,,,skip,,code or documentation
+tests/test_listing_fetch.py,5221,2026-06-12,tests,,,,skip,,code or documentation
+menu_refresh/add_delisted_branches.py,5185,2026-08-20,menu_refresh,,,,skip,,code or documentation
+september/rank_zones.py,5180,2026-09-08,september,,,,skip,,code or documentation
+Google_Place/apify/brands/all_local_brands/output/logs/brand_run_20260708_203449.log,5161,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+map_version2/zaatar_w_zeit/output/logs/brand_run_20260706_140846.log,5140,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/zaatar_w_zeit/output/logs/brand_run_20260706_140846.log,5140,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+menu_refresh/fix_delisted_labels.py,5093,2026-08-24,menu_refresh,,,,skip,,code or documentation
+map_version2/pickl/output/logs/brand_run_20260706_140729.log,5055,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/pickl/output/logs/brand_run_20260706_140729.log,5055,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/jollibee/output/logs/brand_run_20260706_140728.log,5053,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+map_version2/five_guys/output/logs/brand_run_20260706_140733.log,5053,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+map_version2/filli_cafe/output/logs/brand_run_20260706_140724.log,5053,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/jollibee/output/logs/brand_run_20260706_140728.log,5053,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/five_guys/output/logs/brand_run_20260706_140733.log,5053,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/filli_cafe/output/logs/brand_run_20260706_140724.log,5053,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+menu/std_term_mapper.log,5040,2026-06-24,menu,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/11_recheck_not_found.py,4994,2026-07-02,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/brands/all_local_brands/output/logs/brand_run_20260708_203445.log,4985,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+map_version2/dunkin_donuts/output/logs/brand_run_20260706_140715.log,4975,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/dunkin_donuts/output/logs/brand_run_20260706_140715.log,4975,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/15_check_known_chains_coverage.py,4970,2026-07-03,Google_Place,,,,skip,,code or documentation
+map_version2/caffe_nero/output/logs/brand_run_20260706_140707.log,4966,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/caffe_nero/output/logs/brand_run_20260706_140707.log,4966,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+tavily/restaurant_format_classification_prompt (1).md,4950,2026-06-22,tavily,,,,skip,,code or documentation
+Google_Place/Google_map/1_select_next_100.py,4946,2026-07-02,Google_Place,,,,skip,,code or documentation
+area_classification/config.py,4932,2026-09-02,area_classification,,,,skip,,code or documentation
+Google_Place/tav/test/test_platform_scrape.py,4914,2026-07-04,Google_Place,,,,skip,,code or documentation
+map_version2/german_doner_kebab/output/logs/brand_run_20260706_140838.log,4912,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/german_doner_kebab/output/logs/brand_run_20260706_140838.log,4912,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/new_york_fries/output/logs/brand_run_20260706_140737.log,4901,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/new_york_fries/output/logs/brand_run_20260706_140737.log,4901,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/all_local_brands/output/logs/brand_run_20260708_203446.log,4899,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/7_build_500_retest.py,4888,2026-07-02,Google_Place,,,,skip,,code or documentation
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_173832.log,4876,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_173832.log,4876,2026-06-23,apify,,,,skip,,not a data file (.log)
+listing_comparison/common.py,4858,2026-09-08,listing_comparison,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/emit_mongo_json.py,4826,2026-07-29,export,,,,skip,,code or documentation
+Google_Place/tav/revalidate_phase1.py,4818,2026-07-05,Google_Place,,,,skip,,code or documentation
+map_version2/pret_a_manger/output/logs/brand_run_20260706_140723.log,4809,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/pret_a_manger/output/logs/brand_run_20260706_140723.log,4809,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/popeyes/output/logs/brand_run_20260706_140726.log,4804,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/popeyes/output/logs/brand_run_20260706_140726.log,4804,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+August_menu/fill_cities.py,4800,2026-08-20,August_menu,,,,skip,,code or documentation
+s3_archive/stage_for_console_upload.py,4794,2026-09-23,s3_archive,,,,skip,,code or documentation
+url_collector/fetcher.py,4792,2026-09-01,url_collector,,,,skip,,code or documentation
+map_version2/burger_fuel/output/logs/brand_run_20260706_140738.log,4732,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/burger_fuel/output/logs/brand_run_20260706_140738.log,4732,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/wendys/output/logs/brand_run_20260706_140727.log,4729,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/wendys/output/logs/brand_run_20260706_140727.log,4729,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+images/package_cohort_logos.py,4724,2026-09-18,images,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/clean_rules.py,4665,2026-07-29,export,,,,skip,,code or documentation
+August_menu/dedupe_by_location.py,4660,2026-08-21,August_menu,,,,skip,,code or documentation
+export/preview_mnc_brands.py,4650,2026-07-16,export,,,,skip,,code or documentation
+Google_Place/talabat_menu/test/test_slug_extraction.py,4581,2026-06-23,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/talabat_menu/test/test_slug_extraction.py,4581,2026-06-23,apify,,,,skip,,code or documentation
+menu_refresh/patch_taxonomy_gaps.py,4573,2026-08-19,menu_refresh,,,,skip,,code or documentation
+area_classification/clean_rules.py,4569,2026-09-02,area_classification,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/normalize_spellings.py,4561,2026-07-30,export,,,,skip,,code or documentation
+listing_scraper/listing_scraper/settings.py,4559,2026-06-12,listing_scraper,,,,skip,,code or documentation
+september/README.md,4552,2026-09-01,september,,,,skip,,code or documentation
+area_classification/tax_map.py,4536,2026-09-02,area_classification,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_confirm_chains/output/logs/brand_run_20260702_133334.log,4531,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+september/drop_empty_menus.py,4519,2026-09-08,september,,,,skip,,code or documentation
+area_classification/taxonomy.py,4517,2026-09-02,area_classification,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/test_batching.py,4510,2026-07-29,export,,,,skip,,code or documentation
+area_classification/report_nulls.py,4504,2026-09-02,area_classification,,,,skip,,code or documentation
+images/separate_cohort_logos.py,4485,2026-08-24,images,,,,skip,,code or documentation
+Google_Place/apify/brands/chicking/output/logs/brand_run_20260907_115714.log,4461,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+listing_scraper/listing_scraper/middlewares.py,4452,2026-06-12,listing_scraper,,,,skip,,code or documentation
+Google_Place/Google_map/prototype_scraper.py,4425,2026-07-02,Google_Place,,,,skip,,code or documentation
+August_menu/remove_test_records.py,4404,2026-08-24,August_menu,,,,skip,,code or documentation
+september/build_universe.py,4396,2026-09-01,september,,,,skip,,code or documentation
+Google_Place/apify/brands/all_local_brands/output/logs/brand_run_20260708_203453.log,4391,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_04/output/logs/brand_run_20260703_130439.log,4348,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/all_local_brands/output/logs/brand_run_20260708_203455.log,4307,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/all_local_brands/output/logs/brand_run_20260708_203452.log,4305,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/bonus_directory/build_bonus_directory.py,4293,2026-07-03,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/scripts/4_build_confirmation_test.py,4286,2026-07-02,Google_Place,,,,skip,,code or documentation
+menu_refresh/enforce_name_consistency.py,4278,2026-08-24,menu_refresh,,,,skip,,code or documentation
+listing_comparison/logs/fix_area.log,4219,2026-08-11,listing_comparison,,,,skip,,not a data file (.log)
+s3_archive/check_access.py,4202,2026-09-23,s3_archive,,,,skip,,code or documentation
+listing_scraper/listing_scraper/pipelines.py,4175,2026-06-12,listing_scraper,,,,skip,,code or documentation
+Google_Place/talabat_menu/test_actor_format.py,4167,2026-06-23,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/talabat_menu/test_actor_format.py,4167,2026-06-23,apify,,,,skip,,code or documentation
+images/logo_status.py,4164,2026-08-24,images,,,,skip,,code or documentation
+Google_Place/map/split_final_deliverables.py,4161,2026-07-04,Google_Place,,,,skip,,code or documentation
+Google_Place/bonus_directory/filter_categories.py,4120,2026-07-03,Google_Place,,,,skip,,code or documentation
+tavily/tests/test_config.py,4105,2026-06-03,tavily,,,,skip,,code or documentation
+listing_comparison/emit_final.py,4078,2026-08-11,listing_comparison,,,,skip,,code or documentation
+september/build_prior_labels.py,4069,2026-09-09,september,,,,skip,,code or documentation
+Google_Place/apify/brands/all_local_brands/output/logs/brand_run_20260708_203450.log,4062,2026-07-08,Google_Place,,,,skip,,not a data file (.log)
+export/IT_Team_Location/logs/merge_final.log,4049,2026-07-29,export,,,,skip,,not a data file (.log)
+export/IT_Team_Location/scripts/merge_khalidiyah.py,4028,2026-07-30,export,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_chain_03/output/logs/brand_run_20260702_141353.log,4008,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+export/IT_Team_Location/scripts/normalize_al_prefix.py,3980,2026-07-30,export,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_chain_02/output/logs/brand_run_20260702_141345.log,3925,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_fast_chain_01/output/logs/brand_run_20260702_141335.log,3922,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_fast_chain_06/output/logs/brand_run_20260702_141402.log,3907,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/cohort_summary.py,3881,2026-09-07,Google_Place,,,,skip,,code or documentation
+Google_Place/Google_map/diag_bandwidth2.py,3849,2026-07-03,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_chain_04/output/logs/brand_run_20260702_141359.log,3841,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+images/build_september_logo_input.py,3801,2026-09-18,images,,,,skip,,code or documentation
+menu_refresh/verify_consistency.py,3795,2026-08-24,menu_refresh,,,,skip,,code or documentation
+tavily/utils/autosave.py,3785,2026-06-03,tavily,,,,skip,,code or documentation
+Google_Place/apify/run_cohort.py,3777,2026-09-07,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_chain_05/output/logs/brand_run_20260702_141401.log,3752,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+tavily/cuisine_config.py,3670,2026-06-03,tavily,,,,skip,,code or documentation
+Google_Place/tav/tavily_search.py,3660,2026-07-04,Google_Place,,,,skip,,code or documentation
+talabat_2_0/talabat_2_0/middlewares.py,3648,2025-10-09,talabat_2_0,,,,skip,,code or documentation
+Google_Place/apify/output/logs/apify_run_20260604_141747.log,3645,2026-06-04,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/output/logs/apify_run_20260604_141747.log,3645,2026-06-04,apify,,,,skip,,not a data file (.log)
+menu/check_progress.py,3643,2026-06-18,menu,,,,skip,,code or documentation
+sanitization/sanitize_live.log,3634,2026-06-18,sanitization,,,,skip,,not a data file (.log)
+export/IT_Team_Location/scripts/test_api.py,3632,2026-07-29,export,,,,skip,,code or documentation
+menu/test_clean.py,3626,2026-06-24,menu,,,,skip,,code or documentation
+Google_Place/tav/run_production.py,3624,2026-07-05,Google_Place,,,,skip,,code or documentation
+Restaurant Identifier/fetch_restaurant_urls.py,3621,2026-07-22,Restaurant Identifier,,,,skip,,code or documentation
+Google_Place/test/README.md,3606,2026-05-20,Google_Place,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/canonicalize.py,3466,2026-07-29,export,,,,skip,,code or documentation
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_175007.log,3413,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_175007.log,3413,2026-06-23,apify,,,,skip,,not a data file (.log)
+s3_archive/restore_from_s3.py,3407,2026-09-22,s3_archive,,,,skip,,code or documentation
+Google_Place/apify/brands/crispy_chicken/output/logs/brand_run_20260907_115714.log,3405,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/Google_map/diag_bandwidth.py,3394,2026-07-03,Google_Place,,,,skip,,code or documentation
+s3_archive/setup_bucket.py,3390,2026-09-23,s3_archive,,,,skip,,code or documentation
+menu/clean_menu_step2.log,3340,2026-06-24,menu,,,,skip,,not a data file (.log)
+url_collector/run.py,3326,2026-06-12,url_collector,,,,skip,,code or documentation
+talabat_2_0/talabat_2_0/talabat_downtown_burj_khalifa.py,3326,2025-10-09,talabat_2_0,,,,skip,,code or documentation
+export/IT_Team_Location/scripts/check_tavily_keys.py,3311,2026-07-29,export,,,,skip,,code or documentation
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_161750.log,3300,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_161750.log,3300,2026-06-23,apify,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/14_export_remaining_list.py,3280,2026-07-03,Google_Place,,,,skip,,code or documentation
+s3_archive/data/inventory_summary.json,3263,2026-09-22,s3_archive,,,,skip,,rule ^s3_archive/
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_161331.log,3261,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_161331.log,3261,2026-06-23,apify,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_validation_chains/output/logs/brand_run_20260702_130347.log,3239,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/check_team_keys.py,3174,2026-07-02,Google_Place,,,,skip,,code or documentation
+export/IT_Team_Location/logs/fill_city.log,3163,2026-08-03,export,,,,skip,,not a data file (.log)
+tests/test_proxy.py,3157,2026-06-12,tests,,,,skip,,code or documentation
+images/build_august_logo_input.py,3147,2026-08-24,images,,,,skip,,code or documentation
+september/config.py,3139,2026-09-01,september,,,,skip,,code or documentation
+export/IT_Team_Location/logs/geo_resolve.log,3133,2026-07-31,export,,,,skip,,not a data file (.log)
+september/data/menus/logs/scrape.log,3129,2026-09-08,september,,,,skip,,not a data file (.log)
+Google_Place/tav/run_sample.py,3101,2026-07-04,Google_Place,,,,skip,,code or documentation
+Google_Place/test/conftest.py,3041,2026-05-20,Google_Place,,,,skip,,code or documentation
+export/IT_Team_Location/logs/fix_non_areas.log,3038,2026-07-31,export,,,,skip,,not a data file (.log)
+listing_comparison/logs/fix_area.out,3025,2026-08-11,listing_comparison,,,,skip,,not a data file (.out)
+talabat_2_0/talabat_2_0/settings.py,3002,2025-10-09,talabat_2_0,,,,skip,,code or documentation
+export/IT_Team_Location/logs/al_prefix.log,2950,2026-07-30,export,,,,skip,,not a data file (.log)
+TAB_MENU_VALIDATION/debug_mcdonalds.py,2905,2026-02-03,TAB_MENU_VALIDATION,,,,skip,,code or documentation
+TAB_MENU_VALIDATION/scrape_single_url.py,2892,2026-02-03,TAB_MENU_VALIDATION,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_validation_default/output/logs/brand_run_20260702_113004.log,2802,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+talabat_2_0/talabat_2_0/test_next_data.py,2728,2025-10-09,talabat_2_0,,,,skip,,code or documentation
+s3_archive/remap_keys.py,2716,2026-09-23,s3_archive,,,,skip,,code or documentation
+Google_Place/apify/scripts/10_scan_fused_names.py,2697,2026-07-02,Google_Place,,,,skip,,code or documentation
+test_url_extraction.py,2674,2025-10-09,(root files),,,,skip,,code or documentation
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_174012.log,2667,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_174012.log,2667,2026-06-23,apify,,,,skip,,not a data file (.log)
+tavily/utils/retry.py,2589,2026-06-03,tavily,,,,skip,,code or documentation
+tavily/supabase_loader.py,2587,2026-06-22,tavily,,,,skip,,code or documentation
+september/build_classification_input.py,2580,2026-09-10,september,,,,skip,,code or documentation
+Google_Place/apify/brands/local/output/logs/brand_run_20260604_180953.log,2555,2026-06-04,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/brands/local/output/logs/brand_run_20260604_180953.log,2555,2026-06-04,apify,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_02/output/logs/brand_run_20260703_104008.log,2542,2026-07-03,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_main_batch_01/output/logs/brand_run_20260702_205459.log,2540,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+listing_comparison/status.py,2496,2026-08-11,listing_comparison,,,,skip,,code or documentation
+export/IT_Team_Location/logs/normalize_spellings.log,2427,2026-07-30,export,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/check_all_fast_batches.py,2382,2026-07-02,Google_Place,,,,skip,,code or documentation
+listing_scraper/run.py,2358,2026-06-12,listing_scraper,,,,skip,,code or documentation
+export/export_locations.py,2344,2026-07-13,export,,,,skip,,code or documentation
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_161734.log,2332,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_161734.log,2332,2026-06-23,apify,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/salvage_aborted_runs.py,2323,2026-07-02,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/scripts/final_counts.py,2312,2026-07-02,Google_Place,,,,skip,,code or documentation
+url_collector/config.py,2262,2026-06-12,url_collector,,,,skip,,code or documentation
+export/IT_Team_Location/logs/merge_khalidiyah.log,2232,2026-07-30,export,,,,skip,,not a data file (.log)
+Google_Place/apify/output/logs/apify_run_20260526_152908.log,2223,2026-05-26,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/output/logs/apify_run_20260526_152908.log,2223,2026-05-26,apify,,,,skip,,not a data file (.log)
+menu/data/logs/stderr_full_run.log,2181,2026-06-18,menu,,,,skip,,not a data file (.log)
+Google_Place/tav/test/test_key_rotator.py,2180,2026-07-04,Google_Place,,,,skip,,code or documentation
+area_classification/report_offtaxonomy.py,2167,2026-09-02,area_classification,,,,skip,,code or documentation
+Google_Place/apify/brands/dominos/output/logs/brand_run_20260604_164519.log,2137,2026-06-04,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/brands/dominos/output/logs/brand_run_20260604_164519.log,2137,2026-06-04,apify,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/check_all_fast_batches2.py,2098,2026-07-02,Google_Place,,,,skip,,code or documentation
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_161245.log,2096,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_161245.log,2096,2026-06-23,apify,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/find_known_brands.py,2071,2026-07-02,Google_Place,,,,skip,,code or documentation
+Google_Place/tav/config.py,2007,2026-07-05,Google_Place,,,,skip,,code or documentation
+Google_Place/scripts/retry_failed.py,1946,2026-05-21,Google_Place,,,,skip,,code or documentation
+tavily/utils/logger.py,1930,2026-06-03,tavily,,,,skip,,code or documentation
+export/IT_Team_Location/logs/websearch_resolve.log,1899,2026-07-31,export,,,,skip,,not a data file (.log)
+Google_Place/scripts/_preview_output.py,1808,2026-05-20,Google_Place,,,,skip,,code or documentation
+export/export_ingredients.py,1808,2026-07-07,export,,,,skip,,code or documentation
+Google_Place/apify/scripts/check_retest_progress.py,1756,2026-07-02,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_fast_default_07/output/logs/brand_run_20260702_141328.log,1730,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/tav/test/test_openai_extract_smoke.py,1686,2026-07-04,Google_Place,,,,skip,,code or documentation
+menu/data/logs/run_20260618_142129.log,1675,2026-06-18,menu,,,,skip,,not a data file (.log)
+menu/data/logs/run_20260618_142237.log,1669,2026-06-18,menu,,,,skip,,not a data file (.log)
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_174721.log,1655,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_174721.log,1655,2026-06-23,apify,,,,skip,,not a data file (.log)
+menu/data/logs/run_20260618_142329.log,1653,2026-06-18,menu,,,,skip,,not a data file (.log)
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_174851.log,1637,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_174943.log,1637,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_174851.log,1637,2026-06-23,apify,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_174943.log,1637,2026-06-23,apify,,,,skip,,not a data file (.log)
+s3_archive/bucket_lifecycle.json,1636,2026-09-22,s3_archive,,,,skip,,rule ^s3_archive/
+.env.example,1634,2026-09-23,(root files),,,,skip,,code or documentation
+Google_Place/scripts/_verify_fixes.py,1615,2026-05-21,Google_Place,,,,skip,,code or documentation
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_175235.log,1584,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_175235.log,1584,2026-06-23,apify,,,,skip,,not a data file (.log)
+address_audit/data/wrong_emirate_ll_search.log,1551,2026-09-17,address_audit,,,,skip,,not a data file (.log)
+Google_Place/scripts/_quick_test.py,1537,2026-05-21,Google_Place,,,,skip,,code or documentation
+export/IT_Team_Location/logs/emit_mongo_json.log,1523,2026-07-29,export,,,,skip,,not a data file (.log)
+map_version2/german_doner_kebab/output/logs/brand_run_20260706_140731.log,1488,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/german_doner_kebab/output/logs/brand_run_20260706_140731.log,1488,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/zaatar_w_zeit/output/logs/brand_run_20260706_140732.log,1478,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/zaatar_w_zeit/output/logs/brand_run_20260706_140732.log,1478,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/shake_shack/output/logs/brand_run_20260706_140635.log,1464,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/shake_shack/output/logs/brand_run_20260706_140635.log,1464,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+map_version2/mcdonalds/output/logs/brand_run_20260706_164316.log,1455,2026-07-06,map_version2,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/mcdonalds/output/logs/brand_run_20260706_164316.log,1455,2026-07-06,Google_Place,,,,skip,,not a data file (.log)
+tests/conftest.py,1447,2026-06-12,tests,,,,skip,,code or documentation
+export/IT_Team_Location/logs/test_api.log,1443,2026-07-29,export,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/hardees/output/logs/brand_run_20260907_114059.log,1440,2026-09-07,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/check_area.py,1432,2026-07-02,Google_Place,,,,skip,,code or documentation
+menu/export_mapping_csv.py,1412,2026-06-24,menu,,,,skip,,code or documentation
+talabat_2_0/talabat_2_0/items.py,1380,2025-10-09,talabat_2_0,,,,skip,,code or documentation
+Google_Place/tav/test/test_pipeline_integration_smoke.py,1366,2026-07-04,Google_Place,,,,skip,,code or documentation
+TAB_MENU_VALIDATION/debug_mismatch.py,1305,2026-01-13,TAB_MENU_VALIDATION,,,,skip,,code or documentation
+Google_Place/apify/scripts/watch_run.py,1241,2026-07-02,Google_Place,,,,skip,,code or documentation
+listing_scraper/logs/run2_tier300.out,1234,2026-08-10,listing_scraper,,,,skip,,not a data file (.out)
+.env,1201,2026-09-23,(root files),,,,skip,,not a data file (no extension)
+export/IT_Team_Location/scripts/config.py,1193,2026-07-29,export,,,,skip,,code or documentation
+Google_Place/talabat_menu/output/logs/talabat_menu_20260623_174007.log,1140,2026-06-23,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/talabat_menu/output/logs/talabat_menu_20260623_174007.log,1140,2026-06-23,apify,,,,skip,,not a data file (.log)
+export/IT_Team_Location/logs/test_batching.log,1118,2026-07-29,export,,,,skip,,not a data file (.log)
+Google_Place/apify/brands/uae_confirm_default/output/logs/brand_run_20260702_133320.log,1106,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+listing_scraper/listing_scraper/items.py,1095,2026-06-12,listing_scraper,,,,skip,,code or documentation
+TAB_MENU_VALIDATION/test_proxy.py,1086,2026-01-13,TAB_MENU_VALIDATION,,,,skip,,code or documentation
+menu_refresh/data/refresh_202609/smoke/logs/scrape.log,1052,2026-09-10,menu_refresh,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/spot_check2.py,1048,2026-07-02,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/brands/uae_validation_chains/output/logs/brand_run_20260702_113014.log,1022,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/spot_check.py,1019,2026-07-02,Google_Place,,,,skip,,code or documentation
+Google_Place/tav/test/test_tavily_search_smoke.py,1001,2026-07-04,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/scripts/fetch_input_schema.py,897,2026-07-02,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/output/logs/apify_run_20260604_141710.log,796,2026-06-04,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/output/logs/apify_run_20260604_141710.log,796,2026-06-04,apify,,,,skip,,not a data file (.log)
+Google_Place/apify/output/logs/apify_run_20260526_144849.log,768,2026-05-26,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/output/logs/apify_run_20260526_144849.log,768,2026-05-26,apify,,,,skip,,not a data file (.log)
+export/IT_Team_Location/logs/final_pass.log,726,2026-07-30,export,,,,skip,,not a data file (.log)
+menu_refresh/data/smoke/logs/scrape.log,626,2026-08-19,menu_refresh,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/check_stall_log.py,623,2026-07-02,Google_Place,,,,skip,,code or documentation
+menu/_patch_null.py,588,2026-06-24,menu,,,,skip,,code or documentation
+Google_Place/bonus_directory/list_categories.py,570,2026-07-03,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/scripts/check_log.py,565,2026-07-02,Google_Place,,,,skip,,code or documentation
+Google_Place/apify/output/logs/apify_run_20260526_144857.log,563,2026-05-26,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/output/logs/apify_run_20260526_144857.log,563,2026-05-26,apify,,,,skip,,not a data file (.log)
+export/IT_Team_Location/logs/canonicalize.log,558,2026-07-29,export,,,,skip,,not a data file (.log)
+Google_Place/apify/scripts/check_search_matching.py,481,2026-07-02,Google_Place,,,,skip,,code or documentation
+s3_archive/data/console_check.csv,477,2026-09-23,s3_archive,,,,skip,,rule ^s3_archive/
+Google_Place/.env,425,2026-07-01,Google_Place,,,,skip,,not a data file (no extension)
+Google_Place/tav/test/conftest.py,423,2026-07-04,Google_Place,,,,skip,,code or documentation
+menu/requirements.txt,418,2026-06-26,menu,,,,skip,,code or documentation
+Google_Place/apify/brands/dominos/output/logs/brand_run_20260604_170235.log,404,2026-06-04,Google_Place,,,,skip,,not a data file (.log)
+apify/Apify_talabat/brands/dominos/output/logs/brand_run_20260604_170235.log,404,2026-06-04,apify,,,,skip,,not a data file (.log)
+export/IT_Team_Location/logs/apply_last_29.log,393,2026-07-30,export,,,,skip,,not a data file (.log)
+talabat_2_0/talabat_2_0/pipelines.py,376,2025-10-09,talabat_2_0,,,,skip,,code or documentation
+talabat_2_0/scrapy.cfg,276,2025-10-09,talabat_2_0,,,,skip,,code or documentation
+tavily/utils/__init__.py,268,2026-06-03,tavily,,,,skip,,code or documentation
+tavily/.env,241,2026-06-03,tavily,,,,skip,,not a data file (no extension)
+talabat_2_0/talabat_2_0/spiders/__init__.py,161,2025-10-09,talabat_2_0,,,,skip,,code or documentation
+url_collector/requirements.txt,158,2026-06-12,url_collector,,,,skip,,code or documentation
+Google_Place/apify/scripts/brands/uae_validation_default/output/logs/brand_run_20260702_112810.log,125,2026-07-02,Google_Place,,,,skip,,not a data file (.log)
+tavily/tests/conftest.py,120,2026-06-03,tavily,,,,skip,,code or documentation
+Google_Place/requirements.txt,113,2026-05-20,Google_Place,,,,skip,,code or documentation
+pytest.ini,100,2026-06-12,(root files),,,,skip,,code or documentation
+Google_Place/apify/requirements.txt,87,2026-05-26,Google_Place,,,,skip,,code or documentation
+apify/Apify_talabat/scripts/requirements.txt,87,2026-05-26,apify,,,,skip,,code or documentation
+images/requirements.txt,86,2026-07-23,images,,,,skip,,code or documentation
+listing_scraper/scrapy.cfg,82,2026-06-12,listing_scraper,,,,skip,,code or documentation
+.gitignore,53,2026-06-12,(root files),,,,skip,,not a data file (no extension)
+Google_Place/tav/pytest.ini,46,2026-07-04,Google_Place,,,,skip,,code or documentation
+TAB_MENU_VALIDATION/requirements.txt,45,2026-01-13,TAB_MENU_VALIDATION,,,,skip,,code or documentation
+tavily/cache/tavily_cache.json,40,2026-06-22,tavily,bronze,04_enrichment_raw,_cross_month,archive_keep,talabat/bronze/_cross_month/04_enrichment_raw/tavily/cache/tavily_cache.json,rule (llm|openai|gpt|tavily)[^/]*cache[^/]*\.json$
+Restaurant Identifier/requirements.txt,38,2026-06-13,Restaurant Identifier,,,,skip,,code or documentation
+address_audit/data/cache/august_export.stamp,20,2026-09-15,address_audit,,,,skip,,not a data file (.stamp)
+address_audit/data/cache/july_export.stamp,20,2026-09-15,address_audit,,,,skip,,not a data file (.stamp)
+address_audit/data/cache/unified_202608.stamp,20,2026-09-15,address_audit,,,,skip,,not a data file (.stamp)
+url_collector/__init__.py,0,2026-06-12,url_collector,,,,skip,,code or documentation
+tests/__init__.py,0,2026-06-12,tests,,,,skip,,code or documentation
+talabat_2_0/talabat_2_0/__init__.py,0,2025-10-09,talabat_2_0,,,,skip,,code or documentation
+sanitization/sanitize_err.log,0,2026-06-18,sanitization,,,,skip,,not a data file (.log)
+Postgre/migration_stderr.txt,0,2026-06-23,Postgre,,,,skip,,code or documentation
+menu/clean_menu_data.log,0,2026-09-18,menu,,,,skip,,not a data file (.log)
+menu/data/logs/pending_run_stderr.txt,0,2026-06-19,menu,,,,skip,,code or documentation
+listing_scraper/listing_scraper/__init__.py,0,2026-06-12,listing_scraper,,,,skip,,code or documentation
+listing_scraper/listing_scraper/spiders/__init__.py,0,2026-06-12,listing_scraper,,,,skip,,code or documentation
+Google_Place/logs/run_20260520_161455.log,0,2026-05-20,Google_Place,,,,skip,,not a data file (.log)
+Google_Place/Google_map/requirement.txt,0,2026-07-02,Google_Place,,,,skip,,code or documentation

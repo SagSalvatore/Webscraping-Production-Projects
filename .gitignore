@@ -111,6 +111,34 @@ storage_state*.json
 # .pytest_cache/.mypy_cache READMEs stay out on their own.
 !talabat/**/*.md
 
+# --- Exceptions to the "no data in git" rule -------------------------------
+# These are metadata and controlled vocabularies, not bulk data. Named one by
+# one rather than by wildcard so nothing else in these folders can drift in.
+
+# The S3 archive's own records. 15 GB of Talabat data lives in
+# s3://rii-data-dump and the local copies are deleted; these files are the only
+# description of what is up there. Without them s3_archive/*.py still runs but
+# has nothing to reconcile against: verify_s3.py cannot prove a byte,
+# restore_from_s3.py cannot find a key, and there is no map from a deleted local
+# path to its s3:// URI. 1.6 MB to keep the archive legible from any machine.
+!talabat/s3_archive/data/staged_manifest.jsonl
+!talabat/s3_archive/data/upload_manifest.jsonl
+!talabat/s3_archive/data/deleted_index.csv
+!talabat/s3_archive/data/inventory.csv
+!talabat/s3_archive/data/inventory_summary.json
+!talabat/s3_archive/data/verify_report.json
+!talabat/s3_archive/data/console_check.csv
+!talabat/s3_archive/bucket_lifecycle.json
+
+# Controlled vocabularies. The taxonomy is deliberately closed - a stage may map
+# onto an existing std_term but never invent one - so the vocabulary IS the
+# contract, and it belongs under version control where a change shows up as a
+# diff rather than as a silently wider taxonomy next month.
+!talabat/menu/final_std_terms_taxonomy.csv
+!talabat/area_classification/area_list.csv
+!talabat/menu_refresh/data/std_term_canonical_ingredients.json
+!talabat/unified/data/arabic_fixes.json
+
 # OS/editor noise
 .DS_Store
 Thumbs.db

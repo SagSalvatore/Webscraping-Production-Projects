@@ -1,0 +1,1064 @@
+{
+  "generated_for": "July_menu_update.json",
+  "reason": "scrub() emptied all-Arabic strings to None (build_july_update.py:107)",
+  "fixes": {
+    "767368:69": {
+      "name": "Pepsi"
+    },
+    "39269:93": {
+      "name": "Toshka"
+    },
+    "785985:67": {
+      "name": "Fresh Coconut Cake"
+    },
+    "761283:79": {
+      "section": "Eastern Tajines"
+    },
+    "761283:80": {
+      "section": "Eastern Tajines"
+    },
+    "761283:81": {
+      "section": "Eastern Tajines"
+    },
+    "703696:50": {
+      "section": "Manakish"
+    },
+    "703696:51": {
+      "section": "Manakish"
+    },
+    "703696:52": {
+      "section": "Manakish"
+    },
+    "703696:53": {
+      "section": "Manakish"
+    },
+    "703696:54": {
+      "section": "Manakish"
+    },
+    "660818:179": {
+      "section": "Moroccan Sweets"
+    },
+    "660818:180": {
+      "section": "Moroccan Sweets"
+    },
+    "660818:181": {
+      "section": "Moroccan Sweets"
+    },
+    "660818:182": {
+      "section": "Moroccan Sweets"
+    },
+    "660818:183": {
+      "section": "Moroccan Sweets"
+    },
+    "660818:184": {
+      "section": "Moroccan Sweets"
+    },
+    "28556:40": {
+      "name": "Skm D Power Lunch"
+    },
+    "748207:37": {
+      "section": "Beverages"
+    },
+    "748207:38": {
+      "section": "Beverages"
+    },
+    "672532:37": {
+      "name": "Foul Sandwich"
+    },
+    "749293:25": {
+      "name": "Tabaldi"
+    },
+    "724117:40": {
+      "name": "Hummus With Meat"
+    },
+    "724117:82": {
+      "name": "Nutella Dubai Al Omour Pie"
+    },
+    "724117:84": {
+      "name": "Large Kraft Honey Pie"
+    },
+    "724117:135": {
+      "name": "Hummus With Meat"
+    },
+    "724117:216": {
+      "name": "Nutella Dubai Al Omour Pie"
+    },
+    "724117:218": {
+      "name": "Large Kraft Honey Pie"
+    },
+    "724117:276": {
+      "name": "Kofta Sandwich"
+    },
+    "724117:279": {
+      "name": "Fried Eggplant Sandwich"
+    },
+    "724117:280": {
+      "name": "Grilled Local Sausage Sandwich"
+    },
+    "724117:294": {
+      "name": "Kunafa"
+    },
+    "724117:295": {
+      "name": "Basbousa"
+    },
+    "724117:296": {
+      "name": "Basbousa With Cream"
+    },
+    "724117:298": {
+      "name": "Add Kiri"
+    },
+    "724117:299": {
+      "name": "Add Nuts"
+    },
+    "752848:60": {
+      "name": "Spicy Garlic Sauce"
+    },
+    "683890:60": {
+      "name": "Spicy Garlic Sauce"
+    },
+    "770145:60": {
+      "name": "Hummus With Meat"
+    },
+    "770145:145": {
+      "name": "Nutella Dubai Al Omour Pie"
+    },
+    "770145:147": {
+      "name": "Large Kraft Honey Pie"
+    },
+    "770145:211": {
+      "name": "Kofta Sandwich"
+    },
+    "770145:214": {
+      "name": "Fried Eggplant Sandwich"
+    },
+    "770145:215": {
+      "name": "Grilled Local Sausage Sandwich"
+    },
+    "770145:232": {
+      "name": "Kunafa"
+    },
+    "770145:233": {
+      "name": "Basbousa"
+    },
+    "770145:234": {
+      "name": "Basbousa With Cream"
+    },
+    "770145:236": {
+      "name": "Add Kiri"
+    },
+    "770145:237": {
+      "name": "Add Nuts"
+    },
+    "782364:85": {
+      "name": "Fanta Orange"
+    },
+    "755507:42": {
+      "section": "Shanghai Noodles"
+    },
+    "755507:43": {
+      "section": "Shanghai Noodles"
+    },
+    "602695:34": {
+      "name": "Ice Box For Shots"
+    },
+    "689370:60": {
+      "name": "Spicy Garlic Sauce"
+    },
+    "730958:62": {
+      "name": "Fried Chicken With Bamboo Shoots"
+    },
+    "613416:18": {
+      "name": "Beef Biryani"
+    },
+    "696048:60": {
+      "name": "Spicy Garlic Sauce"
+    },
+    "684184:66": {
+      "section": "Breakfast Meals"
+    },
+    "684184:67": {
+      "section": "Breakfast Meals"
+    },
+    "684184:68": {
+      "section": "Breakfast Meals"
+    },
+    "684184:69": {
+      "section": "Breakfast Meals"
+    },
+    "684184:70": {
+      "section": "Breakfast Meals"
+    },
+    "684184:71": {
+      "section": "Breakfast Meals"
+    },
+    "684184:72": {
+      "section": "Breakfast Meals"
+    },
+    "684184:73": {
+      "section": "Breakfast Meals"
+    },
+    "684184:74": {
+      "section": "Breakfast Meals"
+    },
+    "684184:75": {
+      "section": "Breakfast Meals"
+    },
+    "684184:76": {
+      "section": "Breakfast Meals"
+    },
+    "684184:77": {
+      "section": "Breakfast Meals"
+    },
+    "684184:78": {
+      "section": "Breakfast Meals"
+    },
+    "684184:79": {
+      "section": "Breakfast Meals"
+    },
+    "684184:80": {
+      "section": "Breakfast Meals"
+    },
+    "684184:81": {
+      "section": "Breakfast Meals"
+    },
+    "685367:23": {
+      "name": "Coffee Husks 200 Grams"
+    },
+    "685367:101": {
+      "name": "Roasted Peas Dipped In White Layer Half Kilo"
+    },
+    "685367:120": {
+      "name": "Mashed Walnut Maamoul"
+    },
+    "685367:121": {
+      "name": "Mashed Date Maamoul"
+    },
+    "685367:154": {
+      "name": "Dark Chocolate Balls Sugar-Free 200 Grams"
+    },
+    "685367:155": {
+      "name": "Chocolate Balls With Cornflakes 200 Grams"
+    },
+    "685367:158": {
+      "name": "Pecan Dipped In Caramel Chocolate 250 Grams"
+    },
+    "685367:159": {
+      "name": "Pecan Covered With Caramel Chocolate 500 Grams"
+    },
+    "685367:187": {
+      "name": "Local Labneh With Olive Oil Half Kilo"
+    },
+    "685367:188": {
+      "name": "Hamouda Cream Qeimer"
+    },
+    "685367:211": {
+      "name": "Greek Stuffed Pepper With Labneh"
+    },
+    "685367:233": {
+      "name": "Frozen Stuffed Cabbage 1 Kg"
+    },
+    "685367:252": {
+      "name": "Saudi Henna 500 Grams"
+    },
+    "685367:401": {
+      "name": "Abu Jabal Al-Dhahabi Tea 300 Grams"
+    },
+    "685367:403": {
+      "name": "Tikrit Tea 290 Grams"
+    },
+    "685367:405": {
+      "name": "Al-Samman Tea Bag 400 Grams"
+    },
+    "685367:415": {
+      "name": "Basmat Tea"
+    },
+    "685367:486": {
+      "name": "Half Kg Local Cow Ghee"
+    },
+    "685367:492": {
+      "name": "Bludan Thyme Half Kilo"
+    },
+    "685367:493": {
+      "name": "Bludan Thyme 1 Kilo"
+    },
+    "685367:515": {
+      "name": "Mandarin Venito 1 Liter"
+    },
+    "685367:538": {
+      "name": "Date Maamoul Bar Without Sugar 400 G"
+    },
+    "685367:539": {
+      "name": "Mixed Molasses Without Sugar 350 G"
+    },
+    "685367:540": {
+      "name": "Mixed Baklava Zero Sugar"
+    },
+    "685367:547": {
+      "name": "Sudanese Wika Meal 200 G"
+    },
+    "685367:548": {
+      "name": "Sudanese Gum Powder"
+    },
+    "685367:551": {
+      "name": "Sudanese Halawa Al-Saeed 400 Grams"
+    },
+    "685367:552": {
+      "name": "Omani Frankincense 100 Grams"
+    },
+    "685367:555": {
+      "name": "Sudanese Beans Per Kilo"
+    },
+    "685367:556": {
+      "name": "Sudanese Tabladi 200 Grams"
+    },
+    "685367:557": {
+      "section": "Kaak"
+    },
+    "685367:558": {
+      "name": "Bludan Kaak With Sesame",
+      "section": "Kaak"
+    },
+    "685367:559": {
+      "section": "Kaak"
+    },
+    "685367:560": {
+      "section": "Toffee And Candies"
+    },
+    "685367:561": {
+      "name": "Candies With Different Flavors 250 Grams",
+      "section": "Toffee And Candies"
+    },
+    "685367:562": {
+      "section": "Toffee And Candies"
+    },
+    "685367:563": {
+      "section": "Toffee And Candies"
+    },
+    "685367:564": {
+      "section": "Toffee And Candies"
+    },
+    "685750:16": {
+      "name": "Grilled Kibbeh"
+    },
+    "651336:6": {
+      "section": "Acai"
+    },
+    "651336:7": {
+      "section": "Acai"
+    },
+    "651336:35": {
+      "name": "Grilled Halloumi With Healthy Sourdough Bread And French Lollo Rosso Lettuce"
+    },
+    "749213:168": {
+      "name": "Rice Pudding"
+    },
+    "749213:362": {
+      "name": "Rice Pudding"
+    },
+    "669671:40": {
+      "name": "Stuffed Lamb Rice Meal"
+    },
+    "798332:24": {
+      "section": "Tajines"
+    },
+    "768191:14": {
+      "section": "Beverages"
+    },
+    "768191:15": {
+      "section": "Beverages"
+    },
+    "768191:16": {
+      "section": "Beverages"
+    },
+    "768191:17": {
+      "section": "Beverages"
+    },
+    "738537:6": {
+      "section": "Eastern Sweets"
+    },
+    "702183:11": {
+      "section": "Fresh Saj Bread"
+    },
+    "702183:12": {
+      "section": "Fresh Saj Bread"
+    },
+    "702183:13": {
+      "section": "Fresh Saj Bread"
+    },
+    "1100479:47": {
+      "name": "Margherita"
+    },
+    "787699:54": {
+      "name": "Crispy Finger Pastry"
+    },
+    "707770:45": {
+      "name": "Skm D Power Lunch"
+    },
+    "712914:3": {
+      "section": "Chocola Dubai"
+    },
+    "712914:4": {
+      "section": "Chocola Dubai"
+    },
+    "712914:5": {
+      "section": "Chocola Dubai"
+    },
+    "712914:6": {
+      "section": "Chocola Dubai"
+    },
+    "712914:7": {
+      "section": "Chocola Dubai"
+    },
+    "712914:8": {
+      "section": "Chocola Dubai"
+    },
+    "712914:9": {
+      "section": "Chocola Dubai"
+    },
+    "712914:10": {
+      "section": "Chocola Dubai"
+    },
+    "712914:11": {
+      "section": "Chocola Dubai"
+    },
+    "712914:12": {
+      "section": "Chocola Dubai"
+    },
+    "712914:13": {
+      "section": "Chocola Dubai"
+    },
+    "671942:56": {
+      "name": "Sobya Juice"
+    },
+    "671942:57": {
+      "name": "Tamarind Juice"
+    },
+    "801839:51": {
+      "section": "Fried Brain - Special Dishes"
+    },
+    "768211:38": {
+      "name": "Iced Americano"
+    },
+    "712744:78": {
+      "name": "Dynamite Shrimp"
+    },
+    "686304:29": {
+      "name": "Ice Box For Shots"
+    },
+    "600524:6": {
+      "section": "Chocola Dubai"
+    },
+    "600524:7": {
+      "section": "Chocola Dubai"
+    },
+    "600524:8": {
+      "section": "Chocola Dubai"
+    },
+    "600524:9": {
+      "section": "Chocola Dubai"
+    },
+    "600524:10": {
+      "section": "Chocola Dubai"
+    },
+    "600524:11": {
+      "section": "Chocola Dubai"
+    },
+    "600524:12": {
+      "section": "Chocola Dubai"
+    },
+    "600524:13": {
+      "section": "Chocola Dubai"
+    },
+    "600524:14": {
+      "section": "Chocola Dubai"
+    },
+    "600524:15": {
+      "section": "Chocola Dubai"
+    },
+    "600524:16": {
+      "section": "Chocola Dubai"
+    },
+    "696797:30": {
+      "section": "Special Bab Al-Mandab"
+    },
+    "696797:31": {
+      "section": "Special Bab Al-Mandab"
+    },
+    "696797:32": {
+      "section": "Special Bab Al-Mandab"
+    },
+    "696797:33": {
+      "section": "Special Bab Al-Mandab"
+    },
+    "696797:34": {
+      "section": "Special Bab Al-Mandab"
+    },
+    "696797:35": {
+      "section": "Special Bab Al-Mandab"
+    },
+    "696797:36": {
+      "section": "Special Bab Al-Mandab"
+    },
+    "615973:16": {
+      "section": "Meat Kebab Special Offer"
+    },
+    "737961:0": {
+      "section": "Soup"
+    },
+    "737961:1": {
+      "section": "Soup"
+    },
+    "737961:2": {
+      "section": "Soup"
+    },
+    "737961:3": {
+      "section": "Soup"
+    },
+    "737961:4": {
+      "section": "Soup"
+    },
+    "737961:5": {
+      "section": "Salads"
+    },
+    "737961:6": {
+      "section": "Salads"
+    },
+    "737961:7": {
+      "section": "Salads"
+    },
+    "737961:8": {
+      "section": "Salads"
+    },
+    "737961:9": {
+      "section": "Salads"
+    },
+    "737961:10": {
+      "section": "Salads"
+    },
+    "737961:11": {
+      "section": "Salads"
+    },
+    "737961:12": {
+      "section": "Salads"
+    },
+    "737961:13": {
+      "section": "Salads"
+    },
+    "737961:14": {
+      "section": "Appetizers"
+    },
+    "737961:15": {
+      "section": "Appetizers"
+    },
+    "737961:16": {
+      "section": "Appetizers"
+    },
+    "737961:17": {
+      "section": "Appetizers"
+    },
+    "737961:18": {
+      "section": "Appetizers"
+    },
+    "737961:19": {
+      "section": "Tagines"
+    },
+    "737961:20": {
+      "section": "Tagines"
+    },
+    "737961:21": {
+      "section": "Tagines"
+    },
+    "737961:22": {
+      "section": "Tagines"
+    },
+    "737961:23": {
+      "section": "Tagines"
+    },
+    "737961:24": {
+      "section": "Tagines"
+    },
+    "737961:25": {
+      "section": "Tagines"
+    },
+    "737961:26": {
+      "section": "Tagines"
+    },
+    "737961:27": {
+      "section": "Tagines"
+    },
+    "737961:28": {
+      "section": "Tagines"
+    },
+    "737961:29": {
+      "section": "Stuffed Vegetables"
+    },
+    "737961:30": {
+      "section": "Stuffed Vegetables"
+    },
+    "737961:31": {
+      "section": "Stuffed Vegetables"
+    },
+    "737961:32": {
+      "section": "Stuffed Vegetables"
+    },
+    "737961:33": {
+      "section": "Main Dishes"
+    },
+    "737961:34": {
+      "section": "Main Dishes"
+    },
+    "737961:35": {
+      "section": "Main Dishes"
+    },
+    "737961:36": {
+      "section": "Main Dishes"
+    },
+    "737961:37": {
+      "section": "Main Dishes"
+    },
+    "737961:38": {
+      "section": "Main Dishes"
+    },
+    "737961:39": {
+      "section": "Grills"
+    },
+    "737961:40": {
+      "section": "Grills"
+    },
+    "737961:41": {
+      "section": "Grills"
+    },
+    "737961:42": {
+      "section": "Grills"
+    },
+    "737961:43": {
+      "section": "Grills"
+    },
+    "737961:44": {
+      "section": "Grills"
+    },
+    "737961:45": {
+      "section": "Grills"
+    },
+    "737961:46": {
+      "section": "Grills"
+    },
+    "737961:47": {
+      "section": "Grills"
+    },
+    "737961:48": {
+      "section": "Grilled Dishes"
+    },
+    "737961:49": {
+      "section": "Grilled Dishes"
+    },
+    "737961:50": {
+      "section": "Grilled Dishes"
+    },
+    "737961:51": {
+      "section": "Grilled Dishes"
+    },
+    "737961:52": {
+      "section": "Grilled Dishes"
+    },
+    "737961:53": {
+      "section": "Grilled Dishes"
+    },
+    "737961:54": {
+      "section": "Popular Dishes"
+    },
+    "737961:55": {
+      "section": "Popular Dishes"
+    },
+    "737961:56": {
+      "section": "Popular Dishes"
+    },
+    "737961:57": {
+      "section": "Pies"
+    },
+    "737961:58": {
+      "section": "Pies"
+    },
+    "737961:59": {
+      "section": "Pies"
+    },
+    "737961:60": {
+      "section": "Pies"
+    },
+    "737961:61": {
+      "section": "Pies"
+    },
+    "737961:62": {
+      "section": "Pies"
+    },
+    "737961:63": {
+      "section": "Pies"
+    },
+    "747549:32": {
+      "name": "Hummus With Half Beans"
+    },
+    "769846:57": {
+      "section": "Soft Drinks"
+    },
+    "769846:58": {
+      "section": "Soft Drinks"
+    },
+    "769846:59": {
+      "section": "Soft Drinks"
+    },
+    "769846:60": {
+      "section": "Soft Drinks"
+    },
+    "769846:61": {
+      "section": "Soft Drinks"
+    },
+    "769846:62": {
+      "section": "Soft Drinks"
+    },
+    "769846:63": {
+      "section": "Soft Drinks"
+    },
+    "769846:64": {
+      "section": "Soft Drinks"
+    },
+    "769846:65": {
+      "section": "Soft Drinks"
+    },
+    "769846:66": {
+      "section": "Soft Drinks"
+    },
+    "744487:12": {
+      "name": "Vermicelli With Milk"
+    },
+    "666317:6": {
+      "name": "Ramadan Box"
+    },
+    "615185:48": {
+      "name": "Beautiful Ripee"
+    },
+    "1101673:13": {
+      "name": "Tender Veal Meat Porridge"
+    },
+    "757046:2": {
+      "section": "Beverages"
+    },
+    "757046:3": {
+      "section": "Beverages"
+    },
+    "757046:4": {
+      "section": "Beverages"
+    },
+    "757046:5": {
+      "section": "Beverages"
+    },
+    "757046:6": {
+      "section": "Beverages"
+    },
+    "801793:9": {
+      "name": "Yeast Bread Box"
+    },
+    "760954:44": {
+      "name": "Soft Drinks"
+    },
+    "646041:34": {
+      "name": "Egyptian Fish"
+    },
+    "646041:43": {
+      "name": "Whole Grain Bread"
+    },
+    "646041:44": {
+      "name": "Whole Grain Toast"
+    },
+    "684718:52": {
+      "name": "Chicken Only"
+    },
+    "768950:5": {
+      "name": "Hawawshi Meat",
+      "section": "Hawawshi"
+    },
+    "768950:13": {
+      "name": "Pasta With Shrimp",
+      "section": "Meals"
+    },
+    "768950:14": {
+      "name": "Mixed Seafood",
+      "section": "Meals"
+    },
+    "768950:15": {
+      "section": "Sandwiches"
+    },
+    "768950:17": {
+      "section": "Sandwiches"
+    },
+    "768950:18": {
+      "name": "Calamari",
+      "section": "Sandwiches"
+    },
+    "768950:19": {
+      "name": "Shrimp Sandwich",
+      "section": "Sandwiches"
+    },
+    "768950:20": {
+      "name": "Grilled Kofta",
+      "section": "Sandwiches"
+    },
+    "768950:21": {
+      "section": "Orders"
+    },
+    "768950:22": {
+      "name": "Sklans",
+      "section": "Sweets"
+    },
+    "768950:23": {
+      "section": "Additions"
+    },
+    "768950:24": {
+      "name": "Pickled Tomatoes",
+      "section": "Additions"
+    },
+    "660692:9": {
+      "section": "Chocola Dubai"
+    },
+    "660692:10": {
+      "section": "Chocola Dubai"
+    },
+    "660692:11": {
+      "section": "Chocola Dubai"
+    },
+    "660692:12": {
+      "section": "Chocola Dubai"
+    },
+    "660692:13": {
+      "section": "Chocola Dubai"
+    },
+    "660692:14": {
+      "section": "Chocola Dubai"
+    },
+    "660692:15": {
+      "section": "Chocola Dubai"
+    },
+    "660692:16": {
+      "section": "Chocola Dubai"
+    },
+    "756291:53": {
+      "name": "Potatoes With Our Mix"
+    },
+    "783082:10": {
+      "section": "Mexican Shawarma"
+    },
+    "783082:11": {
+      "section": "Mexican Shawarma"
+    },
+    "783082:12": {
+      "section": "Mexican Shawarma"
+    },
+    "783082:13": {
+      "section": "Mexican Shawarma"
+    },
+    "783082:29": {
+      "name": "Natural Mineral Water"
+    },
+    "710110:0": {
+      "section": "Kunafa"
+    },
+    "710110:1": {
+      "section": "Kunafa"
+    }
+  },
+  "ambiguous": [
+    [
+      "724117:38",
+      "name",
+      2
+    ],
+    [
+      "724117:83",
+      "name",
+      2
+    ],
+    [
+      "724117:133",
+      "name",
+      2
+    ],
+    [
+      "724117:217",
+      "name",
+      2
+    ],
+    [
+      "724117:236",
+      "name",
+      3
+    ],
+    [
+      "770145:58",
+      "name",
+      2
+    ],
+    [
+      "770145:146",
+      "name",
+      2
+    ],
+    [
+      "770145:168",
+      "name",
+      4
+    ],
+    [
+      "685367:109",
+      "name",
+      2
+    ],
+    [
+      "685367:119",
+      "name",
+      2
+    ],
+    [
+      "685367:122",
+      "name",
+      2
+    ],
+    [
+      "685367:253",
+      "name",
+      2
+    ],
+    [
+      "685367:399",
+      "name",
+      2
+    ],
+    [
+      "685367:402",
+      "name",
+      2
+    ],
+    [
+      "685367:514",
+      "name",
+      4
+    ],
+    [
+      "685367:560",
+      "name",
+      3
+    ],
+    [
+      "802529:61",
+      "name",
+      4
+    ],
+    [
+      "681960:41",
+      "name",
+      3
+    ],
+    [
+      "1101673:30",
+      "name",
+      2
+    ],
+    [
+      "768950:6",
+      "name",
+      6
+    ],
+    [
+      "768950:6",
+      "section",
+      2
+    ],
+    [
+      "768950:7",
+      "name",
+      2
+    ],
+    [
+      "768950:7",
+      "section",
+      2
+    ],
+    [
+      "768950:12",
+      "name",
+      4
+    ],
+    [
+      "768950:12",
+      "section",
+      2
+    ],
+    [
+      "768950:15",
+      "name",
+      5
+    ],
+    [
+      "768950:16",
+      "name",
+      2
+    ],
+    [
+      "768950:16",
+      "section",
+      2
+    ],
+    [
+      "768950:17",
+      "name",
+      2
+    ],
+    [
+      "768950:21",
+      "name",
+      6
+    ],
+    [
+      "768950:23",
+      "name",
+      6
+    ]
+  ],
+  "unmatched": [
+    [
+      "758248:59",
+      "name"
+    ],
+    [
+      "738747:51",
+      "section"
+    ],
+    [
+      "801793:0",
+      "name"
+    ],
+    [
+      "646041:3",
+      "name"
+    ],
+    [
+      "768950:0",
+      "name"
+    ],
+    [
+      "768950:1",
+      "name"
+    ],
+    [
+      "768950:2",
+      "name"
+    ],
+    [
+      "768950:3",
+      "name"
+    ],
+    [
+      "768950:4",
+      "name"
+    ]
+  ],
+  "untranslated": []
+}

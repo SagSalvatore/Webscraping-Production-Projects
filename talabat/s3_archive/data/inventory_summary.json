@@ -1,0 +1,157 @@
+{
+  "scanned_root": "C:\\Users\\SagarSingh\\OneDrive - Mordor Intelligence\\Desktop\\Webscraping-Production-Projects\\talabat",
+  "files": 795,
+  "bytes": 941387033,
+  "by_action": {
+    "skip": {
+      "files": 762,
+      "bytes": 114793423
+    },
+    "archive_keep": {
+      "files": 33,
+      "bytes": 826593610
+    }
+  },
+  "by_layer": {
+    "reference": {
+      "files": 7,
+      "bytes": 468697
+    },
+    "gold": {
+      "files": 7,
+      "bytes": 714356615
+    },
+    "bronze": {
+      "files": 19,
+      "bytes": 111768298
+    }
+  },
+  "by_folder": {
+    "(root files)": {
+      "files": 13,
+      "bytes": 122796
+    },
+    "url_collector": {
+      "files": 7,
+      "bytes": 33785
+    },
+    "unified": {
+      "files": 12,
+      "bytes": 676383712
+    },
+    "tests": {
+      "files": 5,
+      "bytes": 18469
+    },
+    "tavily": {
+      "files": 32,
+      "bytes": 14744040
+    },
+    "talabat_2_0": {
+      "files": 13,
+      "bytes": 75631
+    },
+    "talabat-selenium": {
+      "files": 1,
+      "bytes": 7964
+    },
+    "TAB_MENU_VALIDATION": {
+      "files": 9,
+      "bytes": 47001
+    },
+    "supabase": {
+      "files": 4,
+      "bytes": 42303
+    },
+    "september": {
+      "files": 26,
+      "bytes": 32635783
+    },
+    "sanitization": {
+      "files": 6,
+      "bytes": 72219
+    },
+    "s3_archive": {
+      "files": 20,
+      "bytes": 3212915
+    },
+    "Restaurant Identifier": {
+      "files": 4,
+      "bytes": 398034
+    },
+    "Postgre": {
+      "files": 8,
+      "bytes": 3708997
+    },
+    "menu_refresh": {
+      "files": 42,
+      "bytes": 1446361
+    },
+    "menu": {
+      "files": 44,
+      "bytes": 7358483
+    },
+    "map_version2": {
+      "files": 50,
+      "bytes": 288177
+    },
+    "listing_scraper": {
+      "files": 18,
+      "bytes": 2208657
+    },
+    "listing_comparison": {
+      "files": 12,
+      "bytes": 120727
+    },
+    "ingredients": {
+      "files": 2,
+      "bytes": 16858
+    },
+    "images": {
+      "files": 17,
+      "bytes": 6307282
+    },
+    "Google_Place": {
+      "files": 249,
+      "bytes": 2645458
+    },
+    "export": {
+      "files": 60,
+      "bytes": 84774214
+    },
+    "docs": {
+      "files": 5,
+      "bytes": 651015
+    },
+    "data": {
+      "files": 1,
+      "bytes": 4773735
+    },
+    "August_menu": {
+      "files": 26,
+      "bytes": 817866
+    },
+    "August_classification": {
+      "files": 19,
+      "bytes": 68327730
+    },
+    "area_classification": {
+      "files": 25,
+      "bytes": 1061135
+    },
+    "apify": {
+      "files": 47,
+      "bytes": 602873
+    },
+    "address_audit": {
+      "files": 16,
+      "bytes": 26999327
+    },
+    ".scrapy": {
+      "files": 2,
+      "bytes": 1483486
+    }
+  },
+  "upload_bytes": 826593610,
+  "reclaimable_bytes": 0
+}

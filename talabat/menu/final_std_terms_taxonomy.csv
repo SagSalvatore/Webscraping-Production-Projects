@@ -1,0 +1,583 @@
+Std_terms,taxonomy
+croissant,core_food
+burger,core_food
+wings,core_food
+soup,core_food
+meat/poultry bites,core_food
+sandwich,core_food
+hummus,accompaniment
+salad,core_food
+omelette,core_food
+shakshuka,core_food
+steak,core_food
+sauce/dips,addon
+ice cream,dessert
+milkshake,beverage
+juice,beverage
+mojito,beverage
+sparkling water,beverage
+still water,beverage
+soft drink,beverage
+kebab,core_food
+grilled dish,core_food
+wrap,core_food
+mushrooms,core_food
+sweet pastry,core_food
+strips,core_food
+flavored soda,addon
+tea,beverage
+shawarma,core_food
+fresh fruit bowl,core_food
+mezze,core_food
+edamame,core_food
+sashimi,core_food
+tempura,core_food
+seafood starters,core_food
+poke,core_food
+addon,addon
+acai,core_food
+nuggets,core_food
+raita,accompaniment
+grill,core_food
+manchurian,core_food
+noodle,core_food
+indo-chinese,core_food
+instant noodle,core_food
+pav bhaji,core_food
+tikka,core_food
+samosa,core_food
+pizza,core_food
+malt drink,beverage
+baguette,core_food
+calzone,core_food
+kachori,core_food
+rasmalai,dessert
+kheer,dessert
+rasgulla,dessert
+bhel puri,core_food
+koshari,core_food
+pudding,dessert
+rice cake,core_food
+rice dish,core_food
+non veg starter,core_food
+kulcha,core_food
+fusion dessert,core_food
+lassi,beverage
+fillet,core_food
+falafel,core_food
+egg plates,core_food
+smoothie,beverage
+chocolate,core_food
+waffle,dessert
+cocktail,beverage
+yogurt drink,beverage
+herbal tea,beverage
+kiwi,core_food
+pomegranate,core_food
+mango,core_food
+pineapple,core_food
+fruit plate,core_food
+mixed fruit,core_food
+roob,core_food
+chocolate cake,dessert
+falooda,dessert
+dosa,core_food
+south indian tiffin,core_food
+south indian breakfast,breakfast
+indian breakfast,breakfast
+uthappam,core_food
+indian/pakistani breakfast,breakfast
+chapathi,core_food
+poori,core_food
+idiyappam,core_food
+appam,core_food
+vada,core_food
+egg based dish,core_food
+papaya,core_food
+manoushe,core_food
+muhalabiya,core_food
+jello,core_food
+acai bowl,core_food
+bagel,core_food
+risotto,core_food
+porridge,core_food
+western breakfast platter,core_food
+croquettes,core_food
+churros,core_food
+non-alcoholic beer,beverage
+american pancake breakfast,breakfast
+brioche,core_food
+energy bites,core_food
+cookie,dessert
+rocky road,core_food
+coconut water,beverage
+cooler,core_food
+grill/glaze,core_food
+lemon curd,core_food
+flavored milk,beverage
+bonda,core_food
+milk,beverage
+malted drink,beverage
+muffin,core_food
+soda water,beverage
+fish,core_food
+burrito,core_food
+tacos,core_food
+turkish eggs,core_food
+breakfast egg bowl,breakfast
+english breakfast platter,combo
+pastry,core_food
+banana bread,core_food
+biscotti,core_food
+health shot,core_food
+kombucha,core_food
+nachos,core_food
+functional water,beverage
+vegan dish,core_food
+sides and snacks,side
+avocado toast,core_food
+sunny side up,core_food
+ful medames,core_food
+granola,core_food
+crepe,dessert
+bbq,core_food
+pie,core_food
+sweet loaf,core_food
+pickles and chutneys,addon
+breakfast bowl,breakfast
+berries,core_food
+mango and berries,core_food
+nuts,core_food
+boti,core_food
+baked rolls,core_food
+tortilla,core_food
+flavored water,addon
+fatteh,core_food
+kunafa,dessert
+moghli,core_food
+meat/seafood bites,core_food
+indian street snacks,side
+meal + juice,beverage
+khichdi,core_food
+papad,core_food
+dim sum and dumplings,core_food
+asian street bites,core_food
+steamed,core_food
+black pepper stir fry,core_food
+curry (malay style),core_food
+lachha paratha,core_food
+baked potato,core_food
+black forest,core_food
+trifle,core_food
+bread and bakery,core_food
+frappe,core_food
+breakfast protein plate,breakfast
+gulf breakfast,breakfast
+breakfast sandwich/toast,breakfast
+sweet toast,core_food
+seafood/chicken starters,core_food
+arabic breakfast,breakfast
+bao,core_food
+profiterole,core_food
+mixed curry or fry,core_food
+watermelon,beverage
+indian curries and gravies,core_food
+bread pudding,core_food
+rabdi,core_food
+shrikhand,core_food
+kulfi,dessert
+zarda,core_food
+fried banana,core_food
+coconut jelly,core_food
+channa bhatura,core_food
+service and packaging,marketing/non-standard menu
+basbousa,core_food
+baklava,dessert
+bulbul sweet,core_food
+curry or special roast,core_food
+combo,combo
+pasta in alfredo sauce,core_food
+pasta (tomato marinara),core_food
+batter fry,core_food
+rice fusion dish,side
+continental seafood dish,core_food
+baked dish,core_food
+spicy signature dish,core_food
+mousse,core_food
+muhammara,core_food
+mutabal,core_food
+vegetable plate,core_food
+zaatar crackers with dips,accompaniment
+sparkling drink,beverage
+hot beverage,beverage
+savarin,core_food
+west african breakfast,breakfast
+banana split,core_food
+fondant,core_food
+san sebastian cheesecake,dessert
+tres leches,core_food
+salads and greens,core_food
+bruschetta,core_food
+tartufo,core_food
+iced tea,beverage
+english breakfast,breakfast
+fruit sweet,core_food
+fruit drink,beverage
+fruit bowl,core_food
+breakfast plate,breakfast
+mixed platter,combo
+grill/teriyaki,core_food
+halo halo,core_food
+turon,core_food
+chia pudding,core_food
+health drink,beverage
+latin street bites,core_food
+truffle,core_food
+flan,core_food
+sides and crisps,core_food
+filipino silog,core_food
+chole,core_food
+pulao,core_food
+daal,core_food
+savory snack,side
+khachapuri,core_food
+shvili,core_food
+pear dessert,core_food
+churchkhella,core_food
+paklava,core_food
+tonic water,beverage
+curry (thai),core_food
+fried balls w/ sweet-sour sauce,addon
+curry/sauce,addon
+stir-fry vegetables,core_food
+sushi condiments,core_food
+fruit cups,core_food
+quesadilla,core_food
+ferrero sweet,core_food
+nutella sweet,core_food
+kitkat sweet,core_food
+kinder sweet,core_food
+dates,core_food
+figs,core_food
+apricots,core_food
+egg and awarma skillet,core_food
+fateer,core_food
+khaja,core_food
+indian sweet,core_food
+grill/curry,core_food
+corek,core_food
+revani,core_food
+dairy and yogurt,core_food
+iranian breakfast,breakfast
+south asian breakfast,breakfast
+sholeh zard,core_food
+bhajia,core_food
+saj flatbread,core_food
+finger fry,core_food
+mixed seafood curry,core_food
+overnight oats/chia,core_food
+salads and cold sides,core_food
+cajun platter,combo
+sagot gulaman,core_food
+mais con yelo,core_food
+buko pandan,core_food
+greek yogurt bowl,core_food
+jelly,core_food
+marshmallow,core_food
+gelato,core_food
+italian pastry,core_food
+portokalopita,core_food
+greek starters,core_food
+kataifi,core_food
+loukoumades,core_food
+galaktoboureko,core_food
+indian starters,core_food
+balila,core_food
+cheese tart,core_food
+matcha,core_food
+emirati breakfast,breakfast
+carrot loaf,core_food
+carrot walnut cake,dessert
+yogurt sweet,core_food
+victoria sponge,core_food
+japanese starters,core_food
+healthy/keto breakfast plate,breakfast
+veg breakfast,breakfast
+hot sides,side
+indian/pakistani veg curry,core_food
+pakistani breakfast,breakfast
+breakfast side,breakfast
+fusion bites,core_food
+central asian starters,core_food
+kinako,core_food
+soymilk,beverage
+othmalliyeh,core_food
+riz bil halib,core_food
+gulab jamun and rabdi,core_food
+kunafa bar,dessert
+nut sweet,core_food
+crunchy balls,core_food
+labneh egg plate,core_food
+sourdough toast,core_food
+croffle,core_food
+bagel sandwich,core_food
+south indian dish,core_food
+nuts and crunch,core_food
+nut bar,core_food
+energy bar,core_food
+mixed nuts,core_food
+eggs and sausage plate,core_food
+msabbaha,core_food
+breakfast cheese plate,breakfast
+bean dish,core_food
+fruit and nuts bowl,core_food
+sesame ball,core_food
+fermented drink,beverage
+detox drink,beverage
+sol kadi,core_food
+non-alcoholic drink,beverage
+indian/pakistani dessert,core_food
+south asian curry,core_food
+indo-chinese curry,core_food
+coconut yogurt bowl,core_food
+fried eggs,core_food
+fruit,core_food
+meal + pepsi,combo
+ice cream sundae,dessert
+sticky date pudding,core_food
+broths & stocks,core_food
+moroccan tagine,core_food
+pot curry,core_food
+whole fish,core_food
+indian accompaniments,core_food
+mezze appetizer plate,core_food
+mezze dip,accompaniment
+continental dish,core_food
+continental set,core_food
+buttermilk,beverage
+skillet cookie,dessert
+gallayeh,core_food
+macaroni,core_food
+lumpia,core_food
+burger + mojito,combo
+kiwi dessert,core_food
+smoked salmon tartine,core_food
+regional starters,core_food
+seafood platter,combo
+soufflé,core_food
+red velvet cake,dessert
+kunafa croffle,dessert
+kunafa croffle with chocolate hazelnut spread,dessert
+labneh toast,core_food
+peanut sweet,core_food
+berry cake,dessert
+functional beverage,beverage
+sweeteners,core_food
+pain au chocolat,core_food
+levant breakfast mezze,breakfast
+western breakfast set,breakfast
+payasam,core_food
+peda,core_food
+laddu,core_food
+barfi,core_food
+ghazal beirut,core_food
+healthy bowl,core_food
+egg curry,core_food
+curd,core_food
+eastern european breakfast,breakfast
+western breakfast plate,breakfast
+egyptian breakfast,breakfast
+egg & pastrami skillet,core_food
+cheese & tomato plate,core_food
+moussaka,core_food
+beverages,beverage
+baked or stuffed dish,core_food
+eastern european starters,core_food
+breakfast pastry set,breakfast
+quiche,core_food
+whole fish curry or fry,core_food
+chutneys & pickles,addon
+indian street accompaniments,core_food
+fruit salad,core_food
+beer,beverage
+south indian staples,core_food
+kerala spicy curry,core_food
+kerala roast,core_food
+banana leaf roast,core_food
+appetizer,core_food
+kadhai curry,core_food
+khubani ka meetha,core_food
+indian snack,side
+khari,core_food
+rusk,core_food
+surti,core_food
+indian biscuits and snacks,core_food
+mava,core_food
+nankhatai,core_food
+peanut biscuit,core_food
+cham cham,core_food
+sharbat,core_food
+choori,core_food
+gurpare,core_food
+shakarpare,core_food
+indian combo meal,combo
+south indian combo meal,combo
+cannoli,core_food
+pastry twist,core_food
+infused water,beverage
+scandinavian breakfast plate,breakfast
+eggs & mortadella plate,core_food
+torte,core_food
+gata,core_food
+marketing/non-standard menu,marketing/non-standard menu
+pepper roast,core_food
+coconut milk,beverage
+south indian or sri lankan combo,combo
+south indian snack,side
+kebab + tea,combo
+south indian curries & soups,core_food
+south indian chutneys,accompaniment
+fries + pepsi,combo
+snack + energy drink,combo
+filipino taro curry,core_food
+filipino drink,beverage
+pakistani breakfast combo,combo
+accompaniments,core_food
+coconut tossed,core_food
+kerala curry or roast,core_food
+mangalorean roast,core_food
+kerala mappas,core_food
+sudanese breakfast,breakfast
+labneh plate,core_food
+macaron,core_food
+caramel dessert or caramel sauce,addon
+chia pot,core_food
+sweets & desserts,core_food
+churma,core_food
+indian drink,beverage
+curry or fry,core_food
+eggs & minced meat plate,core_food
+sri lankan breakfast,breakfast
+mixed seafood platter,combo
+kothu,core_food
+indo-chinese dish,core_food
+vegetarian curry,core_food
+indo-chinese fry,core_food
+fried dish,core_food
+fried vegetarian dish,core_food
+fried condiment,core_food
+breakfast combo,combo
+eggs & cheese,core_food
+eggs & pastrami,core_food
+eggs & sausage,core_food
+spanish eggs,core_food
+ful & eggs,core_food
+ful with pastrami,core_food
+ful with sausage,core_food
+pumpkin pie,core_food
+sweet potato pie,core_food
+seasonal drink,beverage
+filipino sour soup,core_food
+filipino curry,core_food
+filipino vegetable dish,core_food
+filipino squid curry,core_food
+filipino tomato curry,core_food
+filipino vinegar curry,core_food
+indo-chinese chili fry,core_food
+garlic sauce curry,addon
+maamoul,core_food
+fresh fruits,core_food
+lava cake,dessert
+indo-chinese starters,core_food
+binignit,core_food
+kadala,core_food
+thari unda,core_food
+rich curry or continental dish,core_food
+cream sauce fry,addon
+indo-chinese dry dish,core_food
+burger + pepsi,combo
+mysore pak,core_food
+madakku,core_food
+assorted selection,core_food
+apple pie,core_food
+curd bowl,core_food
+watalappan,core_food
+chocolate drink,beverage
+ginger ale,core_food
+fruit nectar,core_food
+aloe vera drink,beverage
+western skillet,core_food
+persian starters,core_food
+tawa fry,core_food
+dumpling curry,core_food
+spicy mangalorean curry,core_food
+mangalorean ghee roast,core_food
+angoori dessert,core_food
+sheer khurma,core_food
+caramel dessert,core_food
+fruit dessert,core_food
+milk sweet,dessert
+maharashtrian breakfast,breakfast
+maharashtrian snack,side
+gujarati snack,side
+puran poli,core_food
+sheera,core_food
+gnanakatha,core_food
+kadala snack,side
+dal snack,side
+dodol,core_food
+sauces & condiments,addon
+napoleon cake,dessert
+syrniki,core_food
+steamed vegetable sides,side
+asian vegetable sides,core_food
+mango sticky rice,side
+mixed sweets platter,combo
+sweet spreads,core_food
+kerala curry,core_food
+green chili tawa fry,core_food
+kerala stew,core_food
+stuffed fish,core_food
+japanese curry or glaze,core_food
+stir-fry or curry,core_food
+kiri pani,core_food
+ginger beer,core_food
+syrup,core_food
+kesari,core_food
+pongal,core_food
+soussi,core_food
+ghraybeh,core_food
+goto style dish,core_food
+bibingka,core_food
+kutsinta,core_food
+pichi pichi,core_food
+hareeseh,core_food
+cold mezze,core_food
+biryani,core_food
+mandi,core_food
+machboos,core_food
+harees,core_food
+thareed,core_food
+manakish,core_food
+kibbeh,core_food
+tabbouleh,core_food
+fattoush,core_food
+mujadara,core_food
+mloukhieh,core_food
+mansaf,core_food
+freekeh,core_food
+fried rice,core_food
+naan,core_food
+paratha,core_food
+roti,core_food
+idli,core_food
+upma,core_food
+congee,core_food
+sushi,core_food
+ramen,core_food
+udon,core_food
+pad thai,core_food
+pasta,core_food
+ghee rice,core_food
+chicken rice,core_food
+gozleme,core_food
