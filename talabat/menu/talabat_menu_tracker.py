@@ -29,6 +29,7 @@ import argparse
 import csv
 import difflib
 import hashlib
+import logging
 import json
 import os
 import re
@@ -47,11 +48,33 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 from curl_cffi import requests as cffi_requests
 
+# ── Supabase writer (optional — graceful degradation if supabase not installed) ──
+_SUPABASE_DIR = Path(__file__).resolve().parent.parent / "supabase"
+if str(_SUPABASE_DIR) not in sys.path:
+    sys.path.insert(0, str(_SUPABASE_DIR))
+try:
+    from supabase_writer import SupabaseWriter
+    _SUPABASE_AVAILABLE = True
+except ImportError:
+    _SUPABASE_AVAILABLE = False
+
+# ── Text sanitization (emoji / whitespace cleaner) ────────────────────────────
+_SANITIZE_DIR = Path(__file__).resolve().parent.parent / "sanitization"
+if str(_SANITIZE_DIR) not in sys.path:
+    sys.path.insert(0, str(_SANITIZE_DIR))
+try:
+    from text_cleaner import sanitize_items as _sanitize_items
+    _SANITIZE_AVAILABLE = True
+except ImportError:
+    _sanitize_items = lambda items: items   # passthrough if module missing
+    _SANITIZE_AVAILABLE = False
+
 # ── paths ─────────────────────────────────────────────────────────────────────
 ROOT       = Path(__file__).resolve().parent.parent          # talabat/
 ENV_PATH   = ROOT / ".env"
 EXCEL_SRC  = ROOT / "Data_menus.xlsx"
 DATA_DIR   = Path(__file__).resolve().parent / "data"
+LOG_DIR    = DATA_DIR / "logs"
 BASELINE_F = DATA_DIR / "baseline" / "baseline.json"
 SNAP_DIR   = DATA_DIR / "snapshots"
 REPORT_DIR = DATA_DIR / "reports"
@@ -63,7 +86,8 @@ MIN_DELAY            = 1.5
 MAX_DELAY            = 3.0
 RETRY_ATTEMPTS       = 3
 SESSION_REFRESH      = 30
-SAVE_INTERVAL        = 20     # checkpoint every N restaurants
+SAVE_INTERVAL           = 20   # checkpoint every N restaurants
+PROXY_EXHAUST_THRESHOLD = 40   # consecutive proxy failures across all workers → graceful shutdown
 
 # ── credentials ───────────────────────────────────────────────────────────────
 load_dotenv(dotenv_path=ENV_PATH)
@@ -72,17 +96,49 @@ PASSWORD = os.getenv("OXYLABS_PASSWORD", "")
 COUNTRY  = os.getenv("OXYLABS_COUNTRY", "ae")
 
 # ── thread-safe accumulators ──────────────────────────────────────────────────
-lock          = threading.Lock()
-all_snapshots = []          # current scrape results
-all_deltas    = []          # delta records
-processed_ids = set()
-counters      = {"scraped": 0, "changed": 0, "no_change": 0, "failed": 0, "new": 0}
+lock             = threading.Lock()
+all_snapshots    = []          # current scrape results
+all_deltas       = []          # delta records
+processed_ids    = set()
+counters         = {"scraped": 0, "changed": 0, "no_change": 0, "failed": 0, "new": 0}
+supabase_writer  = None        # set in main() if SUPABASE_URL is configured
+PROXY_EXHAUSTED  = False       # set True when proxy is exhausted → all workers exit gracefully
+_proxy_fail_ct   = 0           # rolling count of consecutive proxy failures (reset on any success)
+
+logger = logging.getLogger("talabat")
 
 BROWSER_UAS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
 ]
+
+
+def _setup_logging(run_id: str) -> Path:
+    """Configure file logging for this run. Returns the log file path."""
+    LOG_DIR.mkdir(parents=True, exist_ok=True)
+    log_path = LOG_DIR / f"run_{run_id}.log"
+
+    fh = logging.FileHandler(log_path, encoding="utf-8")
+    fh.setLevel(logging.DEBUG)
+    fh.setFormatter(logging.Formatter(
+        "%(asctime)s [%(levelname)-8s] %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    ))
+    logger.setLevel(logging.DEBUG)
+    logger.addHandler(fh)
+
+    # Keep a fixed "run_LATEST.log" pointer so you can always tail the active log
+    latest = LOG_DIR / "run_LATEST.log"
+    try:
+        if latest.exists() or latest.is_symlink():
+            latest.unlink()
+        latest.symlink_to(log_path.name)
+    except Exception:
+        pass  # symlinks may need admin rights on some Windows setups — non-fatal
+
+    print(f"[Log] {log_path}")
+    return log_path
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -169,6 +225,83 @@ def build_baseline(force: bool = False) -> dict:
     with open(BASELINE_F, "w", encoding="utf-8") as f:
         json.dump(baseline, f, ensure_ascii=False)
     print(f"Baseline built: {len(baseline)} restaurants -> {BASELINE_F}")
+    return baseline
+
+
+def build_pending_baseline_from_db() -> dict:
+    """
+    Fetch restaurants with no menu items from Supabase via fn_get_pending_restaurants().
+    Returns same baseline dict structure as build_baseline() but with empty items
+    (all scraped items will be treated as new additions by the delta engine).
+    Results are cached to pending_baseline.json — delete to force refresh.
+    """
+    PENDING_CACHE = DATA_DIR / "baseline" / "pending_baseline.json"
+
+    if PENDING_CACHE.exists():
+        print(f"Loading cached pending baseline ({PENDING_CACHE.name}) ...")
+        with open(PENDING_CACHE, "r", encoding="utf-8") as f:
+            raw = json.load(f)
+        print(f"  {len(raw):,} pending restaurants loaded from cache")
+        return {int(k): v for k, v in raw.items()}
+
+    try:
+        from supabase import create_client
+    except ImportError:
+        print("ERROR: supabase not installed — pip install supabase")
+        raise
+
+    url = os.getenv("SUPABASE_URL", "")
+    key = os.getenv("SUPABASE_ANON_KEY") or os.getenv("SUPABASE_PUBLISHABLE_KEY", "")
+    if not url or not key:
+        raise RuntimeError("SUPABASE_URL + SUPABASE_ANON_KEY must be set in .env")
+
+    client = create_client(url, key)
+    print("Fetching pending restaurants from Supabase (fn_get_pending_restaurants) ...")
+
+    # Paginate in batches of 1,000 (PostgREST default cap per call)
+    rows: list = []
+    page_size = 1000
+    offset = 0
+    while True:
+        resp = client.rpc(
+            "fn_get_pending_restaurants",
+            {"p_limit": page_size, "p_offset": offset},
+        ).execute()
+        batch = resp.data or []
+        rows.extend(batch)
+        print(f"  fetched {len(rows):,} so far (batch={len(batch)}) ...")
+        if len(batch) < page_size:
+            break
+        offset += page_size
+    print(f"  {len(rows):,} pending restaurants returned")
+
+    empty_price_hash = compute_hash({})
+    empty_full_hash  = compute_hash([])
+
+    baseline = {}
+    for row in rows:
+        bid = int(row["branch_id"])
+        serves = row.get("serves_cuisine") or []
+        serves_str = ", ".join(serves) if isinstance(serves, list) else str(serves or "")
+        baseline[bid] = {
+            "branch_id":            bid,
+            "restaurant_id":        int(row["restaurant_id"]) if row.get("restaurant_id") else None,
+            "restaurant_name":      str(row["restaurant_name"] or "").strip(),
+            "url":                  str(row["map_url"] or "").strip(),
+            "area_id":              row.get("area_id"),
+            "area_name":            str(row.get("area_name") or "").strip(),
+            "serves_cuisine":       serves_str,
+            "baseline_items":       [],         # empty — first scrape for these restaurants
+            "baseline_price_hash":  empty_price_hash,
+            "baseline_full_hash":   empty_full_hash,
+            "baseline_item_count":  0,
+            "baseline_scraped_at":  None,
+        }
+
+    PENDING_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    with open(PENDING_CACHE, "w", encoding="utf-8") as f:
+        json.dump(baseline, f, ensure_ascii=False)
+    print(f"  Pending baseline cached → {PENDING_CACHE.name}")
     return baseline
 
 
@@ -264,7 +397,10 @@ def parse_next_data_menu(soup: "BeautifulSoup") -> list[dict]:
             "description": str(it.get("description", "")).strip(),
             "image_url":   it.get("squareImageUrl") or it.get("imageUrl") or "",
         })
-    return items
+
+    # Sanitize at parse time — clean category emojis + normalize whitespace.
+    # item_key is already set above so delta matching is unaffected.
+    return _sanitize_items(items)
 
 
 def fetch_menu(session, url: str, worker_id: int) -> dict:
@@ -425,7 +561,8 @@ def run_delta(baseline: dict, new_items: list[dict], branch_id: int) -> dict:
 # SECTION 4 — WORKER
 # ═══════════════════════════════════════════════════════════════════════════════
 
-CHECKPOINT_F = DATA_DIR / "checkpoint.json"
+CHECKPOINT_F         = DATA_DIR / "checkpoint.json"
+CHECKPOINT_PENDING_F = DATA_DIR / "checkpoint_pending.json"
 
 
 def load_checkpoint() -> set:
@@ -444,16 +581,24 @@ def save_checkpoint(done: set):
     os.replace(tmp, CHECKPOINT_F)
 
 
-def worker(worker_id: int, jobs: list[tuple], baseline: dict):
+def worker(worker_id: int, jobs: list[tuple], baseline: dict, run_id: str = ""):
     """
     jobs: list of (branch_id, url) tuples.
     baseline: full baseline dict.
     """
+    global PROXY_EXHAUSTED, _proxy_fail_ct
+
     session = None
     local_n = 0
 
     try:
         for i, (branch_id, url) in enumerate(jobs):
+            # ── Proxy exhaustion guard — check before each URL ────────────────
+            if PROXY_EXHAUSTED:
+                logger.warning(f"[W{worker_id}] Proxy-exhausted flag set — stopping (checkpoint saved)")
+                print(f"[W{worker_id}] Proxy exhausted — exiting gracefully")
+                break
+
             # Session create / rotate
             if session is None or local_n % SESSION_REFRESH == 0:
                 if session:
@@ -461,8 +606,10 @@ def worker(worker_id: int, jobs: list[tuple], baseline: dict):
                 session, sid = create_session()
                 verb = "created" if local_n == 0 else "rotated"
                 print(f"[W{worker_id}] Session {verb} (sid={sid})")
+                logger.debug(f"[W{worker_id}] Session {verb} sid={sid}")
 
             print(f"[W{worker_id}] ({i+1}/{len(jobs)}) branch={branch_id}")
+            logger.info(f"[W{worker_id}] START branch={branch_id} ({i+1}/{len(jobs)})")
             scraped_at = datetime.now(timezone.utc).isoformat()
 
             result = None
@@ -470,18 +617,42 @@ def worker(worker_id: int, jobs: list[tuple], baseline: dict):
                 result = fetch_menu(session, url, worker_id)
 
                 if result["status"] == "rate_limited":
-                    # 30s base backoff (from TALABAT_FAST_MENU.py) → 30/60/120s
+                    # 30s base backoff → 30/60/120s
                     wait = (2 ** attempt) * 30
                     print(f"[W{worker_id}] Rate limited — wait {wait}s, rotate session")
+                    logger.warning(
+                        f"[W{worker_id}] branch={branch_id} RATE_LIMITED "
+                        f"attempt={attempt+1}/{RETRY_ATTEMPTS} wait={wait}s"
+                    )
+                    with lock:
+                        _proxy_fail_ct += 1
+                        if _proxy_fail_ct >= PROXY_EXHAUST_THRESHOLD and not PROXY_EXHAUSTED:
+                            PROXY_EXHAUSTED = True
+                            _emsg = (
+                                f"*** PROXY EXHAUSTED (consecutive_failures={_proxy_fail_ct}) "
+                                f"— graceful shutdown triggered — checkpoint will be saved ***"
+                            )
+                            print(f"[W{worker_id}] {_emsg}")
+                            logger.critical(f"[W{worker_id}] {_emsg}")
                     time.sleep(wait)
+                    if PROXY_EXHAUSTED:
+                        break
                     if session: session.close()
                     session, sid = create_session()
                     continue
 
                 if result["status"] == "exception" and attempt < RETRY_ATTEMPTS - 1:
                     print(f"[W{worker_id}] Retry {attempt+2}/{RETRY_ATTEMPTS}: {result.get('error','')[:60]}")
+                    logger.warning(
+                        f"[W{worker_id}] branch={branch_id} exception attempt={attempt+1}: "
+                        f"{result.get('error','')[:100]}"
+                    )
                     time.sleep(5)
                     continue
+                break
+
+            # If exhausted mid-retry, stop this worker
+            if PROXY_EXHAUSTED:
                 break
 
             bline = baseline.get(int(branch_id), {})
@@ -496,6 +667,10 @@ def worker(worker_id: int, jobs: list[tuple], baseline: dict):
                     "error":          result.get("error") or result.get("http_code"),
                     "scraped_at":     scraped_at,
                 }
+                logger.warning(
+                    f"[W{worker_id}] FAILED branch={branch_id} "
+                    f"status={result['status']} err={result.get('error') or result.get('http_code','')}"
+                )
                 with lock:
                     all_snapshots.append(snap)
                     processed_ids.add(branch_id)
@@ -562,6 +737,7 @@ def worker(worker_id: int, jobs: list[tuple], baseline: dict):
             }
 
             with lock:
+                _proxy_fail_ct = 0   # reset on success — proxy is working
                 all_snapshots.append(snap)
                 all_deltas.extend(_expand_deltas(snap))
                 processed_ids.add(branch_id)
@@ -569,12 +745,23 @@ def worker(worker_id: int, jobs: list[tuple], baseline: dict):
                 counters[delta_status if delta_status in counters else "changed"] += 1
                 _maybe_checkpoint()
 
+            # Write to Supabase outside the lock — DB I/O must not block other threads
+            if supabase_writer and run_id:
+                supabase_writer.write_restaurant_scrape(snap, run_id)
+
             name_flag = f" [NAME CHANGED: {rest_name} -> {page_name}]" if name_changed else ""
-            print(
+            _smsg = (
                 f"[W{worker_id}] {rest_name[:28]} | items={len(new_items)} "
                 f"| {delta_status} "
                 f"(+{len(delta.get('added',[]))} -{len(delta.get('removed',[]))} ~{len(delta.get('changed',[]))})"
                 f"{name_flag}"
+            )
+            print(_smsg)
+            logger.info(
+                f"[W{worker_id}] DONE branch={branch_id} name={rest_name[:30]} "
+                f"items={len(new_items)} status={delta_status} "
+                f"added={len(delta.get('added',[]))} removed={len(delta.get('removed',[]))} "
+                f"changed={len(delta.get('changed',[]))}"
             )
             local_n += 1
             time.sleep(random.uniform(MIN_DELAY, MAX_DELAY))
@@ -591,9 +778,11 @@ def _maybe_checkpoint():
     total = sum(counters.values())
     if total % SAVE_INTERVAL == 0:
         save_checkpoint(processed_ids)
-        print(f"[checkpoint] total={total} | scraped={counters['scraped']} "
-              f"| changed={counters['changed']} | no_change={counters['no_change']} "
-              f"| failed={counters['failed']}")
+        msg = (f"[checkpoint] total={total} | scraped={counters['scraped']} "
+               f"| changed={counters['changed']} | no_change={counters['no_change']} "
+               f"| failed={counters['failed']}")
+        print(msg)
+        logger.info(msg)
 
 
 def _expand_deltas(snap: dict) -> list[dict]:
@@ -944,14 +1133,23 @@ def write_excel(run_id: str):
 
 def main():
     parser = argparse.ArgumentParser(description="Talabat Menu Tracker")
-    parser.add_argument("--all",     action="store_true", help="Run all 5,275 restaurants")
-    parser.add_argument("--rebuild", action="store_true", help="Force rebuild baseline from Excel")
+    parser.add_argument("--all",     action="store_true", help="Run all 5,275 restaurants from Excel baseline")
+    parser.add_argument("--pending", action="store_true", help="Scrape the ~10,730 restaurants with no menu items yet (fetched from DB)")
+    parser.add_argument("--rebuild", action="store_true", help="Force rebuild baseline from Excel (ignored with --pending)")
     parser.add_argument("--limit",   type=int, default=TEST_LIMIT, help="URL limit (default 200)")
     args = parser.parse_args()
 
-    run_mode  = "FULL" if args.all else f"TEST ({args.limit})"
-    limit     = None if args.all else args.limit
+    is_pending = args.pending
+    run_mode   = "PENDING_FULL" if is_pending else ("FULL" if args.all else f"TEST ({args.limit})")
+    limit      = None if (args.all or is_pending) else args.limit
+
+    # Pending mode uses its own checkpoint so it never conflicts with Excel-baseline runs
+    global CHECKPOINT_F
+    if is_pending:
+        CHECKPOINT_F = CHECKPOINT_PENDING_F
     run_id    = datetime.now().strftime("%Y%m%d_%H%M%S")
+
+    log_path  = _setup_logging(run_id)
 
     print("=" * 70)
     print(f"TALABAT MENU TRACKER — Run {run_id}")
@@ -959,14 +1157,31 @@ def main():
     print(f"Workers  : {CONCURRENT_WORKERS}")
     print(f"Delay    : {MIN_DELAY}–{MAX_DELAY}s")
     print(f"Output   : {DATA_DIR}")
+    print(f"Log file : {log_path}")
     print("=" * 70)
+    logger.info(f"Run {run_id} started | mode={run_mode} workers={CONCURRENT_WORKERS}")
 
     if not USERNAME or not PASSWORD:
         print("ERROR: Oxylabs credentials not set in talabat/.env")
         sys.exit(1)
 
+    # ── Supabase writer init (non-fatal if not configured) ────────────────────
+    global supabase_writer
+    if _SUPABASE_AVAILABLE and os.getenv("SUPABASE_URL") and (os.getenv("SUPABASE_ANON_KEY") or os.getenv("SUPABASE_PUBLISHABLE_KEY")):
+        try:
+            supabase_writer = SupabaseWriter()
+            supabase_writer.start_run(run_id, platform="talabat", mode=run_mode)
+        except Exception as exc:
+            print(f"[Supabase] Init failed (continuing without DB writes): {exc}")
+            supabase_writer = None
+    else:
+        print("[Supabase] Not configured — skipping DB writes (set SUPABASE_URL + SUPABASE_PUBLISHABLE_KEY)")
+
     # 1. Build / load baseline
-    baseline = build_baseline(force=args.rebuild)
+    if is_pending:
+        baseline = build_pending_baseline_from_db()
+    else:
+        baseline = build_baseline(force=args.rebuild)
     print(f"Baseline: {len(baseline)} restaurants loaded")
 
     # 2. Resume
@@ -982,13 +1197,39 @@ def main():
         all_jobs = all_jobs[:limit]
 
     print(f"Jobs to process: {len(all_jobs)}")
+    logger.info(f"Jobs pending: {len(all_jobs)} | already done: {len(done)}")
     if not all_jobs:
-        print("All done. Generating outputs from existing data...")
+        # Checkpoint is fully saturated — either a previous run completed or this is a --all
+        # re-run without resetting. Don't log a ghost scrape_run record; just advise the user.
+        if supabase_writer:
+            try:
+                # Cancel the start_run record we already created — it's a no-op run
+                supabase_writer._rpc("fn_complete_scrape_run", {
+                    "p_run_id": run_id,
+                    "p_stats": {
+                        "restaurants_scraped": 0, "restaurants_changed": 0,
+                        "restaurants_no_change": 0, "restaurants_failed": 0,
+                        "items_total": 0, "items_added": 0, "items_removed": 0,
+                        "items_price_changed": 0, "items_desc_changed": 0,
+                        "items_cat_changed": 0,
+                    },
+                })
+            except Exception:
+                pass
+        print()
+        print("All restaurants already processed (checkpoint is fully done).")
+        print("To re-scrape everything fresh, delete or reset the checkpoint:")
+        print(f"  del \"{CHECKPOINT_F}\"   (Windows)")
+        print(f"  rm  \"{CHECKPOINT_F}\"   (bash)")
+        print()
+        logger.info("No pending jobs — checkpoint fully saturated. Delete checkpoint to re-scrape.")
+        return
     else:
         # Estimate
         avg_d = (MIN_DELAY + MAX_DELAY) / 2
         est   = (len(all_jobs) * avg_d) / CONCURRENT_WORKERS
         print(f"Est. time: ~{est/60:.0f} min")
+        logger.info(f"Estimated time: ~{est/60:.0f} min")
         print()
 
         # 4. Split & dispatch
@@ -1001,7 +1242,7 @@ def main():
         print()
 
         with ThreadPoolExecutor(max_workers=n) as ex:
-            futs = {ex.submit(worker, i+1, batch, baseline): i for i, batch in enumerate(batches)}
+            futs = {ex.submit(worker, i+1, batch, baseline, run_id): i for i, batch in enumerate(batches)}
             for fut in as_completed(futs):
                 try:
                     fut.result()
@@ -1009,23 +1250,56 @@ def main():
                     print(f"Worker {futs[fut]+1} raised: {e}")
 
     # 5. Final checkpoint + outputs
-    save_checkpoint(processed_ids)
+    resume_flag = "--pending" if is_pending else "--all"
+    if PROXY_EXHAUSTED:
+        print("\n[!] Run terminated early due to proxy exhaustion — checkpoint saved")
+        logger.critical(f"Run terminated early — proxy exhausted. Resume with: python talabat_menu_tracker.py {resume_flag}")
+        save_checkpoint(processed_ids)
+    elif (args.all or is_pending) and not PROXY_EXHAUSTED:
+        # Full / pending run completed cleanly — clear checkpoint and pending cache
+        if CHECKPOINT_F.exists():
+            CHECKPOINT_F.unlink()
+            print(f"[checkpoint] Run complete — checkpoint cleared")
+            logger.info("Checkpoint cleared after successful full run")
+        if is_pending:
+            pending_cache = DATA_DIR / "baseline" / "pending_baseline.json"
+            if pending_cache.exists():
+                pending_cache.unlink()
+                print("[pending] Pending baseline cache cleared — next --pending run will re-fetch from DB")
+                logger.info("Pending baseline cache cleared after successful pending run")
+    else:
+        save_checkpoint(processed_ids)
     write_json(run_id)
     write_excel(run_id)
 
+    if supabase_writer:
+        try:
+            supabase_writer.complete_run(run_id, counters, all_snapshots, all_deltas)
+        except Exception as exc:
+            print(f"[Supabase] complete_run failed: {exc}")
+
     # 6. Summary
+    price_chg  = len([r for r in all_deltas if r["change_type"] == "CHANGED" and r.get("field_changed") == "price"])
+    items_add  = len([r for r in all_deltas if r["change_type"] == "ADDED"])
+    items_rem  = len([r for r in all_deltas if r["change_type"] == "REMOVED"])
+
     print()
     print("=" * 70)
-    print("RUN COMPLETE")
+    print("RUN COMPLETE" + (" [EARLY EXIT — proxy exhausted]" if PROXY_EXHAUSTED else ""))
     print(f"  Scraped          : {counters['scraped']:,}")
     print(f"  Changed (delta)  : {counters['changed']:,}")
     print(f"  No change        : {counters['no_change']:,}")
     print(f"  New (no baseline): {counters['new']:,}")
     print(f"  Failed           : {counters['failed']:,}")
-    print(f"  Price changes    : {len([r for r in all_deltas if r['change_type']=='CHANGED' and r.get('field_changed')=='price']):,}")
-    print(f"  Items added      : {len([r for r in all_deltas if r['change_type']=='ADDED']):,}")
-    print(f"  Items removed    : {len([r for r in all_deltas if r['change_type']=='REMOVED']):,}")
+    print(f"  Price changes    : {price_chg:,}")
+    print(f"  Items added      : {items_add:,}")
+    print(f"  Items removed    : {items_rem:,}")
     print("=" * 70)
+    logger.info(
+        f"Run {run_id} finished | scraped={counters['scraped']} changed={counters['changed']} "
+        f"no_change={counters['no_change']} failed={counters['failed']} "
+        f"price_changes={price_chg} items_added={items_add} items_removed={items_rem}"
+    )
 
 
 if __name__ == "__main__":

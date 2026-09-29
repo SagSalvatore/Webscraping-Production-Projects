@@ -1,0 +1,384 @@
+"""
+process_brand.py
+----------------
+Generic brand result processor for any QSR/restaurant brand.
+Reads the raw Apify JSON, filters to the target brand, deduplicates,
+and exports clean CSV + JSON outputs.
+
+Key improvement over the KFC-specific processor
+------------------------------------------------
+Emirate detection comes from the brand's input.json query_metadata
+(query → area → emirate), NOT from address parsing.  This is 100%
+accurate because we know exactly which area each Apify search covered.
+Address-based fallback is used ONLY for records whose search query
+is not in the metadata (e.g., merged legacy data).
+
+Output fields
+-------------
+place_id, Name, Emirate, Area, City, Address, Street, Neighborhood,
+Contact_No, Google_Maps_URL, Geo_Lat, Geo_Lng,
+Category, All_Categories, Rating, Review_Count
+
+Output files
+------------
+brands/<brand>/output/<OUTPUT_FILENAME>.csv   (UTF-8 BOM for Excel)
+brands/<brand>/output/<OUTPUT_FILENAME>.json
+
+Usage:
+    python process_brand.py --brand dominos                              # latest raw
+    python process_brand.py --brand dominos --input path/to/merged.json  # specific
+    python process_brand.py --brand dominos --include-all               # skip brand filter
+    python process_brand.py --brand kfc --input brands/kfc/output/raw/dataset_*.json
+"""
+
+import re
+import sys
+import json
+import argparse
+import logging
+from pathlib import Path
+from urllib.parse import urlparse, parse_qs, urlunparse
+
+import pandas as pd
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)-8s %(message)s",
+    handlers=[logging.StreamHandler(sys.stdout)],
+)
+
+APIFY_DIR = Path(__file__).parent
+BRANDS_DIR = APIFY_DIR / "brands"
+
+# -- Emirates detection fallback (for records not covered by query_metadata) ---
+# Order: specific sub-cities before their parent emirate
+_EMIRATE_PATTERNS = [
+    ("Al Ain",         "Al Ain"),
+    ("Khor Fakkan",    "Khor Fakkan"),
+    ("Kalba",          "Kalba"),
+    ("Dubai",          "Dubai"),
+    ("Abu Dhabi",      "Abu Dhabi"),
+    ("Sharjah",        "Sharjah"),
+    ("Ajman",          "Ajman"),
+    ("Ras Al Khaimah", "Ras Al Khaimah"),
+    ("Fujairah",       "Fujairah"),
+    ("Umm Al Quwain",  "Umm Al Quwain"),
+]
+
+_UAE_SUFFIX  = re.compile(r",?\s*(united arab emirates|u\.a\.e\.?|uae)\s*$", re.IGNORECASE)
+_ROAD_NOISE  = re.compile(r"\bal ain\s+(?:rd|road|hwy|highway)\b", re.IGNORECASE)
+
+
+def _emirate_from_address(address: str) -> str:
+    """
+    Fallback: derive emirate from the address structure.
+    UAE addresses follow "[building] - [area] - [City] - [Emirate] - UAE".
+    Scan the last 6 tail segments right-to-left; when a parent emirate is
+    found, check if a sub-city name appears anywhere before it (e.g.
+    "Al Ain Cooperative Society - Abu Dhabi" → "Al Ain").
+    """
+    stripped = _UAE_SUFFIX.sub("", address).strip(", -")
+    parts    = [p.strip() for p in re.split(r"\s*[-,]\s*", stripped) if p.strip()]
+    tail     = parts[-6:] if len(parts) >= 6 else parts
+
+    for i in range(len(tail) - 1, -1, -1):
+        for keyword, label in _EMIRATE_PATTERNS:
+            if keyword.lower() == tail[i].lower():
+                if label in ("Abu Dhabi", "Sharjah") and i > 0:
+                    before   = " ".join(tail[:i])
+                    scrubbed = _ROAD_NOISE.sub("", before)
+                    if label == "Abu Dhabi" and re.search(r"\bal ain\b", scrubbed, re.IGNORECASE):
+                        return "Al Ain"
+                    if label == "Sharjah":
+                        if re.search(r"\bkhor\s*fakkan\b", scrubbed, re.IGNORECASE):
+                            return "Khor Fakkan"
+                        if re.search(r"\bkalba\b", scrubbed, re.IGNORECASE):
+                            return "Kalba"
+                return label
+
+    # Word-boundary scan with road noise stripped
+    scrubbed = _ROAD_NOISE.sub(" ", address)
+    for keyword, label in _EMIRATE_PATTERNS:
+        if re.search(r"\b" + re.escape(keyword.lower()) + r"\b", scrubbed.lower()):
+            return label
+    return "Unknown"
+
+
+def clean_maps_url(url: str) -> str:
+    """Return the cleanest direct Google Maps place URL."""
+    if not url:
+        return ""
+    p      = urlparse(url)
+    params = parse_qs(p.query)
+
+    cid = params.get("cid", [""])[0]
+    if cid:
+        return urlunparse((p.scheme, p.netloc, p.path, "", f"cid={cid}", ""))
+
+    qpid = params.get("query_place_id", [""])[0]
+    if qpid:
+        return f"https://www.google.com/maps/place/?q=place_id:{qpid}"
+
+    return url
+
+
+# -- Brand config helpers ------------------------------------------------------
+
+def load_brand_config(brand: str) -> dict:
+    path = BRANDS_DIR / brand / "input.json"
+    if not path.exists():
+        logger.warning(f"Brand input.json not found at {path} — metadata unavailable")
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def build_query_map(brand_config: dict) -> dict:
+    """
+    Return {query_string: {area: ..., emirate: ...}} from the brand's
+    query_metadata list.  Lookup is case-insensitive.
+    """
+    result = {}
+    for m in brand_config.get("query_metadata", []):
+        key = m.get("query", "").strip().lower()
+        if key:
+            result[key] = {"area": m.get("area", ""), "emirate": m.get("emirate", "")}
+    return result
+
+
+def is_brand(name: str, keywords: list[str]) -> bool:
+    """Return True if the venue name matches any brand keyword."""
+    n = name.lower()
+    return any(kw.lower() in n for kw in keywords)
+
+
+# -- Core pipeline -------------------------------------------------------------
+
+def find_latest_raw_file(brand: str) -> Path:
+    raw_dir = BRANDS_DIR / brand / "output" / "raw"
+    files   = sorted(raw_dir.glob("dataset_*.json"),
+                     key=lambda p: p.stat().st_mtime, reverse=True)
+    if not files:
+        raise FileNotFoundError(f"No raw files in {raw_dir}")
+    return files[0]
+
+
+def process(
+    input_path:   Path,
+    brand_config: dict,
+    query_map:    dict,
+    brand_keywords: list[str],
+    include_all:  bool = False,
+) -> pd.DataFrame:
+
+    logger.info(f"Loading raw data from: {input_path}")
+    with open(input_path, encoding="utf-8") as f:
+        raw_items = json.load(f)
+    logger.info(f"Raw items             : {len(raw_items):,}")
+
+    records          = []
+    skipped_closed   = 0
+    skipped_no_name  = 0
+    skipped_non_brand = 0
+
+    for item in raw_items:
+        # Skip closed
+        if item.get("permanentlyClosed") or item.get("temporarilyClosed"):
+            skipped_closed += 1
+            continue
+
+        name = (item.get("title") or "").strip()
+        if not name:
+            skipped_no_name += 1
+            continue
+
+        # Brand filter
+        if not include_all and not is_brand(name, brand_keywords):
+            skipped_non_brand += 1
+            continue
+
+        # Extract search query string
+        # Note: Apify sometimes wraps searchString in extra quotes, e.g.
+        #   '"Domino\'s Pizza in Yas Island, Abu Dhabi, UAE"'
+        # Strip them so the query_map lookup works correctly.
+        sq = item.get("searchQuery", {})
+        query_str = sq.get("term", "") if isinstance(sq, dict) else ""
+        if not query_str:
+            query_str = item.get("searchString", "").strip().strip('"\'')
+        query_str = query_str.strip().strip('"\'')  # strip from either source
+
+        # ── Emirate / Area lookup ─────────────────────────────────────────────
+        # EMIRATE: always derived from the address (reliable ground truth).
+        #   Query-based emirate is NOT used because popular chains (Dominos,
+        #   KFC, etc.) cause Google to return the same outlets regardless of
+        #   the searched area, making query → emirate mapping unreliable.
+        #
+        # AREA: derived from query_metadata when the query matches.
+        #   Provides useful neighbourhood/zone context but is best-effort.
+        address   = (item.get("address") or "").strip()
+        emirate   = _emirate_from_address(address)
+
+        meta = query_map.get(query_str.strip().lower(), {})
+        area = meta.get("area", "")
+
+        loc  = item.get("location") or {}
+        cat  = item.get("categoryName") or ""
+        cats = item.get("categories") or ([cat] if cat else [])
+
+        records.append({
+            "place_id":        item.get("placeId", ""),
+            "Name":            name,
+            "Emirate":         emirate,
+            "Area":            area,
+            "City":            (item.get("city")         or "").strip(),
+            "Address":         (item.get("address")      or "").strip(),
+            "Street":          (item.get("street")       or "").strip(),
+            "Neighborhood":    (item.get("neighborhood") or "").strip(),
+            "Contact_No":      (item.get("phone")        or "").strip(),
+            "Google_Maps_URL": clean_maps_url(item.get("url", "")),
+            "Geo_Lat":         loc.get("lat", ""),
+            "Geo_Lng":         loc.get("lng", ""),
+            "Category":        cat,
+            "All_Categories":  cats,
+            "Rating":          item.get("totalScore"),
+            "Review_Count":    item.get("reviewsCount", 0),
+            "Search_Query":    query_str,
+        })
+
+    logger.info(f"Skipped closed        : {skipped_closed:,}")
+    logger.info(f"Skipped no-name       : {skipped_no_name:,}")
+    if not include_all:
+        logger.info(f"Skipped non-brand     : {skipped_non_brand:,}")
+    logger.info(f"Valid records         : {len(records):,}")
+
+    if not records:
+        logger.warning("No records passed filters — check brand_keywords in input.json")
+        return pd.DataFrame()
+
+    df = pd.DataFrame(records)
+
+    # -- Dedup on placeId -------------------------------------------------------
+    n_before = len(df)
+    df = df[df["place_id"] != ""].copy()
+    df = df.drop_duplicates(subset=["place_id"], keep="first")
+    removed = n_before - len(df)
+    logger.info(f"Duplicates removed    : {removed:,}")
+    logger.info(f"Unique outlets        : {len(df):,}")
+
+    df = df.sort_values(["Emirate", "Area", "Name"]).reset_index(drop=True)
+    return df
+
+
+# -- Output writers ------------------------------------------------------------
+
+def write_outputs(df: pd.DataFrame, brand: str, output_filename: str) -> None:
+    out_dir = BRANDS_DIR / brand / "output"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    csv_path  = out_dir / f"{output_filename}.csv"
+    json_path = out_dir / f"{output_filename}.json"
+
+    # ── CSV (Excel-friendly UTF-8 BOM) ─────────────────────────────────────────
+    csv_df = df.copy()
+    csv_df["All_Categories"] = csv_df["All_Categories"].apply(
+        lambda v: " | ".join(v) if isinstance(v, list) else str(v or "")
+    )
+    csv_df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+    logger.info(f"CSV  saved -> {csv_path}  ({len(csv_df):,} rows)")
+
+    # ── JSON (rich / nested) ───────────────────────────────────────────────────
+    records = []
+    for _, r in df.iterrows():
+        rating = r["Rating"]
+        if rating is None or (isinstance(rating, float) and pd.isna(rating)):
+            rating = None
+        rc = r["Review_Count"]
+        records.append({
+            "place_id":        r["place_id"],
+            "Name":            r["Name"],
+            "Emirate":         r["Emirate"],
+            "Area":            r["Area"],
+            "City":            r["City"],
+            "Address":         r["Address"],
+            "Street":          r["Street"],
+            "Neighborhood":    r["Neighborhood"],
+            "Contact_No":      r["Contact_No"],
+            "Google_Maps_URL": r["Google_Maps_URL"],
+            "Geo_Coordinates": {"lat": r["Geo_Lat"], "lng": r["Geo_Lng"]},
+            "Category":        r["Category"],
+            "All_Categories":  r["All_Categories"] if isinstance(r["All_Categories"], list) else [],
+            "Rating":          rating,
+            "Review_Count":    0 if pd.isna(rc) else int(rc),
+            "Search_Query":    r["Search_Query"],
+        })
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(records, f, ensure_ascii=False, indent=2, default=str)
+    logger.info(f"JSON saved -> {json_path}  ({len(records):,} entries)")
+
+
+# -- Summary -------------------------------------------------------------------
+
+def print_summary(df: pd.DataFrame, brand_display: str) -> None:
+    print("\n" + "=" * 62)
+    print(f"{brand_display} — {len(df):,} unique outlets")
+    print("=" * 62)
+
+    print("\nBy Emirate:")
+    print(df["Emirate"].value_counts().to_string())
+
+    print(f"\nWith phone number  : {(df['Contact_No'] != '').sum():,}")
+    print(f"With Google URL    : {(df['Google_Maps_URL'] != '').sum():,}")
+    print(f"With coordinates   : {(df['Geo_Lat'] != '').sum():,}")
+    print(f"With rating        : {df['Rating'].notna().sum():,}")
+
+    avg = pd.to_numeric(df["Rating"], errors="coerce").mean()
+    if pd.notna(avg):
+        print(f"Avg rating         : {avg:.2f}")
+
+    # Flag unexpected non-brand names
+    brand_kw = [w.lower() for w in df["Name"].str.lower().unique()[:1]]
+    unexpected = []
+    for _, row in df.iterrows():
+        if not any(kw in row["Name"].lower() for kw in ["domino", "kfc", "kentucky", "pizza", "burger"]):
+            unexpected.append(row["Name"])
+    if unexpected:
+        print(f"\nNames to review manually ({len(unexpected)}):")
+        for n in unexpected[:10]:
+            print(f"  {n}")
+
+    print("=" * 62)
+
+
+# -- Entry point ---------------------------------------------------------------
+
+def main():
+    parser = argparse.ArgumentParser(description="Generic brand result processor")
+    parser.add_argument("--brand",       required=True,
+                        help="Brand folder name under brands/ (e.g. dominos)")
+    parser.add_argument("--input",       metavar="PATH",
+                        help="Raw JSON (default: latest in brands/<brand>/output/raw/)")
+    parser.add_argument("--include-all", action="store_true",
+                        help="Keep all results, not just brand-name matches")
+    args = parser.parse_args()
+
+    brand        = args.brand.lower()
+    brand_config = load_brand_config(brand)
+    query_map    = build_query_map(brand_config)
+    keywords     = brand_config.get("brand_keywords", [brand])
+    out_filename = brand_config.get("output_filename", brand.upper() + "_UAE")
+    brand_display= brand_config.get("brand_display", brand.upper() + " UAE")
+
+    input_path = Path(args.input) if args.input else find_latest_raw_file(brand)
+    logger.info(f"Brand         : {brand_display}")
+    logger.info(f"Keywords      : {keywords}")
+    logger.info(f"Query map     : {len(query_map)} entries loaded")
+
+    df = process(input_path, brand_config, query_map, keywords, args.include_all)
+    if not df.empty:
+        write_outputs(df, brand, out_filename)
+        print_summary(df, brand_display)
+
+
+if __name__ == "__main__":
+    main()

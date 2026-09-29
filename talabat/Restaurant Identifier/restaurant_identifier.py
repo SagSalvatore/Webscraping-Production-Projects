@@ -17,6 +17,7 @@ Upgrades over TALABAT_FAST_MENU.py:
 import json
 import re
 import os
+import sys
 import time
 import random
 import csv
@@ -31,16 +32,48 @@ from curl_cffi import requests as cffi_requests
 # ── paths ─────────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).resolve().parent.parent          # talabat/
 ENV_PATH = ROOT / ".env"
-INPUT_JSONL = ROOT / "data" / "urls" / "talabat_restaurant_urls.jsonl"
 CUISINE_CSV = ROOT / "talabat_restro_filteration.csv"
 OUT_DIR = Path(__file__).resolve().parent / "data"
 OUT_DIR.mkdir(exist_ok=True)
 
-CONFIRMED_JSONL = OUT_DIR / "restaurants_confirmed.jsonl"
-NON_REST_JSONL  = OUT_DIR / "non_restaurants.jsonl"
-FAILED_JSONL    = OUT_DIR / "failed_urls.jsonl"
-CHECKPOINT      = OUT_DIR / "checkpoint.json"
-CONFIRMED_CSV   = OUT_DIR / "restaurants_confirmed.csv"
+# --run 2 switches the input file and gives the outputs their own names, so a
+# second crawl is classified without touching run-1's confirmed/rejected sets.
+# Defaults are unchanged, so an argument-less invocation behaves exactly as before.
+_RUN2 = "--run2" in sys.argv or "--run 2" in " ".join(sys.argv)
+_SUFFIX = "_run2" if _RUN2 else ""
+
+
+def _argv_value(flag, default=None):
+    """Tiny arg reader - this module predates argparse and adding one would
+    change how every other flag is detected."""
+    if flag in sys.argv:
+        i = sys.argv.index(flag)
+        if i + 1 < len(sys.argv):
+            return sys.argv[i + 1]
+    for a in sys.argv:
+        if a.startswith(flag + "="):
+            return a.split("=", 1)[1]
+    return default
+
+
+# --cycle NAME gives this run its OWN input, outputs and checkpoint, the same
+# way run2_collector's --out does. Without it a September run would read
+# August's URL file, APPEND to August's confirmed/rejected sets, and inherit
+# August's checkpoint - which marks every August branch as already done, so the
+# run would process nothing and look like a success.
+_CYCLE = _argv_value("--cycle")
+if _CYCLE:
+    _SUFFIX = f"_{_CYCLE}"
+
+INPUT_JSONL = Path(_argv_value("--input") or (ROOT / "data" / "urls" / (
+    "talabat_restaurant_urls_run2.jsonl" if _RUN2 else "talabat_restaurant_urls.jsonl"
+)))
+
+CONFIRMED_JSONL = OUT_DIR / f"restaurants_confirmed{_SUFFIX}.jsonl"
+NON_REST_JSONL  = OUT_DIR / f"non_restaurants{_SUFFIX}.jsonl"
+FAILED_JSONL    = OUT_DIR / f"failed_urls{_SUFFIX}.jsonl"
+CHECKPOINT      = OUT_DIR / f"checkpoint{_SUFFIX}.json"
+CONFIRMED_CSV   = OUT_DIR / f"restaurants_confirmed{_SUFFIX}.csv"
 
 # ── tuning ────────────────────────────────────────────────────────────────────
 CONCURRENT_WORKERS       = 10
@@ -70,15 +103,27 @@ BROWSER_UAS = [
 
 
 # ── whitelist ─────────────────────────────────────────────────────────────────
+HEADER_HINTS = ("cuisines_for", "cuisine_", "cuisines", "serve_cuisine",
+                "servescuisine")
+
+
 def load_cuisine_whitelist() -> set:
+    """Load the cuisine whitelist, skipping a header ONLY if there is one.
+
+    This used to skip line 1 unconditionally. Sagar's September list is
+    HEADERLESS and starts with a real cuisine, so the old loader silently ate
+    `Acai` - a genuine cuisine, gone with no error. Same trap as CITY-URLS.csv,
+    whose first line is also data.
+    """
     whitelist = set()
-    with open(CUISINE_CSV, "r", encoding="utf-8") as f:
+    with open(CUISINE_CSV, "r", encoding="utf-8-sig") as f:
         for i, line in enumerate(f):
-            if i == 0:
-                continue
             name = line.strip()
-            if name:
-                whitelist.add(name.lower())
+            if not name:
+                continue
+            if i == 0 and any(h in name.lower() for h in HEADER_HINTS):
+                continue                       # a real header, skip it
+            whitelist.add(name.lower())
     return whitelist
 
 CUISINE_WHITELIST = load_cuisine_whitelist()
@@ -165,6 +210,12 @@ def extract_restaurant_ld(html: str) -> dict | None:
 
 # ── cuisine matching ──────────────────────────────────────────────────────────
 def match_cuisines(serves_cuisine) -> list:
+    """servesCuisine is a COMBINATION - "Grills, Butchery, Mandi" - so it is
+    split on commas and each part tested. ANY whitelisted part confirms the
+    venue; only a venue whose ENTIRE set is off-whitelist is rejected. That is
+    why removing a term rarely costs anything: 110 venues carry `Doner` and 16
+    carry `Foul`, but every one also carries Shawarma/Kebab/Turkish/Egyptian, so
+    dropping those two terms loses exactly 0 venues."""
     if not serves_cuisine:
         return []
     if isinstance(serves_cuisine, list):
@@ -172,6 +223,21 @@ def match_cuisines(serves_cuisine) -> list:
     else:
         parts = [c.strip() for c in str(serves_cuisine).split(",")]
     return [c for c in parts if c.lower() in CUISINE_WHITELIST]
+
+
+# `Butchery` was removed from the whitelist (Sep 2026) because it admits meat
+# RETAIL - AlHalba Butchery, BEAST MEAT SHOP, Meat One. But a handful of real
+# restaurants carry it as their only cuisine while being grills:
+#   Al Eatemad Butchery & Grill        Al Sanobar Butchery And Grills
+# Sagar's rule: drop the butcheries, keep the genuine grills BY NAME.
+# Deliberately narrow - an earlier version also matched `roast|roastery` and
+# rescued 14 nut/coffee roasteries, which are exactly the retail this removes.
+GRILL_NAME = re.compile(r"\b(grill|grills|grillz|bbq|barbecue|charcoal)\b", re.I)
+
+
+def is_rescued_grill(name: str) -> bool:
+    """True if the NAME shows this is a grill, not a butcher's counter."""
+    return bool(GRILL_NAME.search(name or ""))
 
 
 # ── per-URL processing ────────────────────────────────────────────────────────
@@ -220,6 +286,12 @@ def process_row(session, row: dict, worker_id: int):
             ", ".join(serves_cuisine) if isinstance(serves_cuisine, list)
             else str(serves_cuisine)
         )
+
+        # a grill whose only cuisine tag was the removed `Butchery` still counts
+        rescued = bool(not matched and ld_type == "Restaurant"
+                       and is_rescued_grill(row.get("name") or ld_name))
+        if rescued:
+            matched = ["Grills"]
 
         if ld_type == "Restaurant" and matched:
             return {

@@ -91,12 +91,25 @@ storage_state*.json
 *.tmp
 *.temp
 *.bak
+# `*.bak` does NOT match `.bak9` / `.bak21` - numbered rollback copies of the
+# export JSON, 6.3 MB each. Thirteen of them reached the index before this rule.
+*.bak[0-9]
+*.bak[0-9][0-9]
+# stdout captures from long runs: logs by another name
+*.out
 
 # Documentation files should stay local unless intentionally force-added.
 *.md
 !README.md
 !Readme.md
 !README.template.md
+
+# talabat is the live deliverable pipeline: its written context (why a stage
+# exists, which rules were measured, what the traps are) is as load-bearing as
+# the code and must survive a machine handover. Cache dirs are excluded above,
+# and a file under an ignored directory cannot be re-included, so the
+# .pytest_cache/.mypy_cache READMEs stay out on their own.
+!talabat/**/*.md
 
 # OS/editor noise
 .DS_Store

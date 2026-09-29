@@ -12,7 +12,7 @@ from .config import CollectorConfig, ProxyConfig
 
 class TalabatFetcher:
     """
-    Async HTTP fetcher using curl_cffi Chrome TLS impersonation.
+    Async HTTP fetcher using Chrome TLS impersonation.
     Manages Oxylabs proxy session rotation and per-request rate limiting.
     """
 
