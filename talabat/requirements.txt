@@ -1,0 +1,62 @@
+# One environment for the talabat/ pipeline and the UK/ chain research.
+# Built 2026-09-30 from the third-party imports of all 414 scripts under
+# talabat/ and UK/. The per-folder requirements.txt files are older fragments.
+#
+# The caps keep the major versions this code was written and validated against
+# on the old laptop (Python 3.13.2, numpy 2.4.4, openai 1.77, pandas 2.x).
+# pandas 3 changes copy-on-write and the default string dtype; openai 2 is a new
+# major. Lift a cap only after the offline test suites pass on it.
+# Every package here has a native Python 3.14 wheel (checked with a wheels-only
+# resolve), so the file works on 3.13 and 3.14 alike.
+#
+# Left out on purpose: sentence_transformers (only the rejected embeddings
+# experiment in menu/ uses it, and it pulls ~2 GB of torch) and `discovery`
+# (a local module of the dairy project, not a package).
+
+pandas>=2.2,<3
+numpy>=2.4,<3
+openai>=1.77,<2
+
+# HTTP / scraping
+curl_cffi
+httpx
+requests
+urllib3
+beautifulsoup4
+lxml
+scrapy
+itemadapter
+playwright
+selenium
+webdriver-manager
+tenacity
+
+# Data / text
+orjson
+ijson
+polars
+scipy
+scikit-learn
+rapidfuzz
+ftfy
+Unidecode
+openpyxl
+xlsxwriter
+Pillow
+
+# Services
+psycopg2-binary
+asyncpg
+boto3
+apify-client
+langsmith
+openai-agents
+pydantic
+python-dotenv
+loguru
+tqdm
+colorama
+
+# Tests
+pytest
+pytest-asyncio

@@ -22,6 +22,13 @@ scrapy_env/
 *.pem
 *.key
 *.crt
+# The restored .claude handover archive: an auth token copy
+# (.credentials.json.tmp.*), .claude.json backups and file-history snapshots of
+# scripts from before the pg password moved to .env - none matched by *.json.
+claude_proj_session/
+# Holds the local pg password in its connection string; *.json covers it today,
+# this keeps it out if that data rule is ever loosened.
+.mcp.json
 
 # Scraped/exported data
 *.csv

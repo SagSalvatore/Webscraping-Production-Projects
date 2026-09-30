@@ -48,7 +48,11 @@ def fetcher(collector_config, proxy_config):
     import asyncio
     from url_collector.fetcher import TalabatFetcher
 
+    # Make this loop CURRENT: the tests reach it through asyncio.get_event_loop(),
+    # which on 3.14 raises instead of creating one, and on 3.13 silently created
+    # a second loop - so the fetcher was used on one loop and closed on another.
     loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
     f = TalabatFetcher(collector_config, proxy_config)
 
     yield f
@@ -59,3 +63,4 @@ def fetcher(collector_config, proxy_config):
 
     loop.run_until_complete(_close())
     loop.close()
+    asyncio.set_event_loop(None)
