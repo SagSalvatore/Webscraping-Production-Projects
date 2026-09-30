@@ -28,17 +28,17 @@ Only retire on an explicit usage-limit message in the body.
 """
 import argparse
 import asyncio
-import csv
 import json
 import sys
 import time
 from collections import Counter
 
 import httpx
+import openpyxl
 from loguru import logger
 
 from config import (LOGS, MNC_SEED, PLACES_OUT, TAVILY_CACHE, TAVILY_QUERY,
-                    TAV_KEYS)
+                    TAV_KEYS, TAV_KEYS_SHEET)
 from rules import norm_name
 
 TAVILY_URL = "https://api.tavily.com/search"
@@ -51,16 +51,22 @@ MAX_CHARS = 1200
 
 
 def load_keys():
-    keys = []
+    """Tavily keys from the tracker workbook's `tavily` sheet, `Keys` column."""
     try:
-        with open(TAV_KEYS, encoding="utf-8-sig") as f:
-            for r in csv.DictReader(f):
-                k = (r.get("Keys") or "").strip()
-                if k.startswith("tvly"):
-                    keys.append(k)
+        wb = openpyxl.load_workbook(TAV_KEYS, read_only=True, data_only=True)
     except FileNotFoundError:
-        pass
-    return keys
+        return []
+    try:
+        rows = wb[TAV_KEYS_SHEET].iter_rows(values_only=True)
+        col = [str(h or "").strip() for h in next(rows, ())].index("Keys")
+        keys = []
+        for r in rows:
+            k = str(r[col] or "").strip() if col < len(r) else ""
+            if k.startswith("tvly") and k not in keys:
+                keys.append(k)
+        return keys
+    finally:
+        wb.close()
 
 
 def load_cache():
@@ -223,7 +229,7 @@ async def main(args):
     keys = load_keys()
     logger.info(f"  tavily keys in file: {len(keys)}")
     if not keys:
-        logger.error("no tavily keys in tav_keys.csv")
+        logger.error(f"no tavily keys in {TAV_KEYS.name} [{TAV_KEYS_SHEET}]")
         return 1
     if not args.dry_run and not args.no_preflight:
         keys = preflight(keys)

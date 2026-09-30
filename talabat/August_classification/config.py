@@ -66,7 +66,11 @@ else:
     PRIOR_CLASSIFY = [ROOT / "tavily" / "FINAL_CLASSIFY.csv",
                       HERE / "data" / "restaurants_classified.csv"]
 
-TAV_KEYS = ROOT / "tavily" / "tav_keys.csv"
+# Tavily and Apify keys live in ONE tracker workbook at the repo root (sheets
+# `tavily` / `apify`, columns S.No, Name, Keys) - the same file UK/scripts reads.
+# tavily/tav_keys.csv was archived to S3 and pruned in Sept 2026.
+TAV_KEYS = ROOT.parent / "TRACKER_TAVILY_KEYS_apify.xlsx"
+TAV_KEYS_SHEET = "tavily"
 
 # ---- outputs ------------------------------------------------------------
 # Caches live with their cohort's DATA dir. They are keyed by brand name, so
